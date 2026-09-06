@@ -8,9 +8,13 @@ accounts, open your project, and continue a saved conversation.
 
 ## Download
 
-The first signed, Apple-notarized public build is being prepared. There is no
-public installer available yet. Approved downloads will appear under
-[Releases](https://github.com/arnenoori/side-a-releases/releases).
+Find signed, Apple-notarized builds under
+[Releases](https://github.com/arnenoori/side-a-releases/releases). A version is ready
+when its published release includes the app ZIP and `SHA256SUMS.txt`. If the list
+is empty, a public build is not available yet.
+
+Download the ZIP, open it, and drag **Side A.app** into Applications. To update,
+replace the app with the newer download; account metadata and history are kept.
 
 ## Requirements
 
