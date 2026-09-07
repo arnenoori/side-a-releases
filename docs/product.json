@@ -1,0 +1,15 @@
+{
+  "name": "Side A",
+  "url": "https://getsidea.com/",
+  "description": "A standalone Mac app and menu bar companion for Claude Code and Codex account profiles, controlled through a vintage 3D player.",
+  "platform": "macOS 14+",
+  "architectures": ["Apple Silicon", "Intel"],
+  "requirements": ["Python 3.9+", "Claude Code or Codex CLI", "A provider account"],
+  "providers": ["Claude Code", "Codex"],
+  "releaseStatus": "public-preview",
+  "version": "0.3.1",
+  "releasesURL": "https://github.com/arnenoori/side-a-releases/releases",
+  "limitations": ["Switching applies to sessions started in Side A", "Codex and Auto flip are experimental", "Real multiple-account handoffs are still being validated"],
+  "guideURL": "https://getsidea.com/index.md",
+  "author": {"name": "Arne Noori", "url": "https://arne.ai"}
+}

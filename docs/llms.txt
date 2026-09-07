@@ -1,0 +1,13 @@
+# Side A
+
+> A standalone Mac app and menu bar companion for Claude Code and Codex account profiles, controlled through a vintage 3D player.
+
+The signed and Apple-notarized public preview is available. The website player uses demo accounts. Codex and Auto flip are experimental.
+
+## Product
+
+- [Product and setup guide](https://getsidea.com/index.md): Requirements, download status, account switching, and privacy.
+- [Official releases](https://github.com/arnenoori/side-a-releases/releases): Published downloads and checksums.
+- [Product data](https://getsidea.com/product.json): Public read-only product information.
+- [Setup skill](https://getsidea.com/.well-known/agent-skills/side-a-setup/SKILL.md): Help users check availability and set up the app.
+- [Creator](https://arne.ai): Arne Noori.

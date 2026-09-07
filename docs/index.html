@@ -5,50 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <meta name="theme-color" content="#f7f8f7" />
-  <meta name="description" content="A little Mac player for your Claude Code and Codex accounts. Pick an account. Press play. Keep going." />
-  <meta property="og:title" content="Side A — Pick up where you left off." />
+  <meta name="description" content="A vintage 3D player for your Claude Code and Codex accounts. A standalone Mac app and menu bar companion." />
+  <meta property="og:title" content="Side A — Claude Code &amp; Codex account switcher for Mac" />
   <meta property="og:description" content="An interactive 3D account player for your Mac. Claude Code + Codex." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="./player.png" />
+  <meta property="og:image" content="https://getsidea.com/social.jpg" />
+  <meta property="og:url" content="https://getsidea.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="author" content="Arne Noori" />
+  <meta property="og:site_name" content="Side A" />
+  <meta property="og:image:alt" content="Side A, a silver portable account player for Mac" />
+  <link rel="alternate" type="text/markdown" href="https://getsidea.com/index.md" title="Product and setup guide" />
+  <link rel="canonical" href="https://getsidea.com/" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <title>Side A — Pick up where you left off.</title>
-  <script type="module" crossorigin src="./assets/index-Beb_DIWf.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D0G4TWhu.css">
+  <title>Side A — Claude Code &amp; Codex account switcher for Mac</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A standalone Mac app and menu bar companion for Claude Code and Codex accounts, controlled through a vintage 3D player. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["Multiple account profiles","Standalone and menu bar modes","Physical 3D player controls"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
+  <script type="module" crossorigin src="./assets/index-DxpS1qEK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BsMmZAR0.css">
 </head>
 <body>
   <div class="page">
     <header>
       <a class="wordmark" href="./" aria-label="Side A home"><span class="disc-mark" aria-hidden="true"></span>Side A</a>
-      <button class="quiet-button" data-open="setup">Getting started <span aria-hidden="true">↗</span></button>
+      <button class="quiet-button" data-open="setup">Setup</button>
     </header>
     <main>
-      <div class="intro"><p class="eyebrow">CLAUDE CODE + CODEX</p><h1 class="sr-only">Side A. Your coding accounts, a track apart.</h1></div>
+      <h1 class="sr-only">Side A. A Mac player for your Claude Code and Codex accounts.</h1>
       <div class="stage" id="stage" role="group" aria-label="Interactive Side A player preview">
-        <img class="fallback" id="fallback" src="./player.png" width="1100" height="1000" alt="Side A’s silver portable account player" fetchpriority="high" />
+        <img class="fallback" id="fallback" src="./player-1100.webp" srcset="./player-550.webp 550w, ./player-1100.webp 1100w" sizes="(max-width: 600px) 85vw, 680px" width="1100" height="1000" alt="Side A’s silver portable account player" fetchpriority="high" />
         <canvas id="player" tabindex="0" aria-label="Try the player. Left and right arrows switch demo accounts. Enter opens the lid. Space plays or pauses." aria-describedby="model-hint"></canvas>
         <div class="sr-only" id="model-hint">Go on. Press a button.</div>
         <p class="sr-only" id="preview-status" aria-live="polite">Preview account: Personal, Claude.</p>
       </div>
       <div class="download-area">
-        <p class="tagline">Your coding accounts. A track apart.</p>
-        <a class="download" id="download" href="https://github.com/arnenoori/side-a-releases/releases" aria-disabled="true">
+        <a class="download" id="download" href="https://github.com/arnenoori/side-a-releases/releases">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          <span id="download-label">Checking release…</span>
+          <span id="download-label">View downloads</span>
         </a>
-        <p class="requirements" id="release-detail">macOS 14+ <span>·</span> Apple Silicon & Intel</p>
-        <p class="release-status" id="release-status" role="status"></p>
+        <p class="requirements">Claude Code &amp; Codex. For Mac.</p>
+        <p class="sr-only" id="release-status" role="status"></p>
         <noscript><p><a href="https://github.com/arnenoori/side-a-releases/releases">View available downloads</a></p></noscript>
       </div>
     </main>
-    <footer><span>A small thing, by Arne Noori.</span><nav aria-label="More information"><button data-open="privacy">Privacy</button><a href="https://github.com/arnenoori/side-a-releases/releases">Release notes</a></nav></footer>
+    <footer><a href="https://arne.ai">Made with love by Arne Noori</a></footer>
   </div>
   <dialog id="setup" aria-labelledby="setup-title">
-    <button class="close" data-close aria-label="Close getting started">×</button>
-    <p class="eyebrow">THREE SMALL STEPS</p><h2 id="setup-title">Put it in play.</h2>
-    <ol class="steps"><li><span>01</span><div><h3>Make it at home.</h3><p>Open the download. Drag Side A to Applications.</p></div></li><li><span>02</span><div><h3>Add an account.</h3><p>Open the player’s lid. Choose Claude or Codex and finish its official sign-in.</p></div></li><li><span>03</span><div><h3>Press play.</h3><p>Pick your project and keep going.</p></div></li></ol>
-    <details><summary>What needs to be installed?</summary><p>Python 3.9+ and either <a href="https://code.claude.com/docs/en/setup" target="_blank" rel="noopener">Claude Code</a> or <a href="https://developers.openai.com/codex/cli" target="_blank" rel="noopener">Codex CLI</a>. Side A uses your own subscription accounts.</p><p>Need Python? Use the <a href="https://www.python.org/downloads/macos/" target="_blank" rel="noopener">official macOS installer</a>.</p></details>
-    <p class="fine-print">For sessions started in Side A. Codex and Auto flip are preview features; real multi-account handoffs are still being validated.</p>
+    <button class="close" data-close aria-label="Close setup">×</button>
+    <h2 id="setup-title">Setup</h2>
+    <ol class="steps">
+      <li>Drag Side A to Applications.</li>
+      <li>Open the lid. Sign in.</li>
+      <li>Choose a project. Press play.</li>
+    </ol>
+    <details><summary>Requirements</summary><p>macOS 14+. Apple Silicon or Intel.<br><a href="https://www.python.org/downloads/macos/" target="_blank" rel="noopener">Python 3.9+</a> and <a href="https://code.claude.com/docs/en/setup" target="_blank" rel="noopener">Claude Code</a> or <a href="https://developers.openai.com/codex/cli" target="_blank" rel="noopener">Codex CLI</a>.</p><p>For sessions started in Side A. Codex and Auto flip are experimental.</p><a href="https://github.com/arnenoori/side-a-releases/releases">Release notes ↗</a> · <a href="./index.md">Guide</a> · <button class="text-button" data-open="privacy">Privacy</button></details>
   </dialog>
-  <dialog id="privacy" aria-labelledby="privacy-title"><button class="close" data-close aria-label="Close privacy">×</button><p class="eyebrow">YOURS STAYS YOURS</p><h2 id="privacy-title">No extra account.</h2><p>Side A has no analytics or credential-collection service. Your agent owns sign-in; your profiles and managed history stay on your Mac.</p><p>Your coding agent sends requests to its provider under that provider’s policies. This site loads files from its host and checks GitHub for the latest public release. No cookies or tracking scripts.</p></dialog>
+  <dialog id="privacy" aria-labelledby="privacy-title"><button class="close" data-close aria-label="Close privacy">×</button><h2 id="privacy-title">Privacy</h2><p>Your profiles stay on your Mac. Claude and Codex handle sign-in and requests under their own policies.</p><p>No tracking. This page checks GitHub for downloads.</p></dialog>
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "side-a-setup",
+      "type": "skill-md",
+      "description": "Check Side A downloads and help set up Claude Code or Codex account profiles on a Mac.",
+      "url": "/.well-known/agent-skills/side-a-setup/SKILL.md",
+      "digest": "sha256:e73a94126b9f672f8a99b80170a0b8e8c00b77a37037dd6ba66b34fa42f983ea"
+    }
+  ]
+}
