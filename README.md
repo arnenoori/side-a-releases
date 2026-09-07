@@ -42,9 +42,11 @@ OAuth and real-limit handoffs are still undergoing acceptance testing.
 
 ## Privacy and support
 
-Side A does not collect analytics or send credentials to a Side A service. The
+The Side A app does not collect analytics or send credentials to a Side A service. The
 agent CLI owns sign-in and sends requests to its provider under that provider's
 policies. Side A stores profile metadata and managed conversation history locally.
+The website collects anonymous page views, download clicks, and demo interactions via PostHog, with no cookies, recordings, or persistent visitor IDs. Browser privacy signals and the opt-out in Setup → Requirements → Privacy are respected. See the [website privacy guide](https://getsidea.com/index.md).
+
 Never include credentials, account files, or conversation contents in public
 [bug reports](https://github.com/arnenoori/side-a-releases/issues).
 
