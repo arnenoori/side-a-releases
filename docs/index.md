@@ -27,7 +27,7 @@ Switching applies to sessions started in Side A. Codex integration and Auto flip
 
 ## Privacy
 
-Your profiles stay on your Mac. Claude and Codex handle sign-in and requests under their own policies. The website has no analytics or tracking cookies; it checks GitHub for public downloads. Side A is an independent app, not affiliated with Anthropic, OpenAI, or Sony.
+Your profiles stay on your Mac. Claude and Codex handle sign-in and requests under their own policies. The app has no analytics. The website sends anonymous page views, download clicks, and demo interactions to PostHog in the US, with no cookies, recordings, or persistent visitor IDs. Reloading starts a new anonymous visit. No account data, URL queries, or conversation content is sent. Turn website statistics off in Setup → Requirements → Privacy; Do Not Track and Global Privacy Control are also respected. This preference is stored locally. The page checks GitHub for public downloads. Side A is an independent app, not affiliated with Anthropic, OpenAI, or Sony.
 
 ## Machine-readable resources
 
