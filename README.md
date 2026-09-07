@@ -8,12 +8,14 @@ accounts, open your project, and continue a saved conversation.
 
 ## Download
 
-Find signed, Apple-notarized builds under
+Try the player and download Side A at **[getsidea.com](https://getsidea.com)**.
+
+Signed, Apple-notarized builds will also appear under
 [Releases](https://github.com/arnenoori/side-a-releases/releases). A version is ready
-when its published release includes the app ZIP and `SHA256SUMS.txt`. If the list
+when its published release includes the DMG, ZIP alternative, and `SHA256SUMS.txt`. If the list
 is empty, a public build is not available yet.
 
-Download the ZIP, open it, and drag **Side A.app** into Applications. To update,
+Open the DMG and drag **Side A** onto its Applications shortcut. To update,
 replace the app with the newer download; account metadata and history are kept.
 
 ## Requirements
@@ -47,7 +49,7 @@ policies. Side A stores profile metadata and managed conversation history locall
 Never include credentials, account files, or conversation contents in public
 [bug reports](https://github.com/arnenoori/side-a-releases/issues).
 
-This repository contains public release information and binaries only. The app's
+This repository contains public release information, binaries, and a compiled website preview. The app's
 source is private. Updates will be available as manual downloads.
 
 Copyright © 2026 Arne Noori. All rights reserved. Side A is independent software,
