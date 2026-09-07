@@ -10,10 +10,9 @@ accounts, open your project, and continue a saved conversation.
 
 Try the player and download Side A at **[getsidea.com](https://getsidea.com)**.
 
-Signed, Apple-notarized builds will also appear under
-[Releases](https://github.com/arnenoori/side-a-releases/releases). A version is ready
-when its published release includes the DMG, ZIP alternative, and `SHA256SUMS.txt`. If the list
-is empty, a public build is not available yet.
+The signed, Apple-notarized **0.3.1 public preview** is available in
+[Releases](https://github.com/arnenoori/side-a-releases/releases/tag/v0.3.1), with a
+universal DMG, ZIP alternative, and `SHA256SUMS.txt`.
 
 Open the DMG and drag **Side A** onto its Applications shortcut. To update,
 replace the app with the newer download; account metadata and history are kept.
