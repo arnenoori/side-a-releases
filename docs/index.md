@@ -8,8 +8,8 @@ The signed and Apple-notarized public preview is available. Download the univers
 
 ## Setup
 
-1. Download the signed DMG when available. Drag Side A to Applications.
-2. Open the player's lid. Add an account and complete the provider's official sign-in.
+1. Download the signed DMG. Drag Side A to Applications.
+2. Open the player's lid. Setup checks Python and your agent CLI. Add an account and complete the provider's official sign-in.
 3. Choose a project. Press play.
 
 ## Requirements
@@ -27,7 +27,7 @@ Switching applies to sessions started in Side A. Codex integration and Auto flip
 
 ## Privacy
 
-Your profiles stay on your Mac. Claude and Codex handle sign-in and requests under their own policies. The app has no analytics. The website sends anonymous page views, download clicks, and demo interactions to PostHog in the US, with no cookies, recordings, or persistent visitor IDs. Reloading starts a new anonymous visit. No account data, URL queries, or conversation content is sent. Turn website statistics off in Setup → Requirements → Privacy; Do Not Track and Global Privacy Control are also respected. This preference is stored locally. The page checks GitHub for public downloads. Side A is an independent app, not affiliated with Anthropic, OpenAI, or Sony.
+Your profiles stay on your Mac. Claude and Codex handle sign-in and requests under their own policies. App versions before 0.4 have no analytics. Starting with 0.4, anonymous app statistics are off by default: opt in during setup or in Settings to share setup, session, and handoff counts. App statistics use a new anonymous ID each launch and include no accounts, emails, code, or project paths. Turn them off at any time in Settings. The website sends anonymous page views, download clicks, and demo interactions to PostHog in the US, with no cookies, recordings, or persistent visitor IDs. Reloading starts a new anonymous visit. No account data, URL queries, or conversation content is sent. Turn website statistics off in Setup → Requirements → Privacy; Do Not Track and Global Privacy Control are also respected. This preference is stored locally. The page checks GitHub for public downloads. Side A is an independent app, not affiliated with Anthropic, OpenAI, or Sony.
 
 ## Machine-readable resources
 

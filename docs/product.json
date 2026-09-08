@@ -7,7 +7,7 @@
   "requirements": ["Python 3.9+", "Claude Code or Codex CLI", "A provider account"],
   "providers": ["Claude Code", "Codex"],
   "releaseStatus": "public-preview",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "releasesURL": "https://github.com/arnenoori/side-a-releases/releases",
   "limitations": ["Switching applies to sessions started in Side A", "Codex and Auto flip are experimental", "Real multiple-account handoffs are still being validated"],
   "guideURL": "https://getsidea.com/index.md",
