@@ -10,8 +10,8 @@ accounts, open your project, and continue a saved conversation.
 
 Try the player and download Side A at **[getsidea.com](https://getsidea.com)**.
 
-The signed, Apple-notarized **0.4.0 public preview** is available in
-[Releases](https://github.com/arnenoori/side-a-releases/releases/tag/v0.4.0), with a
+The signed, Apple-notarized **0.4.1 public preview** is available in
+[Releases](https://github.com/arnenoori/side-a-releases/releases/tag/v0.4.1), with a
 universal DMG, ZIP alternative, and `SHA256SUMS.txt`.
 
 Open the DMG and drag **Side A** onto its Applications shortcut. Setup checks Python and your agent CLI. Versions before 0.4 need this one manual download; later updates arrive through the signed in-app updater. Account metadata and history are kept.
@@ -22,14 +22,14 @@ Open the DMG and drag **Side A** onto its Applications shortcut. Setup checks Py
 - Python 3.9 or later.
 - [Claude Code](https://code.claude.com/docs/en/setup) or
   [Codex CLI](https://developers.openai.com/codex/cli), installed separately.
-- Your own agent subscription account. Additional accounts are optional.
+- Your own account with Claude Code or Codex access enabled. Additional accounts are optional.
 
 Side A manages CLI sessions launched through the app. It does not change accounts
 in Claude Desktop, the Codex desktop app, or other existing terminals.
 
 ## How it works
 
-Open the lid to add accounts and finish the agent's official sign-in. Choose a
+Open the lid to add accounts, finish the agent's official sign-in, and return to Side A. Choose a
 project, select an account with the previous/next buttons, then press PLAY. Each
 provider keeps its own account pool and conversation history.
 
@@ -40,6 +40,8 @@ integration is experimental and depends on its CLI version. Live multi-account
 OAuth and real-limit handoffs are still undergoing acceptance testing.
 
 ## Privacy and support
+
+Save a private diagnostic summary from Settings or Help when troubleshooting. It includes only app/tool versions and session state, with no accounts, paths, conversations, or credentials. Nothing is uploaded.
 
 Anonymous app statistics are off by default. You can opt in during setup or in Settings to share setup, session, and handoff counts, with no account identities, project paths, code, or persistent identifiers. Side A never sends credentials to a Side A service. The agent CLI owns sign-in and sends requests to its provider under that provider's
 policies. Side A stores profile metadata and managed conversation history locally.
