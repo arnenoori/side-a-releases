@@ -9,7 +9,7 @@ The signed and Apple-notarized public preview is available. Download the univers
 ## Setup
 
 1. Download the signed DMG. Drag Side A to Applications.
-2. Open the player's lid. Setup checks Python and your agent CLI. Add an account and complete the provider's official sign-in.
+2. Open the player's lid. Setup checks Python and your agent CLI. Add an account, complete the provider's official sign-in, then return to Side A.
 3. Choose a project. Press play.
 
 ## Requirements
@@ -17,13 +17,17 @@ The signed and Apple-notarized public preview is available. Download the univers
 - macOS 14 or later, Apple Silicon or Intel.
 - [Python 3.9 or later](https://www.python.org/downloads/macos/).
 - [Claude Code](https://code.claude.com/docs/en/setup) or [Codex CLI](https://developers.openai.com/codex/cli).
-- An account with the provider you want to use.
+- An account with Claude Code or Codex access enabled.
 
 ## Account switching
 
 Side A keeps separate account profiles for Claude Code and Codex. Use the player's previous and next controls to select an account. The app can run as the 3D player or from the menu bar.
 
 Switching applies to sessions started in Side A. Codex integration and Auto flip are experimental; real multiple-account handoffs are still being validated. Side A does not increase provider limits or guarantee uninterrupted sessions.
+
+## Troubleshooting
+
+If a switch is waiting, return to Terminal to finish the turn or submit or clear your draft. Side A never replays a prompt for you. Settings and Help offer a local diagnostic summary with app/tool versions and session state. No accounts, paths, conversations, or credentials are included, and nothing is uploaded.
 
 ## Privacy
 
