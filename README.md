@@ -10,12 +10,11 @@ accounts, open your project, and continue a saved conversation.
 
 Try the player and download Side A at **[getsidea.com](https://getsidea.com)**.
 
-The signed, Apple-notarized **0.3.1 public preview** is available in
-[Releases](https://github.com/arnenoori/side-a-releases/releases/tag/v0.3.1), with a
+The signed, Apple-notarized **0.4.0 public preview** is available in
+[Releases](https://github.com/arnenoori/side-a-releases/releases/tag/v0.4.0), with a
 universal DMG, ZIP alternative, and `SHA256SUMS.txt`.
 
-Open the DMG and drag **Side A** onto its Applications shortcut. To update,
-replace the app with the newer download; account metadata and history are kept.
+Open the DMG and drag **Side A** onto its Applications shortcut. Setup checks Python and your agent CLI. Versions before 0.4 need this one manual download; later updates arrive through the signed in-app updater. Account metadata and history are kept.
 
 ## Requirements
 
@@ -42,16 +41,13 @@ OAuth and real-limit handoffs are still undergoing acceptance testing.
 
 ## Privacy and support
 
-The Side A app does not collect analytics or send credentials to a Side A service. The
-agent CLI owns sign-in and sends requests to its provider under that provider's
+Anonymous app statistics are off by default. You can opt in during setup or in Settings to share setup, session, and handoff counts, with no account identities, project paths, code, or persistent identifiers. Side A never sends credentials to a Side A service. The agent CLI owns sign-in and sends requests to its provider under that provider's
 policies. Side A stores profile metadata and managed conversation history locally.
-The website collects anonymous page views, download clicks, and demo interactions via PostHog, with no cookies, recordings, or persistent visitor IDs. Browser privacy signals and the opt-out in Setup → Requirements → Privacy are respected. See the [website privacy guide](https://getsidea.com/index.md).
-
 Never include credentials, account files, or conversation contents in public
 [bug reports](https://github.com/arnenoori/side-a-releases/issues).
 
 This repository contains public release information, binaries, and a compiled website preview. The app's
-source is private. Updates will be available as manual downloads.
+source is private. Updates use signed feeds, signed installers, and Apple notarization.
 
 Copyright © 2026 Arne Noori. All rights reserved. Side A is independent software,
 not affiliated with Sony, Anthropic, or OpenAI.
