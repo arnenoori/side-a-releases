@@ -4,25 +4,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.4.0</title>
-            <pubDate>Mon, 07 Sep 2026 18:10:45 -0700</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <title>0.4.1</title>
+            <pubDate>Mon, 07 Sep 2026 18:50:17 -0700</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.4.0
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.4.1
 
-- Setup checks Python and your agent CLI, and shows what needs installing or updating. Return from the installer and Side A checks again.
-- Optional anonymous app statistics help improve account setup and handoffs. Off by default; change this any time in Settings. No account identities, code, or conversations are collected.
-- Signed automatic updates through Sparkle. Checks and downloads happen in the background; an active coding session can finish before the app relaunches.
+- Simpler setup: installed tools collapse to one line, sign-in verifies when you return, and the player highlights what to press next.
+- Temporary tool failures no longer mark a connected account as signed out. Reconnecting preserves your Auto flip choice.
+- Save a small, private diagnostic summary from Settings or Help. Nothing is uploaded.
+- Optional usage statistics now count completed setup after your consent choice.
 
 macOS 14 or later. Apple Silicon and Intel. Free public preview.
 
-Existing 0.3.1 users need to download this version once to enable the updater. Claude and Codex sessions must be started from Side A. Codex and Auto flip remain experimental; real multiple-account handoffs are still undergoing acceptance testing.
+Claude and Codex sessions must be started from Side A. Codex and Auto flip remain experimental; real multiple-account handoffs are still undergoing acceptance testing.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.4.0/SideA-0.4.0-macOS-universal.dmg" length="5583918" type="application/octet-stream" sparkle:edSignature="lScPurW40wvJPdBTsDSP/d0H3/x4jY7XwjQDhi/F6qyrKZxrc9ZUh1e7a76g+r51MtunZCtRtERsnKOFZ4qmDA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.4.1/SideA-0.4.1-macOS-universal.dmg" length="5631835" type="application/octet-stream" sparkle:edSignature="ZLJJkBH/qfWfjJx1t75SHpr4wTrYTgeRa+6xyXWQ9BVC9mWhWCxaxb+5b78/QeYaHX+JC8KMZ0gVKzHXeXh4Bg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: mOwQtYibo1ouBgFrGrhzt390s3UWJhILLS+lSs1i4hKKmoIkKHvEwoqHcrqxEuNYoyR3ovo+XwdrOikfvJoGBQ==
-length: 1948
+edSignature: Kpjspceb6ikVE76e7f9TZSEi2mn9ju2I7yKInLLxGAHVDRH3ygFRt7uLKXRRk/YoGgUq+lBBC1nlwxG/q3wsBw==
+length: 1814
 -->
