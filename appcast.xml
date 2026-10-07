@@ -4,22 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.12</title>
-            <pubDate>Wed, 07 Oct 2026 16:37:20 +0000</pubDate>
-            <sparkle:version>20</sparkle:version>
-            <sparkle:shortVersionString>0.5.12</sparkle:shortVersionString>
+            <title>0.5.13</title>
+            <pubDate>Wed, 07 Oct 2026 16:44:41 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.5.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.12
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.13
 
-- No surprise charges: past a plan limit, an account with usage credits on keeps working and bills them. Side A now warns before that happens when no other account has room, tells you when spend goes up, and marks the account "Charging paid credits" in the menu.
-- Usage shows each account's paid usage this month against its cap.
+- Every limit, with its reset: the Usage tab lists each account's 5-hour, weekly and Fable limits with when they reset, and the Accounts tab shows a Fable bar and the reset time under each bar.
+- A fair Today: it compares with what you usually use by this time of day, not a whole day's average.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.12/SideA-0.5.12-macOS-universal.dmg" length="6422879" type="application/octet-stream" sparkle:edSignature="JKr/2BA0sAmCuRjSNf79sZf013FslqyGVLaN+E5x774MwFzmvWs5pxzosB2Iuf2kZjCRSjQzkZoCw2oKMeALAw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.13/SideA-0.5.13-macOS-universal.dmg" length="6440800" type="application/octet-stream" sparkle:edSignature="BNGGb4k4R9ZTqK1DJMpX6qayC5n+ah+YfChwf9Q5m0QUGuVevq9V+17iwt2B4KUzreMlmdRDaXVc4BiWagGwBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: OOZxDZLxd9ucAiiliEwS0M/Efy+40srL4T7tHE6wQmL/Kyfb1kpkwWnY7k1kH87rheiSXXQmmw0WAu+CgZFtAg==
-length: 1542
+edSignature: G1bLKK71yZqYePxfIRkFbGVANVeCpxuJ7gQO/4uNUHMxveUnYo87JlNP3t6FU480amqNO9Zr88HLOh3QX4tBBA==
+length: 1507
 -->
