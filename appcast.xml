@@ -4,21 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.5</title>
-            <pubDate>Wed, 07 Oct 2026 01:36:36 +0000</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.5.5</sparkle:shortVersionString>
+            <title>0.5.6</title>
+            <pubDate>Wed, 07 Oct 2026 01:42:22 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.5.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.5
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.6
 
-- The disc shows when you open the player's lid.
+- Per-model weekly limits (for example Weekly Fable) appear in the menu once that model is in use.
+- The 3D player is now an opt-in novelty: Settings > General > 3D player.
+- A few small surprises.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.5/SideA-0.5.5-macOS-universal.dmg" length="6105320" type="application/octet-stream" sparkle:edSignature="eZ5cXBReIFHTw03y6Mf+zrI8ptVDRq6vLOa4EmBQ69ZYZUEQfMId6ShVADCDpTwv8Y3Io76jMSPT9k6+41QlBQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.6/SideA-0.5.6-macOS-universal.dmg" length="6113170" type="application/octet-stream" sparkle:edSignature="eKVcQs1PfEkSqABbAOnPBi6mf1q9Acb3WhcTQnhv0TSMj4uf4/2Ug7NiuY4cPMXlJDnzfB8Tk+vLcRiipY1jAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 15VJFe2o1DEawg3tJ1wrasuhk8nJfvLFcOTrhsXvlIjloUbe1MSevnAs0F1JYEL0VQMaRKSC79U02QNHZ8pBDw==
-length: 1255
+edSignature: 8vBWeB6b+tOoQJ563/nuj5WcFBQCMvxchxh/5X2fjT1kKAY3JJHd4tZUL78NhVWaCHdWKOn6NgELPKSQxbf5Dg==
+length: 1404
 -->
