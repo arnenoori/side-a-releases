@@ -4,22 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.9</title>
-            <pubDate>Wed, 07 Oct 2026 15:42:20 +0000</pubDate>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.5.9</sparkle:shortVersionString>
+            <title>0.5.10</title>
+            <pubDate>Wed, 07 Oct 2026 15:55:43 +0000</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.5.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.9
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.10
 
-- Sync across your Macs: turn it on in Settings and Usage combines every Mac on your iCloud Drive, with a per-Mac breakdown. Accounts from your other Macs show up ready to sign in. Logins never sync.
-- Follow Fable: while you use Fable, Autopilot picks the account with the most Fable left and skips Pro plans, where Fable is billed as extra usage. When every account has spent its Fable share, it tells you.
+- No more endless "Reading...": every account now says what is wrong and offers the fix: Sign in again, Wake, or Couldn't connect with when it retries.
+- Codex logins that OpenAI revoked now ask you to sign in again instead of being treated as a rate limit.
+- Claude logins that expired from disuse are woken automatically during your working hours, or right away with Wake.
+- The Terminal prompt explains what it does: new claude commands run as the account you or Autopilot pick.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.9/SideA-0.5.9-macOS-universal.dmg" length="6335502" type="application/octet-stream" sparkle:edSignature="dYojX/AkhtJwP0y1Q46YLB42f6Xzs7zbVguQmo5WFPLVTogXNgIYSVH9d5XCOZj4hyrUu5rV5VMfZH6pBZCkCA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.10/SideA-0.5.10-macOS-universal.dmg" length="6357079" type="application/octet-stream" sparkle:edSignature="4rTyPEJm0jonHup+a2AkE80yE6bPRzMathkQV4rtN3raQuZYNZ43Yx3JvohHA9DbtJxEeKEZOfxggbEXVeaZDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: uRFLusuSnO2tP/P1/B/OE1yY8r7wg0gkuh99nFZ2+odomJjZA19npUlmtBWizmm3P0fF7D59oRWd6TGwu61QBw==
-length: 1615
+edSignature: CirFXfHSHEhLmZIlvV4fjB69RCVarK0wKWH528jW35FRFuQOLh/wCt0EGKMlnpjXgZmNqPCAoK4gTFRHfXMjCA==
+length: 1693
 -->
