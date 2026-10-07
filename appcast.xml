@@ -4,23 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.11</title>
-            <pubDate>Wed, 07 Oct 2026 16:19:17 +0000</pubDate>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>0.5.11</sparkle:shortVersionString>
+            <title>0.5.12</title>
+            <pubDate>Wed, 07 Oct 2026 16:37:20 +0000</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>0.5.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.11
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.12
 
-- Two accounts at once: choose Open Terminal on an account, or type sidea use <name>, and that terminal stays on it while Autopilot moves everything else. Good for long tasks. sidea auto hands it back.
-- Forecasts that know your week: "Runs out Fri 8 AM" and "On pace for 64%" now follow when you usually work, so quiet weekends and evenings count as quiet. A week-ahead line sums up all your Claude accounts.
-- A cleaner menu: the Terminal setup prompt is gone. Pressing Use or turning on Autopilot sets it up.
+- No surprise charges: past a plan limit, an account with usage credits on keeps working and bills them. Side A now warns before that happens when no other account has room, tells you when spend goes up, and marks the account "Charging paid credits" in the menu.
+- Usage shows each account's paid usage this month against its cap.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.11/SideA-0.5.11-macOS-universal.dmg" length="6390959" type="application/octet-stream" sparkle:edSignature="AuUWdri6BJMCn7OB4J3hlUZjFkUcGac5D+lVAJpBgMKuFc/7SgPfW0NiIFCJVSb6zDOv2VptwOhrokVeENcRBw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.12/SideA-0.5.12-macOS-universal.dmg" length="6422879" type="application/octet-stream" sparkle:edSignature="JKr/2BA0sAmCuRjSNf79sZf013FslqyGVLaN+E5x774MwFzmvWs5pxzosB2Iuf2kZjCRSjQzkZoCw2oKMeALAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Zmz8xweMLnykx3EXnsQGo6J5mYi8s2KrvdGBDKsaObbldU7V54FNxyaxN9s5UUhq9GO0H1UmTGTujiX3xe/9BQ==
-length: 1723
+edSignature: OOZxDZLxd9ucAiiliEwS0M/Efy+40srL4T7tHE6wQmL/Kyfb1kpkwWnY7k1kH87rheiSXXQmmw0WAu+CgZFtAg==
+length: 1542
 -->
