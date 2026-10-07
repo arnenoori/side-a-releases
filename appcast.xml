@@ -4,22 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.7</title>
-            <pubDate>Wed, 07 Oct 2026 01:47:18 +0000</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>0.5.7</sparkle:shortVersionString>
+            <title>0.5.8</title>
+            <pubDate>Wed, 07 Oct 2026 02:17:03 +0000</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.5.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.7
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.8
 
-- Clearer Accounts: grouped by Claude and Codex, an "In use" label for the account new commands use, live limits on every row, and Autopilot moved into each account's menu.
-- A more useful Usage tab: this week's pace for every account (on pace, or how much will go unused), today and 7-day totals against your usual, tokens per day by model, and when you work.
+- A new Autopilot tab: which account goes next and why, your working day on a 24-hour strip, and the rules Autopilot follows at a glance.
+- Usage predicts from your pace: "On pace for 64% by Fri 9 AM" or "Runs out around Thu 3 PM".
+- Codex usage now shows in the Usage tab, with readable GPT model names.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.7/SideA-0.5.7-macOS-universal.dmg" length="6188377" type="application/octet-stream" sparkle:edSignature="OOWg+Oz3Uh2yCbATFZZYNSNY1krZS6EFqe5ALR4SJ0TY9yDzHS6Jph2EiC9tBVigf/tlVxE9VrH0phf335iPBg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.8/SideA-0.5.8-macOS-universal.dmg" length="6265246" type="application/octet-stream" sparkle:edSignature="htZX5bSfLr82Ua42vwWiRzLLKQ0OYLpQkNMaWjsn11cPTcIOBlfOl1aPMObfrlsrkPCjSqLakMpIxFBTYXb1BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 7KdLFc6QiHfGWQuomlE6ZZc6UXgSIvKcNs8Hoof4HoWhlwJ5V5ohk4WaMLQPwg1UpGW/sn96ApL3ewKpvKLSAg==
-length: 1567
+edSignature: jV/KfrYuXRiiHM0Cgk2TZEwvROQ5zuhsU1ac+J9Iw+N+oJAqsMyEKPSzrhV5qDpqTF1t7MIp/rQRVn31ZQkBAw==
+length: 1511
 -->
