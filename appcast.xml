@@ -4,22 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.13</title>
-            <pubDate>Wed, 07 Oct 2026 16:44:41 +0000</pubDate>
-            <sparkle:version>21</sparkle:version>
-            <sparkle:shortVersionString>0.5.13</sparkle:shortVersionString>
+            <title>0.5.14</title>
+            <pubDate>Wed, 07 Oct 2026 17:07:38 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.5.14</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.13
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.14
 
-- Every limit, with its reset: the Usage tab lists each account's 5-hour, weekly and Fable limits with when they reset, and the Accounts tab shows a Fable bar and the reset time under each bar.
-- A fair Today: it compares with what you usually use by this time of day, not a whole day's average.
+- Codex models in Usage: Claude and Codex each get their own model list, so a smaller Codex share no longer disappears behind Claude.
+- Sturdier Codex counting: each turn counts the way ccusage counts it, including after Codex compacts a long session.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.13/SideA-0.5.13-macOS-universal.dmg" length="6440800" type="application/octet-stream" sparkle:edSignature="BNGGb4k4R9ZTqK1DJMpX6qayC5n+ah+YfChwf9Q5m0QUGuVevq9V+17iwt2B4KUzreMlmdRDaXVc4BiWagGwBQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.14/SideA-0.5.14-macOS-universal.dmg" length="6449875" type="application/octet-stream" sparkle:edSignature="INkN6RzvGsBvyYUbn46sKzlQ+b+Y/43PmosQTmoBNhfIrhS8NiIbtVwO2hKuLV5w/ESIQFX9RdbdFIqeSyQlDA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: G1bLKK71yZqYePxfIRkFbGVANVeCpxuJ7gQO/4uNUHMxveUnYo87JlNP3t6FU480amqNO9Zr88HLOh3QX4tBBA==
-length: 1507
+edSignature: ZMVZH3XIfPQYiU+i+rmZhzQCkEo3MN7qFIFpCGOJk2qb2v76KsgAVcAh0T6julqIZu1AJjjBU+PXQ4yjxtGHCg==
+length: 1463
 -->
