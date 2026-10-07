@@ -4,28 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.3</title>
-            <pubDate>Wed, 07 Oct 2026 01:01:22 +0000</pubDate>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+            <title>0.5.4</title>
+            <pubDate>Wed, 07 Oct 2026 01:15:09 +0000</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.5.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.3
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.4
 
-- Lives in the menu bar: the active account's usage as a percentage, and every account's 5-hour and weekly limits one click away. Accounts at their weekly limit fold away.
-- Autopilot picks the Claude account whose quota expires soonest, weighted by plan size, and warms idle 5-hour windows ahead of your usual hours.
-- Read-only by design: Side A never writes or refreshes a login. Turn on Switch in Terminal to point new `claude` commands at the chosen account; an optional hook rechecks the moment a limit hits.
-- Tokens by day, project and model, read from local transcripts.
-- Codex accounts are tracked and warmed; switch them with `codex login`.
-- The menu shows when an update is ready and restarts into it in one click.
-- Rename accounts, a single Settings window, and a short guided tour.
-- Removed per-project Terminal sessions.
+- Side A is now open source under the MIT license: https://github.com/arnenoori/side-a-source
+- New setting: keep checking for updates but install only when you choose (Settings > General > Updates).
+- Smoother website.
 
-macOS 14 or later. Apple Silicon and Intel. Free public preview.
+macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.3/SideA-0.5.3-macOS-universal.dmg" length="6107818" type="application/octet-stream" sparkle:edSignature="Gpu2+IM0V2b7WotZo2/3qu55lUYTtm136PZfPmk5ZOJuljqBvza8KkpjzDnVOQwB4g+/4jsxEwtVPMoeUj63Dg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.4/SideA-0.5.4-macOS-universal.dmg" length="6112334" type="application/octet-stream" sparkle:edSignature="iD7ehatzeO4Pm3qW/WBT6keipwyqjofMmymWEBWh21fv9AxnUaXBuwzMbOCaRB0NxrEMJWRNx1ttGK+oCq3RAg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: EEjDbQ2gfHtQMPRHANDkmQOR3v2M+vUTqu/KDOQYro2aiTFj87Sw3muynBEU1dQ/pN1ogw7OwslOUbNpIr5yDw==
-length: 2061
+edSignature: zIUn2BPCtdiLljNKZMskFNJqmgVN2wit8bavzU34UX/vYc9LkrSmiiSlP+iZzmYWwYzLexv91TRhHpUIaZxmDA==
+length: 1426
 -->
