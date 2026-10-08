@@ -1,0 +1,1 @@
+import{t as e}from"./analytics-C3CMmgZ0.js";e.capture(`$pageview`);var t=document.querySelector(`.note-mark`),n=()=>t?.setAttribute(`aria-pressed`,String(t.classList.toggle(`marked`)));t?.addEventListener(`click`,n),t?.addEventListener(`keydown`,e=>{(e.key===`Enter`||e.key===` `)&&(e.preventDefault(),n())});
