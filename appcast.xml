@@ -4,23 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.17</title>
-            <pubDate>Thu, 08 Oct 2026 02:35:18 +0000</pubDate>
-            <sparkle:version>25</sparkle:version>
-            <sparkle:shortVersionString>0.5.17</sparkle:shortVersionString>
+            <title>0.5.18</title>
+            <pubDate>Thu, 08 Oct 2026 03:04:15 +0000</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.5.18</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.17
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.18
 
-- Always-current limits: when an account's login goes idle, Side A renews it the same way Claude Code does, then reads it right away. No message is sent, no quota is used, and it works at any hour.
-- Heads-up before a sign-in ends: each Claude sign-in lasts about a month. Side A tells you three days ahead so no account drops out.
-- No more false "Couldn't connect": when the usage service asks Side A to slow down, the last reading stays, with its time once it ages. The account in use is read every three minutes.
+- Live limits: every Claude Code reply now updates the account's 5-hour and weekly numbers in Side A, with no extra requests. Your own statusline keeps working exactly as before.
+- No more rate limits on readings: while sessions report live, Side A checks the usage service only every 15 minutes, for Fable, paid usage and use on other devices.
+- Turn it off in Settings > Autopilot; your statusline is restored as it was.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.17/SideA-0.5.17-macOS-universal.dmg" length="6481152" type="application/octet-stream" sparkle:edSignature="I7KHPy1bTIKC/BSguCWM0bYJC7DJZucMbFxqv7+lkjTCn08QihrZmsP+QnP1XBqHKoyKEQETZI76DrSaZxPWCA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.18/SideA-0.5.18-macOS-universal.dmg" length="6511497" type="application/octet-stream" sparkle:edSignature="9x40dOYHhqP5UR5w5h7Hx89Ybo+/acOCz5SLVyzQSWrLijRdeEQj/GZ7Hy0CnuX6++yvH/qYJtk8orxvldUuDg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: hjpuOXxuryOV95z545QydY/xvZV4563EIiQ4hN1cqGYYQLF3gTCO+/BgTIR+1wUE9YIectapZcNCdhnfYlqMCQ==
-length: 1728
+edSignature: 8jC0ty+TVdcJg9YqSZNFcueuttu+86PQY+3eu4YnZaJOKnof8tiq9XW1bHLOh5/ww4CFopLQmoJ+IEP9uRlGCQ==
+length: 1634
 -->
