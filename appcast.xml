@@ -4,24 +4,36 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.19</title>
-            <pubDate>Thu, 08 Oct 2026 13:35:36 -0700</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>0.5.19</sparkle:shortVersionString>
+            <title>0.5.21</title>
+            <pubDate>Fri, 09 Oct 2026 14:20:44 -0700</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>0.5.21</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.19
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.21
 
-- Running sessions switch: when an account nears its limit, the Claude Code sessions already running on it continue on a fresh account within about 30 seconds. Nothing to quit or restart.
-- Choose when to move: Settings > Autopilot > Move at (80% to 99%, default 95%). Lower leaves room for a burst; higher uses more of each account.
-- Faster: Autopilot reacts as soon as a reply reports new limits, not once a minute.
-- Safe: logins trade places, they are never copied, so no login is invalidated.
+- Sessions: a new Settings tab searches every Claude Code and Codex conversation on this Mac, by what you asked, what came back and the commands that ran.
+- One list: what needs you first, then your pinned conversations, then each project's, with branches under the conversation they came from. New conversations from the terminal appear within a second.
+- Fast: the list is there the moment the tab opens, conversations open in milliseconds, and a search hit opens right at the message.
+- Show or resume: a running conversation's button takes you to its terminal tab; others resume with `claude --resume` or `codex resume` in Ghostty, iTerm, Warp or Terminal.
+- ⌘F finds within a conversation. Pin, rename or archive conversations without touching Claude's or Codex's files.
+- Optional notification when a session needs you, even with Side A closed. Turn it on in Settings > General.
+- Soft sound effects when the account changes, a session resumes or one needs you, with a volume setting.
+
+Also in this update, from 0.5.20:
+
+- Faster moves at a limit: when a session hits a limit, Side A reads it from the session itself and moves its account right away, even when the usage endpoint is throttled.
+- Better targets: Autopilot moves to an account with room on every limit.
+- A limited account is checked hourly, so a limit that resets early is used.
+- Fixes a crash when Side A posted a notification, and `source ~/.zshrc && claude` uses the chosen account.
+
+Thanks to brandedDaniel, whose fork found most of the 0.5.20 fixes.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.19/SideA-0.5.19-macOS-universal.dmg" length="6554025" type="application/octet-stream" sparkle:edSignature="VNAuF+YgBKBSw4t8ozpcqrj4YLkUV7n8eZcG+K1FIMjUDYr8KK/o/QCEvjLxnY6g4Fy/hsEYNghsU/s71YNXBA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.21/SideA-0.5.21-macOS-universal.dmg" length="8024688" type="application/octet-stream" sparkle:edSignature="MJ5sQVAmO6uuZZfQnG7mfJpdn9cYQl7g+yA+XLQkhC6oRk6lUE56jbia8iLiAaEgwqQuznFB6KN0NggtXjniDg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: kjQ7AhWEfUzWqIx4fZwc4Ni1lKA6lllwaPc5YSoKyX93rv9QorRf11iLyNY56ClO/3W4809p8tckLce0rtxnBw==
-length: 1710
+edSignature: TA5fEpin1OD0fnORaArbl9YDRm3autkTBTG+wMnysv8384KFThPxvHPcesVFoAsp+AdLG8lnTN2VLbeDuF5KBA==
+length: 2741
 -->
