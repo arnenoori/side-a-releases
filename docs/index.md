@@ -32,7 +32,7 @@ Example: 60% left, resets in a day: 2.5 per hour. 90% left, resets in six days: 
 
 ## What it touches
 
-Reads each account's own login where its CLI keeps it, and transcripts in `~/.claude/projects`. Writes one marked line in `~/.zshrc` if you turn on switching, wraps the Claude Code statusline (your own command still runs, with the same input) to save each reply's limits, and its own folder in `~/Library/Application Support/SideA`. Never copies, logs or uploads a login; moving running sessions trades two logins' Keychain items, so each still lives in one place. When a Claude login's short-lived token expires, renews it the way Claude Code does, under Claude Code's own lock, so readings stay current.
+Reads each account's own login where its CLI keeps it, transcripts in `~/.claude/projects` and `~/.codex/sessions` (for usage and session search, indexed locally), and Claude Code's list of running sessions. Writes one marked line in `~/.zshrc` if you turn on switching, wraps the Claude Code statusline (your own command still runs, with the same input) to save each reply's limits, and its own folder in `~/Library/Application Support/SideA`. Never copies, logs or uploads a login; moving running sessions trades two logins' Keychain items, so each still lives in one place. When a Claude login's short-lived token expires, renews it the way Claude Code does, under Claude Code's own lock, so readings stay current.
 
 Never logs or uploads a token, moves your MCP server logins, runs your Claude hooks when it starts a window, or sends analytics unless you opt in.
 
