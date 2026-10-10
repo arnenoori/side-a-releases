@@ -4,26 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.22</title>
-            <pubDate>Fri, 09 Oct 2026 14:57:06 -0700</pubDate>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>0.5.22</sparkle:shortVersionString>
+            <title>0.5.23</title>
+            <pubDate>Fri, 09 Oct 2026 19:11:07 -0700</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>0.5.23</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.22
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.23
 
-- One copy at a time: opening Side A while another copy runs hands over to the one you opened, so two copies never trade logins or install updates at once.
-- Move to Applications: opened from Downloads or a disk image, Side A offers to move itself where updates can install.
-- If an update doesn't install, the menu says so and links the download.
-- Settings > General shows the session search index's size with Rebuild, and Remove Side A undoes everything it set up and moves it to the Trash.
-- Catching up on your conversation history runs at background priority, so the first index never makes your Mac feel busy.
-- In Sessions, a message's time and copy button no longer cover the text around it.
+- Fixes every account showing Couldn't connect, and Autopilot stopping, while your Mac is busy. A slow check no longer makes Side A lose track of Python, Claude Code or Codex.
+- A Homebrew Python upgrade no longer takes Side A offline: it finds Python by its versioned name when `python3` goes missing.
+- If Python ever goes missing, Side A checks again each minute and picks up as soon as it's back, without opening Settings.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.22/SideA-0.5.22-macOS-universal.dmg" length="8092043" type="application/octet-stream" sparkle:edSignature="pk0KpRXOzFypBx5uthIwVlDwsKJ3lvaNbc9b5vyckwc+t506PeGmuuKFWZ6jAIVrln6Y8oUktA1cxS5Vp4toAg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.23/SideA-0.5.23-macOS-universal.dmg" length="8095602" type="application/octet-stream" sparkle:edSignature="/xHCOwyJgkyhkVUFYXjouMagnCzlXpZROi+sK4avvsSxC1Ev93hL3u1QUHMIz6lV9uhWydz0OMAkRbuvegfmAg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 6mYd3Wl6DLFPyIyasXYpPDwFjF8RzsVSyu3pxAu4vR7pw2h8ZC2M/Xi/r1Cu0yQ8x6LMriGoxIfz3fU8hceHBw==
-length: 1912
+edSignature: ADXD+Gj1r1RZJYDMTO1I1uClR4uqFLR6CoSQB9NZ1n8PNCrxOZ3LMgITUY2DzOV9k4ur0yQho/H+7+6FhWCPCg==
+length: 1638
 -->
