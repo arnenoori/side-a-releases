@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://us.i.posthog.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <meta name="theme-color" content="#f7f8f7" />
-  <meta name="description" content="How Side A tracks your Claude Code and Codex limits and decides which account to use." />
+  <meta name="description" content="How Side A uses the quota that expires first, and answers your sessions from the notch." />
   <link rel="canonical" href="https://getsidea.com/how/" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <title>How Side A works</title>
-  <script type="module" crossorigin src="../assets/how-DrqwyBs8.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/analytics-C3CMmgZ0.js">
-  <link rel="stylesheet" crossorigin href="../assets/analytics-9HneiqtH.css">
-  <link rel="stylesheet" crossorigin href="../assets/how-CtT562gy.css">
+  <script type="module" crossorigin src="../assets/how-Bm_qI4ey.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/analytics-CnTxUk2r.js">
+  <link rel="stylesheet" crossorigin href="../assets/analytics-EBHkNbbf.css">
+  <link rel="stylesheet" crossorigin href="../assets/how-DbYewrLD.css">
 </head>
 <body>
   <div class="page how">
@@ -22,58 +22,133 @@
     </header>
     <main>
       <section class="lead">
-        <h1>How Side A works</h1>
-        <p>Claude Code and Codex plans come with a 5-hour and a weekly limit. Whatever you haven't used when a window resets is gone. With several accounts, one runs dry while another's quota quietly expires. Side A watches all of them and keeps you on the one about to lose the most.</p>
+        <h1>Never waste a limit you paid for.</h1>
+        <p>Side A watches every Claude Code and Codex account and keeps you on the one about to lose the most.</p>
       </section>
 
       <section class="shots" aria-label="The app">
-        <figure><img draggable="false" src="../app-menu.webp" width="320" height="374" alt="Side A in the menu bar, showing each account's 5-hour and weekly limits" loading="lazy" decoding="async" /><figcaption>Every account, one click away.</figcaption></figure>
-        <figure><img draggable="false" src="../app-usage.webp" width="520" height="648" alt="Usage by day and project" loading="lazy" decoding="async" /><figcaption>Tokens by day, project and model.</figcaption></figure>
+        <figure><img draggable="false" src="../app-menu.webp" width="320" height="374" alt="Side A in the menu bar, showing each account's 5-hour and weekly limits" loading="lazy" decoding="async" /></figure>
+        <figure><img draggable="false" src="../app-usage.webp" width="520" height="648" alt="Usage by day and project" loading="lazy" decoding="async" /></figure>
       </section>
 
-      <section>
-        <h2>What it does</h2>
-        <dl class="features">
-          <div><dt>Every limit, at a glance</dt><dd>5-hour and weekly usage for each account, with reset times. The menu bar shows the active account as a percentage.</dd></div>
-          <div><dt>Switches for you</dt><dd>New <code>claude</code> commands in any terminal use the account Side A picks. Running sessions are never interrupted.</dd></div>
-          <div><dt>Moves before the limit</dt><dd>It switches before an account runs out, and rechecks the moment a rate limit hits.</dd></div>
-          <div><dt>Starts windows early</dt><dd>Before your usual start, it opens idle 5-hour windows with one tiny message, so they reset sooner.</dd></div>
-          <div><dt>Shows where tokens go</dt><dd>Usage per day, project and model, read from your local transcripts.</dd></div>
-          <div><dt>Stays out of the way</dt><dd>It lives in the menu bar and runs in the background.</dd></div>
-        </dl>
-      </section>
-
-      <section>
-        <h2>How it decides</h2>
-        <p>It reads the same numbers as <code>/usage</code>, then scores every account:</p>
-        <div class="paper" role="img" aria-label="Priority equals weekly percent left divided by hours until the weekly reset, times plan size">
-          <div class="hand formula">
+      <section data-demo>
+        <h2>The quota that expires first goes first</h2>
+        <div class="paper" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
+          <div class="hand formula" aria-hidden="true">
             <span>priority</span><span>=</span>
             <span class="frac"><span>weekly % left</span><span>hours until it resets</span></span>
             <span>&times; plan size</span>
           </div>
-          <div class="hand worked">
-            <p><span class="who">Account A</span> 60% left, resets in 24 h <span class="arrow">&rarr;</span> 60 &divide; 24 = <b>2.5</b></p>
-            <p><span class="who">Account B</span> 90% left, resets in 144 h <span class="arrow">&rarr;</span> 90 &divide; 144 = <b>0.6</b></p>
-            <p class="note"><span class="note-mark" role="button" tabindex="0" aria-pressed="false">A goes first. Its quota expires sooner.<svg viewBox="0 0 300 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 60 2, 120 9, 180 5 S 270 3, 298 6" /></svg></span></p>
+          <p class="hand note" aria-hidden="true"><span class="note-mark">Whatever expires first, goes first.<svg viewBox="0 0 300 10" preserveAspectRatio="none"><path d="M2 6 C 60 2, 120 9, 180 5 S 270 3, 298 6" /></svg></span></p>
+        </div>
+      </section>
+
+      <section class="feature-section" id="switch" data-demo>
+        <h2>Switches without breaking your flow</h2>
+        <p>Running sessions move at a pause. Nothing restarts.</p>
+        <div class="timeline" role="img" aria-label="Animation: Work's switch can wait, so it happens after its session pauses. Personal is out of room, so it switches at once.">
+          <div class="lane" aria-hidden="true">
+            <p class="lane-label"><b>Work</b> can wait</p>
+            <div class="track">
+              <i class="act a1"></i><i class="act a2"></i><i class="act a3"></i><i class="act a4"></i>
+              <span class="quiet"><span>Pause</span></span>
+              <span class="trade t-late">Switch</span>
+            </div>
+          </div>
+          <div class="lane" aria-hidden="true">
+            <p class="lane-label"><b>Personal</b> out of room</p>
+            <div class="track">
+              <i class="act b1"></i>
+              <span class="trade t-now">Switch now</span>
+            </div>
           </div>
         </div>
-        <dl class="rules">
-          <div><dt>Plan size</dt><dd>Max 20x counts 20, Max 5x counts 5, Pro counts 1.</dd></div>
-          <div><dt>Ties</dt><dd>Use the 5-hour window that resets soonest.</dd></div>
-          <div><dt>Limits</dt><dd>Leaves an account at 97%; only moves to one under 90%.</dd></div>
-          <div><dt>Calm</dt><dd>Stays put unless another account is 1.5 times more urgent.</dd></div>
-        </dl>
+      </section>
+
+      <section class="feature-section" id="island" data-demo>
+        <h2>Answer from anywhere</h2>
+        <p>Requests and finished sessions open at the notch.</p>
+        <div class="island-demo" role="img" aria-label="Animation: the notch opens: Claude Code wants to run npm test. A shortcut allows it. Then the notch says api is done, and a reply sends the next task.">
+          <div class="mac" aria-hidden="true">
+            <div class="screen">
+              <div class="menubar"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
+              <div class="term">
+                <div class="term-bar"><i></i><i></i><i></i><span>api — claude</span></div>
+                <p><b>&gt;</b> fix the retry and run the tests</p>
+                <p class="term-status"><span class="term-wait">Waiting for permission…</span><span class="term-ran">48 passed</span></p>
+              </div>
+              <div class="island" data-state="idle">
+                <div class="pane" data-pane="ask">
+                  <p class="i-kicker"><span class="i-dot"></span>Claude Code wants to run</p>
+                  <p class="i-cmd">npm test</p>
+                  <div class="i-actions"><span class="i-btn">Deny</span><span class="i-btn primary" data-press="allow">Allow</span></div>
+                </div>
+                <div class="pane" data-pane="allowed">
+                  <p class="i-ok"><span class="i-check"></span>Allowed</p>
+                </div>
+                <div class="pane" data-pane="done">
+                  <p class="i-title"><span class="i-check"></span>api is done</p>
+                  <p class="i-msg">All 48 tests pass.</p>
+                  <div class="i-actions"><span class="i-btn">Go</span><span class="i-btn primary" data-press="reply">Reply</span></div>
+                </div>
+                <div class="pane" data-pane="reply">
+                  <p class="i-title">Reply to api</p>
+                  <p class="i-field"><span class="typed"></span><span class="caret"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="keys" aria-hidden="true">
+            <span class="key" data-key="ctrl"><small>control</small>⌃</span><span class="key" data-key="opt"><small>option</small>⌥</span><span class="key letter" data-key="letter">Y</span>
+            <span class="keys-label">Allow</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section" id="running" data-demo>
+        <h2>Catch a stuck session</h2>
+        <p>Send it a note or stop it, without finding its terminal.</p>
+        <div class="running-demo" role="img" aria-label="Animation: three running sessions. web is flagged as stuck. A note is sent and delivered after its step.">
+          <div class="window" aria-hidden="true">
+            <div class="window-bar"><i></i><i></i><i></i><span>Sessions</span></div>
+            <ul class="sessions">
+              <li data-steps="Editing IslandView.swift|Running swift test|Reading IslandModel.swift">
+                <span class="eq"><i></i><i></i><i></i></span>
+                <span class="s-name">side-a</span><span class="s-step">Editing IslandView.swift</span>
+              </li>
+              <li data-steps="Running pytest|Editing routes.py|Running pytest -k retry">
+                <span class="eq"><i></i><i></i><i></i></span>
+                <span class="s-name">api</span><span class="s-step">Running pytest</span>
+              </li>
+              <li class="flagged" data-steps="Running npm run build">
+                <span class="eq"><i></i><i></i><i></i></span>
+                <span class="s-name">web</span><span class="s-step">Running npm run build</span>
+                <span class="s-flag">Stuck on the same step</span>
+                <span class="s-actions"><span class="s-btn" data-press="note">Note…</span><span class="s-btn">Stop</span></span>
+                <span class="s-note">Note queued</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section" id="money" data-demo>
+        <h2>See what your plan is worth</h2>
+        <p>Your tokens, priced at API rates.</p>
+        <div class="mini-card">
+          <div class="worth-bar" role="img" aria-label="Illustration: most of the value is cache reads, then cache writes, then input and output."><i class="seg-read"></i><i class="seg-write"></i><i class="seg-io"></i></div>
+          <p class="legend" aria-hidden="true"><span class="k-read">Cache reads</span><span class="k-write">Cache writes</span><span class="k-io">Input and output</span></p>
+        </div>
       </section>
 
       <section>
-        <h2>What it touches</h2>
-        <dl class="rules">
-          <div><dt>Reads</dt><dd>Each account's own login, where its CLI keeps it, and transcripts in <code>~/.claude/projects</code>.</dd></div>
-          <div><dt>Writes</dt><dd>One marked line in <code>~/.zshrc</code> if you turn on switching, and its own folder in Application Support.</dd></div>
-          <div><dt>Never</dt><dd>Copies, logs or uploads a login. Edits your Claude or Codex settings. Sends analytics unless you opt in.</dd></div>
-        </dl>
-        <p class="fine"><a href="https://github.com/arnenoori/side-a-source">Open source</a> (MIT). Not affiliated with Anthropic or OpenAI.</p>
+        <h2>Safe on your Mac</h2>
+        <ul class="trust">
+          <li>Logins stay in your Keychain. Never copied or uploaded.</li>
+          <li>Changes to your files are marked and removable in Settings.</li>
+          <li><span><a href="https://github.com/arnenoori/side-a-source">Open source</a>. Not affiliated with Anthropic or OpenAI.</span></li>
+        </ul>
+        <p class="fine"><a href="https://github.com/arnenoori/side-a-source/blob/main/SECURITY.md">Security details</a></p>
       </section>
 
       <div class="download-area"><a class="download" href="../">Get Side A</a></div>

@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://us.i.posthog.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <meta name="theme-color" content="#f7f8f7" />
-  <meta name="description" content="A Mac menu bar app that shows the 5-hour and weekly limits of all your Claude Code and Codex accounts and keeps your Mac on the account whose quota is most at risk of going unused." />
+  <meta name="description" content="Every Claude Code and Codex limit in your Mac menu bar. Side A uses the quota that expires first." />
   <meta property="og:title" content="Side A: use every Claude Code and Codex limit you pay for" />
-  <meta property="og:description" content="Live 5-hour and weekly limits for all your accounts, and an autopilot that switches your Mac to the account with the most quota at risk." />
+  <meta property="og:description" content="Every limit in your menu bar. Side A uses the quota that expires first." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://getsidea.com/social.jpg" />
   <meta property="og:url" content="https://getsidea.com/" />
@@ -19,10 +19,10 @@
   <link rel="canonical" href="https://getsidea.com/" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>Side A: usage limits and account autopilot for Claude Code and Codex</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota","5-hour window priming","Per-project and per-day token breakdown"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
-  <script type="module" crossorigin src="./assets/main-DS8NMDtd.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/analytics-C3CMmgZ0.js">
-  <link rel="stylesheet" crossorigin href="./assets/analytics-9HneiqtH.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota that moves running sessions, timed to keep the prompt cache","Dynamic Island for Claude Code and Codex permission requests, questions, plans and finished sessions","Running sessions with step, flags, notes and stop","Search across every Claude Code and Codex conversation","Token usage by project, day and model, with worth at API prices","5-hour window priming"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
+  <script type="module" crossorigin src="./assets/main-B1peolNp.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/analytics-CnTxUk2r.js">
+  <link rel="stylesheet" crossorigin href="./assets/analytics-EBHkNbbf.css">
 </head>
 <body>
   <div class="page">
@@ -33,7 +33,7 @@
     <main>
       <div class="title">
         <h1>All your Claude Code and Codex limits, in the menu bar.</h1>
-        <p>Side A always uses the account whose quota resets soonest, so none of it goes to waste.</p>
+        <p>Side A uses the quota that expires first, so none goes to waste.</p>
       </div>
       <div class="stage" id="stage" role="group" aria-label="Interactive Side A player preview">
         <picture>
@@ -50,6 +50,7 @@
           <span id="download-label">View downloads</span>
         </a>
         <p class="sr-only" id="release-status" role="status"></p>
+        <p class="how-link"><a href="./how/">How it works</a></p>
         <noscript><p><a href="https://github.com/arnenoori/side-a-releases/releases">View available downloads</a></p></noscript>
       </div>
     </main>
