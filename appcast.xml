@@ -4,22 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.25</title>
-            <pubDate>Mon, 12 Oct 2026 14:09:10 -0700</pubDate>
-            <sparkle:version>33</sparkle:version>
-            <sparkle:shortVersionString>0.5.25</sparkle:shortVersionString>
+            <title>0.5.26</title>
+            <pubDate>Mon, 12 Oct 2026 15:14:46 -0700</pubDate>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>0.5.26</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.25
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.26
 
-- Fable-share trades between two running logins are undone if they can't finish, so the two never share one login.
-- "Worth at API prices" follows the public price list daily, so new models and price changes show without an update.
+- Answer from Sessions: a waiting conversation shows Allow, Deny and Always, or its question's options or plan's Approve; a finished one has a box for its next task.
+- A Finished section lists sessions waiting for their next task, and the menu shows how many wait for you.
+- Permission notifications have Allow and Deny buttons.
+- Claude's recommended answer is marked and preselected; Send recommended answers takes one click.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.25/SideA-0.5.25-macOS-universal.dmg" length="9326228" type="application/octet-stream" sparkle:edSignature="/WnXK+dY7z9M4wjBHW+3Ze8P46Lhr4ijh30LUAA9+xWUB3Wg93DUP4g1RuhumvW5tvfAZn1s3P6+IQHIKK8OCQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.26/SideA-0.5.26-macOS-universal.dmg" length="9558175" type="application/octet-stream" sparkle:edSignature="+GyGM5H7cRqzvziKZxor+Ukso/FvOQ2rPjhUtlXFYbr9vsuSrKjr5l3cPgZtwh5rydlRLMr2PJ8rncK2q3nSDg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: qOhCgEaYqjCivuZ5bgPQFDS2ELigrn7O6sYmLSXoH3roE+gjzUev7RzTfFRLSMvoKkRB0/9ryM9dd5Wi0X+XDQ==
-length: 1443
+edSignature: 8ckXIN/BHxw14wnvMiCDLelGD9EGV4AXLQ8G0IyWKotUyqCvzM319rt2wyj3JSkQc5UR6uqyMyVkUPB1I7RSBA==
+length: 1639
 -->
