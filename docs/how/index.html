@@ -9,10 +9,10 @@
   <link rel="canonical" href="https://getsidea.com/how/" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <title>How Side A works</title>
-  <script type="module" crossorigin src="../assets/how-Bm_qI4ey.js"></script>
+  <script type="module" crossorigin src="../assets/how-DgLCV4Tn.js"></script>
   <link rel="modulepreload" crossorigin href="../assets/analytics-CnTxUk2r.js">
   <link rel="stylesheet" crossorigin href="../assets/analytics-EBHkNbbf.css">
-  <link rel="stylesheet" crossorigin href="../assets/how-DbYewrLD.css">
+  <link rel="stylesheet" crossorigin href="../assets/how-DyXV6g5b.css">
 </head>
 <body>
   <div class="page how">
@@ -21,128 +21,391 @@
       <nav><a class="quiet-button" href="https://github.com/arnenoori/side-a-source">GitHub</a><a class="quiet-button" href="../">Download</a></nav>
     </header>
     <main>
-      <section class="lead">
+      <section class="hero">
         <h1>Never waste a limit you paid for.</h1>
-        <p>Side A watches every Claude Code and Codex account and keeps you on the one about to lose the most.</p>
-      </section>
+        <p class="subline">Side A watches every Claude Code and Codex account and keeps you on the one about to lose the most.</p>
+        <!-- The app, rebuilt in HTML and CSS from the SwiftUI views (MenuPlayer, SettingsView, SessionsView). Every control works; the data is a demo. -->
+        <svg class="sprite" aria-hidden="true" focusable="false">
+          <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" /><path d="M19.5 4.5v4.6h-4.6" /></symbol>
+          <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6" /></symbol>
+          <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13" /></symbol>
+          <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="2.4" /><path d="M8.2 8.2a5.4 5.4 0 0 0-1.4 2.6" /></symbol>
+          <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.8" /><path d="M10.4 3.5h3.2l.5 2.3 1.6.9 2.2-.8 1.6 2.8-1.7 1.6v1.8l1.7 1.6-1.6 2.8-2.2-.8-1.6.9-.5 2.3h-3.2l-.5-2.3-1.6-.9-2.2.8-1.6-2.8 1.7-1.6v-1.8L4.6 8.7l1.6-2.8 2.2.8 1.6-.9z" /></symbol>
+          <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3.5v8" /><path d="M7 6.6a7.5 7.5 0 1 0 10 0" /></symbol>
+          <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8.2" r="3.2" /><path d="M3 19.5c.4-3.3 2.9-5.4 6-5.4s5.6 2.1 6 5.4" /><circle cx="16.6" cy="8.8" r="2.5" /><path d="M16.4 13.9c2.6.2 4.3 2 4.6 4.6" /></symbol>
+          <symbol id="i-chart" viewBox="0 0 24 24"><rect x="4" y="12" width="3.6" height="8" rx=".9" /><rect x="10.2" y="5" width="3.6" height="15" rx=".9" /><rect x="16.4" y="9" width="3.6" height="11" rx=".9" /></symbol>
+          <symbol id="i-bubble" viewBox="0 0 24 24"><path d="M5.5 4.5h13a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H12l-4.6 3.6v-3.6H5.5a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z" /><path d="M7.5 9h9M7.5 12.5h6" /></symbol>
+          <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1l1.9 2" /><path d="M19.4 4.6v4.4H15" /><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1l-1.9-2" /><path d="M4.6 19.4V15H9" /></symbol>
+          <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3" /><path d="M15.5 15.5l4.5 4.5" /></symbol>
+          <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4.5 7h15M7.5 12h9M10.5 17h3" /></symbol>
+          <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M7 3.5h10M7 20.5h10" /><path d="M8 3.5v2.4c0 2.6 4 3.6 4 6.1 0-2.5 4-3.5 4-6.1V3.5M8 20.5v-2.4c0-2.6 4-3.6 4-6.1 0 2.5 4 3.5 4 6.1v2.4" /></symbol>
+          <symbol id="i-check-fill" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" stroke="none" /><path d="M7.6 12.3l3 3 5.8-6.2" stroke="#fff" stroke-width="2.4" /></symbol>
+          <symbol id="i-asterisk" viewBox="0 0 24 24"><path d="M12 4v16M5.1 8l13.8 8M18.9 8L5.1 16" /></symbol>
+          <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="M3 9h18" /></symbol>
+        </svg>
 
-      <section class="shots" aria-label="The app">
-        <figure><img draggable="false" src="../app-menu.webp" width="320" height="374" alt="Side A in the menu bar, showing each account's 5-hour and weekly limits" loading="lazy" decoding="async" /></figure>
-        <figure><img draggable="false" src="../app-usage.webp" width="520" height="648" alt="Usage by day and project" loading="lazy" decoding="async" /></figure>
-      </section>
+        <div class="desk" role="group" aria-label="Side A, rebuilt in the browser. Try the menu and the Settings window.">
+          <div class="desk-bar" aria-hidden="true"><span class="desk-apple"></span><span class="desk-menus"><b>Terminal</b><span>Shell</span><span>Edit</span><span>View</span></span><span class="desk-right"><span class="desk-status"><span class="mini-disc"></span></span><span>Mon 3:41 PM</span></span></div>
 
-      <section data-demo>
-        <h2>The quota that expires first goes first</h2>
-        <div class="paper" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
-          <div class="hand formula" aria-hidden="true">
-            <span>priority</span><span>=</span>
-            <span class="frac"><span>weekly % left</span><span>hours until it resets</span></span>
-            <span>&times; plan size</span>
-          </div>
-          <p class="hand note" aria-hidden="true"><span class="note-mark">Whatever expires first, goes first.<svg viewBox="0 0 300 10" preserveAspectRatio="none"><path d="M2 6 C 60 2, 120 9, 180 5 S 270 3, 298 6" /></svg></span></p>
-        </div>
-      </section>
-
-      <section class="feature-section" id="switch" data-demo>
-        <h2>Switches without breaking your flow</h2>
-        <p>Running sessions move at a pause. Nothing restarts.</p>
-        <div class="timeline" role="img" aria-label="Animation: Work's switch can wait, so it happens after its session pauses. Personal is out of room, so it switches at once.">
-          <div class="lane" aria-hidden="true">
-            <p class="lane-label"><b>Work</b> can wait</p>
-            <div class="track">
-              <i class="act a1"></i><i class="act a2"></i><i class="act a3"></i><i class="act a4"></i>
-              <span class="quiet"><span>Pause</span></span>
-              <span class="trade t-late">Switch</span>
-            </div>
-          </div>
-          <div class="lane" aria-hidden="true">
-            <p class="lane-label"><b>Personal</b> out of room</p>
-            <div class="track">
-              <i class="act b1"></i>
-              <span class="trade t-now">Switch now</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature-section" id="island" data-demo>
-        <h2>Answer from anywhere</h2>
-        <p>Requests and finished sessions open at the notch.</p>
-        <div class="island-demo" role="img" aria-label="Animation: the notch opens: Claude Code wants to run npm test. A shortcut allows it. Then the notch says api is done, and a reply sends the next task.">
-          <div class="mac" aria-hidden="true">
-            <div class="screen">
-              <div class="menubar"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
-              <div class="term">
-                <div class="term-bar"><i></i><i></i><i></i><span>api — claude</span></div>
-                <p><b>&gt;</b> fix the retry and run the tests</p>
-                <p class="term-status"><span class="term-wait">Waiting for permission…</span><span class="term-ran">48 passed</span></p>
-              </div>
-              <div class="island" data-state="idle">
-                <div class="pane" data-pane="ask">
-                  <p class="i-kicker"><span class="i-dot"></span>Claude Code wants to run</p>
-                  <p class="i-cmd">npm test</p>
-                  <div class="i-actions"><span class="i-btn">Deny</span><span class="i-btn primary" data-press="allow">Allow</span></div>
-                </div>
-                <div class="pane" data-pane="allowed">
-                  <p class="i-ok"><span class="i-check"></span>Allowed</p>
-                </div>
-                <div class="pane" data-pane="done">
-                  <p class="i-title"><span class="i-check"></span>api is done</p>
-                  <p class="i-msg">All 48 tests pass.</p>
-                  <div class="i-actions"><span class="i-btn">Go</span><span class="i-btn primary" data-press="reply">Reply</span></div>
-                </div>
-                <div class="pane" data-pane="reply">
-                  <p class="i-title">Reply to api</p>
-                  <p class="i-field"><span class="typed"></span><span class="caret"></span></p>
-                </div>
+          <!-- Settings window -->
+          <div class="mw glass" data-mock="settings" role="region" aria-label="Side A Settings">
+            <div class="mw-toolbar">
+              <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p class="mw-title" aria-hidden="true">Sessions</p>
+              <div class="mw-tabs" role="tablist" aria-label="Settings">
+                <button type="button" role="tab" id="mt-accounts" aria-controls="mp-accounts" aria-selected="false" tabindex="-1" data-tab="accounts"><svg aria-hidden="true"><use href="#i-people" /></svg>Accounts</button>
+                <button type="button" role="tab" id="mt-usage" aria-controls="mp-usage" aria-selected="false" tabindex="-1" data-tab="usage"><svg aria-hidden="true"><use href="#i-chart" /></svg>Usage</button>
+                <button type="button" role="tab" id="mt-sessions" aria-controls="mp-sessions" aria-selected="true" data-tab="sessions"><svg aria-hidden="true"><use href="#i-bubble" /></svg>Sessions</button>
+                <button type="button" role="tab" id="mt-autopilot" aria-controls="mp-autopilot" aria-selected="false" tabindex="-1" data-tab="autopilot"><svg aria-hidden="true"><use href="#i-cycle" /></svg>Autopilot</button>
+                <button type="button" role="tab" id="mt-general" aria-controls="mp-general" aria-selected="false" tabindex="-1" data-tab="general"><svg aria-hidden="true"><use href="#i-gear" /></svg>General</button>
               </div>
             </div>
+
+            <!-- Accounts -->
+            <div class="mw-pane form" role="tabpanel" id="mp-accounts" aria-labelledby="mt-accounts" tabindex="0" hidden>
+              <p class="f-head">Claude</p>
+              <div class="f-section">
+                <div class="f-row acct" data-account="personal">
+                  <span class="acct-id"><b>Personal</b><small>you@example.com</small></span>
+                  <span class="mini" data-pct="62"><span class="mini-l">5h 62%</span><span class="mini-bar"><i></i></span><span class="mini-r">2h 10m</span></span>
+                  <span class="mini" data-pct="41"><span class="mini-l">wk 41%</span><span class="mini-bar"><i></i></span><span class="mini-r">Sat 5 PM</span></span>
+                  <span class="acct-act"><span class="in-use">In use</span><button type="button" class="push" data-use="personal">Use</button></span>
+                </div>
+                <div class="f-row acct" data-account="studio">
+                  <span class="acct-id"><b>Studio</b><small>studio@example.com</small></span>
+                  <span class="mini" data-pct="8"><span class="mini-l">5h 8%</span><span class="mini-bar"><i></i></span><span class="mini-r">4h 2m</span></span>
+                  <span class="mini" data-pct="18"><span class="mini-l">wk 18%</span><span class="mini-bar"><i></i></span><span class="mini-r">Mon 9 AM</span></span>
+                  <span class="acct-act"><span class="in-use">In use</span><button type="button" class="push" data-use="studio">Use</button></span>
+                </div>
+                <div class="f-row acct" data-account="weekend">
+                  <span class="acct-id"><b>Weekend</b><small>weekend@example.com</small></span>
+                  <span class="mini" data-pct="0" data-empty><span class="mini-l">5h –</span><span class="mini-bar"><i></i></span><span class="mini-r">&nbsp;</span></span>
+                  <span class="mini" data-pct="100"><span class="mini-l">wk 100%</span><span class="mini-bar"><i></i></span><span class="mini-r">Wed 5 PM</span></span>
+                  <span class="acct-act"><span class="in-use">In use</span><button type="button" class="push" data-use="weekend">Use</button></span>
+                </div>
+              </div>
+              <p class="f-head">Codex</p>
+              <div class="f-section">
+                <div class="f-row acct active" data-codex>
+                  <span class="acct-id"><b>Work</b><small>work@example.com</small></span>
+                  <span class="mini" data-pct="34"><span class="mini-l">5h 34%</span><span class="mini-bar"><i></i></span><span class="mini-r">3h 5m</span></span>
+                  <span class="mini" data-pct="57"><span class="mini-l">wk 57%</span><span class="mini-bar"><i></i></span><span class="mini-r">Fri 8 AM</span></span>
+                  <span class="acct-act"><span class="in-use">In use</span></span>
+                </div>
+                <div class="f-row acct" data-codex>
+                  <span class="acct-id"><b>Side project</b><small>side@example.com</small></span>
+                  <span class="mini" data-pct="0" data-empty><span class="mini-l">5h –</span><span class="mini-bar"><i></i></span><span class="mini-r">&nbsp;</span></span>
+                  <span class="mini" data-pct="12"><span class="mini-l">wk 12%</span><span class="mini-bar"><i></i></span><span class="mini-r">Thu 2 PM</span></span>
+                  <span class="acct-act"></span>
+                </div>
+              </div>
+              <p class="f-head">Add account</p>
+              <div class="f-section">
+                <div class="f-row"><span>Agent</span><span class="segmented" role="radiogroup" aria-label="Agent"><button type="button" role="radio" aria-checked="true">Claude</button><button type="button" role="radio" aria-checked="false">Codex</button></span></div>
+                <label class="f-row"><span>Name</span><input class="field" type="text" placeholder="Personal" autocomplete="off" /></label>
+                <div class="f-row end"><button type="button" class="push" disabled>Sign in with <span data-agent>Claude</span></button></div>
+              </div>
+            </div>
+
+            <!-- Usage -->
+            <div class="mw-pane form" role="tabpanel" id="mp-usage" aria-labelledby="mt-usage" tabindex="0" hidden>
+              <div class="f-section tiles">
+                <div class="tile"><small>Today</small><b>1.7B</b><small>+12% vs usual by 3 PM</small></div>
+                <div class="tile"><small>7 days</small><b>8.8B</b><small>+6% vs the week before</small></div>
+                <div class="tile"><small>30 days</small><b>38.2B</b><small>tokens</small></div>
+              </div>
+              <p class="f-head">Worth at API prices</p>
+              <div class="f-section">
+                <div class="f-row"><span>Last 7 days</span><span class="num">$2,912</span></div>
+                <div class="f-row"><span>Last 30 days</span><span class="num">$11,486</span></div>
+                <div class="f-row"><span>Opus 5.5</span><span class="num sec">$9,870</span></div>
+                <div class="f-row"><span>Sonnet 5</span><span class="num sec">$1,616</span></div>
+              </div>
+              <p class="f-foot">What the same Claude tokens would cost on Anthropic's API. Your plans cover them for a flat price.</p>
+              <p class="f-head">Tokens per day</p>
+              <div class="f-section">
+                <div class="chart" role="img" aria-label="Tokens per day for the last 30 days, between about half a billion and 2.3 billion a day.">
+                  <div class="chart-plot" aria-hidden="true"><span class="grid g3">3B</span><span class="grid g2">2B</span><span class="grid g1">1B</span><span class="grid g0">0</span><div class="bars"></div></div>
+                  <p class="chart-x" aria-hidden="true"><span>Sep 13</span><span>Sep 20</span><span>Sep 27</span><span>Oct 4</span><span>Oct 11</span></p>
+                  <p class="chart-key" aria-hidden="true"><span class="k1">Opus 5.5</span><span class="k2">Sonnet 5</span></p>
+                </div>
+              </div>
+              <p class="f-head">Projects</p>
+              <div class="f-section">
+                <div class="f-row share" data-pct="47"><span>web-app<span class="mini-bar wide"><i></i></span></span><span class="num">9.4B&nbsp; 47%</span></div>
+                <div class="f-row share" data-pct="30"><span>api<span class="mini-bar wide"><i></i></span></span><span class="num">6.1B&nbsp; 30%</span></div>
+                <div class="f-row share" data-pct="19"><span>mobile<span class="mini-bar wide"><i></i></span></span><span class="num">3.8B&nbsp; 19%</span></div>
+                <div class="f-row share" data-pct="4"><span>docs<span class="mini-bar wide"><i></i></span></span><span class="num">900.0M&nbsp; 4%</span></div>
+              </div>
+            </div>
+
+            <!-- Sessions -->
+            <div class="mw-pane s-pane" role="tabpanel" id="mp-sessions" aria-labelledby="mt-sessions">
+              <div class="s-side">
+                <label class="s-search"><svg aria-hidden="true"><use href="#i-search" /></svg><input type="search" placeholder="Search 1,284 conversations" aria-label="Search conversations" autocomplete="off" /><svg aria-hidden="true" class="s-filter"><use href="#i-filter" /></svg></label>
+                <div class="s-list">
+                  <p class="s-label" data-label="waiting">Needs you</p>
+                  <button type="button" class="s-row" data-session="api" data-group="waiting" aria-current="true"><span class="s-lead"><span class="waiting-dot orig"></span><span class="eq alt"><i></i><i></i><i></i></span></span><span class="s-main"><span class="s-title">api</span><span class="s-sub alt" data-run>Running pytest -k retry</span></span><span class="chip orig">Permission</span></button>
+                  <p class="s-label" data-label="finished">Finished</p>
+                  <button type="button" class="s-row tall" data-session="docs" data-group="finished"><span class="s-lead"><svg class="ok orig" aria-hidden="true"><use href="#i-check-fill" /></svg><span class="eq alt"><i></i><i></i><i></i></span></span><span class="s-main"><span class="s-title">docs</span><span class="s-sub orig">Added the changelog entry</span><span class="s-sub alt">Working</span></span><span class="s-when orig">2m</span></button>
+                  <p class="s-label" data-label="running">Running</p>
+                  <button type="button" class="s-row tall" data-session="side-a" data-group="running"><span class="s-lead"><span class="eq"><i></i><i></i><i></i></span></span><span class="s-main"><span class="s-title">side-a</span><span class="s-sub" data-steps="Editing IslandView.swift|Running swift test|Reading IslandModel.swift">Editing IslandView.swift</span></span></button>
+                  <button type="button" class="s-row tall" data-session="web" data-group="running"><span class="s-lead"><span class="eq"><i></i><i></i><i></i></span></span><span class="s-main"><span class="s-title">web</span><span class="s-sub warn orig"><svg aria-hidden="true"><use href="#i-hourglass" /></svg>Stuck on the same step</span><span class="s-sub mail alt" data-mail-line>Note waits for its next step</span></span></button>
+                  <p class="s-empty" hidden>Nothing matches</p>
+                </div>
+              </div>
+              <div class="s-view">
+                <div class="v" data-view="api">
+                  <p class="v-head"><svg aria-hidden="true"><use href="#i-asterisk" /></svg>api <small>Claude Code</small></p>
+                  <div class="v-body">
+                    <p class="msg user">fix the retry and run the tests</p>
+                    <p class="msg">The retry now backs off and stops after three tries. Running the tests.</p>
+                    <p class="tool"><svg aria-hidden="true"><use href="#i-terminal" /></svg>Edited routes.py</p>
+                    <p class="msg late">All 48 tests pass.</p>
+                  </div>
+                  <div class="req">
+                    <p class="req-kicker"><span class="waiting-dot"></span>Claude Code is waiting for you</p>
+                    <p class="req-head">Run a command</p>
+                    <p class="req-detail">pytest -k retry</p>
+                    <div class="req-actions"><span class="link">Show in terminal</span><span class="spacer"></span><button type="button" class="push" data-answer="Denied">Deny</button><button type="button" class="push" data-answer="Always allowed pytest">Always</button><button type="button" class="push prominent" data-answer="Allowed">Allow</button></div>
+                  </div>
+                  <p class="req-done" role="status"></p>
+                </div>
+                <div class="v" data-view="docs" hidden>
+                  <p class="v-head"><svg aria-hidden="true"><use href="#i-asterisk" /></svg>docs <small>Claude Code</small></p>
+                  <div class="v-body">
+                    <p class="msg user">add a changelog entry for the retry fix</p>
+                    <p class="tool"><svg aria-hidden="true"><use href="#i-terminal" /></svg>Edited CHANGELOG.md</p>
+                    <p class="msg">Added the changelog entry under 0.5.26.</p>
+                  </div>
+                  <form class="reply" action="#"><input type="text" placeholder="Reply to docs" aria-label="Reply to docs" autocomplete="off" /><button type="submit" class="push prominent">Send</button></form>
+                </div>
+                <div class="v" data-view="side-a" hidden>
+                  <p class="v-head"><svg aria-hidden="true"><use href="#i-asterisk" /></svg>side-a <small>Claude Code</small></p>
+                  <div class="v-body">
+                    <p class="msg user">make the island spring a little softer</p>
+                    <p class="tool"><svg aria-hidden="true"><use href="#i-terminal" /></svg>Read IslandView.swift</p>
+                    <p class="msg">Lowering the damping to 0.8 and checking the tests.</p>
+                  </div>
+                </div>
+                <div class="v" data-view="web" hidden>
+                  <p class="v-head"><svg aria-hidden="true"><use href="#i-asterisk" /></svg>web <small>Claude Code</small></p>
+                  <div class="v-body">
+                    <p class="msg user">ship the new pricing page</p>
+                    <p class="tool"><svg aria-hidden="true"><use href="#i-terminal" /></svg>Running npm run build</p>
+                  </div>
+                  <div class="stuck">
+                    <p>Its transcript hasn't moved in a while. A long command may still be running.</p>
+                    <div class="req-actions"><span class="spacer"></span><button type="button" class="push" data-mail="Stops before its next step">Stop</button><button type="button" class="push" data-mail="Note waits for its next step">Send a Note…</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Autopilot -->
+            <div class="mw-pane form" role="tabpanel" id="mp-autopilot" aria-labelledby="mt-autopilot" tabindex="0" hidden>
+              <div class="f-section">
+                <div class="f-row"><span class="f-label"><b class="big">Autopilot</b><small data-autopilot-status>On. Using Personal. Warms up idle windows from 8:30.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Autopilot" data-autopilot><span></span></button></div>
+                <div class="f-row"><span class="f-label">Move at<small>When an account reaches this much of its 5-hour or weekly limit, Autopilot moves your sessions to another.</small></span><span class="popup">95%</span></div>
+              </div>
+              <p class="f-head">Up next</p>
+              <div class="f-section">
+                <div class="f-row rank" data-rank="personal" data-pct="100"><b>Personal</b><span class="mini-bar wide"><i></i></span><span class="hand">1.4/h</span><span class="rank-tag"></span></div>
+                <div class="f-row rank" data-rank="studio" data-pct="64"><b>Studio</b><span class="mini-bar wide"><i></i></span><span class="hand">0.9/h</span><span class="rank-tag"></span></div>
+                <div class="f-row rank" data-rank="weekend" data-pct="3"><b>Weekend</b><span class="mini-bar wide"><i></i></span><span class="hand">–</span><span class="rank-tag">Limited</span></div>
+              </div>
+              <p class="f-foot hand">weekly % left ÷ hours until it resets × plan size</p>
+            </div>
+
+            <!-- General -->
+            <div class="mw-pane form" role="tabpanel" id="mp-general" aria-labelledby="mt-general" tabindex="0" hidden>
+              <div class="f-section">
+                <div class="f-row"><span class="f-label">Open at login</span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Open at login"><span></span></button></div>
+                <div class="f-row"><span class="f-label">Show only in the menu bar</span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Show only in the menu bar"><span></span></button></div>
+                <div class="f-row"><span class="f-label">Sound effects<small>Soft player clicks when the account changes, a session resumes, or one needs you.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Sound effects"><span></span></button></div>
+                <div class="f-row"><span class="f-label">Notify when a session needs you<small>When Claude Code asks for permission or input, even with Side A closed.</small></span><button type="button" class="switch" role="switch" aria-checked="false" aria-label="Notify when a session needs you"><span></span></button></div>
+              </div>
+              <div class="f-section">
+                <div class="f-row"><span class="f-label">Dynamic Island<small>Answer Claude Code and Codex from the notch, and see account changes as they happen.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Dynamic Island"><span></span></button></div>
+              </div>
+            </div>
           </div>
-          <div class="keys" aria-hidden="true">
-            <span class="key" data-key="ctrl"><small>control</small>⌃</span><span class="key" data-key="opt"><small>option</small>⌥</span><span class="key letter" data-key="letter">Y</span>
-            <span class="keys-label">Allow</span>
+
+          <!-- Menu bar popover -->
+          <div class="mm glass" data-mock="menu" role="region" aria-label="Side A menu">
+            <div class="mm-head"><p class="mm-title">Side A</p><button type="button" class="mm-icon" data-refresh aria-label="Refresh usage"><svg aria-hidden="true"><use href="#i-refresh" /></svg></button></div>
+            <div class="mm-group">
+              <p class="mm-provider">Claude</p>
+              <div class="mm-row active" data-account="personal">
+                <span class="mm-dot"></span><span class="mm-name">Personal</span>
+                <span class="mini" data-pct="62" data-live><span class="mini-l">5h 62%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mini" data-pct="41"><span class="mini-l">wk 41%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mm-use"><button type="button" class="mini-btn" data-use="personal">Use</button></span>
+              </div>
+              <div class="mm-row" data-account="studio">
+                <span class="mm-dot"></span><span class="mm-name">Studio</span>
+                <span class="mini" data-pct="8"><span class="mini-l">5h 8%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mini" data-pct="18"><span class="mini-l">wk 18%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mm-use"><button type="button" class="mini-btn" data-use="studio">Use</button></span>
+              </div>
+              <button type="button" class="mm-limited" aria-expanded="false" aria-controls="mm-limited-rows"><svg aria-hidden="true"><use href="#i-chevron" /></svg>Limited (1) <span class="sec">· next back Wed 5 PM</span></button>
+              <div id="mm-limited-rows" hidden>
+                <div class="mm-row" data-account="weekend">
+                  <span class="mm-dot"></span><span class="mm-name">Weekend<small>Back Wed 5 PM</small></span>
+                  <span class="mini" data-pct="0" data-empty><span class="mini-l">5h –</span><span class="mini-bar"><i></i></span></span>
+                  <span class="mini" data-pct="100"><span class="mini-l">wk 100%</span><span class="mini-bar"><i></i></span></span>
+                  <span class="mm-use"><button type="button" class="mini-btn" data-use="weekend">Use</button></span>
+                </div>
+              </div>
+            </div>
+            <div class="mm-group">
+              <p class="mm-provider">Codex</p>
+              <div class="mm-row active" data-codex>
+                <span class="mm-dot"></span><span class="mm-name">Work</span>
+                <span class="mini" data-pct="34"><span class="mini-l">5h 34%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mini" data-pct="57"><span class="mini-l">wk 57%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mm-use"></span>
+              </div>
+              <div class="mm-row" data-codex>
+                <span class="mm-dot"></span><span class="mm-name">Side project</span>
+                <span class="mini" data-pct="0" data-empty><span class="mini-l">5h –</span><span class="mini-bar"><i></i></span></span>
+                <span class="mini" data-pct="12"><span class="mini-l">wk 12%</span><span class="mini-bar"><i></i></span></span>
+                <span class="mm-use"></span>
+              </div>
+            </div>
+            <button type="button" class="mm-today" data-open="usage"><span>Today 1.7B</span><span class="sec">· 7 days 8.8B</span><span class="sec">· web-app</span><span class="spacer"></span><svg aria-hidden="true"><use href="#i-chevron" /></svg></button>
+            <hr />
+            <div class="mm-auto"><span id="mm-auto-label">Autopilot</span><button type="button" class="switch" role="switch" aria-checked="true" aria-labelledby="mm-auto-label" data-autopilot><span></span></button></div>
+            <div class="mm-foot">
+              <button type="button" class="mm-add" data-open="accounts"><svg aria-hidden="true"><use href="#i-plus" /></svg>Add account</button>
+              <span class="spacer"></span>
+              <span class="mm-icon" aria-hidden="true"><svg><use href="#i-disc" /></svg></span>
+              <button type="button" class="mm-icon" data-open="general" aria-label="Settings"><svg aria-hidden="true"><use href="#i-gear" /></svg></button>
+              <span class="mm-icon" aria-hidden="true"><svg><use href="#i-power" /></svg></span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="feature-section" id="running" data-demo>
-        <h2>Catch a stuck session</h2>
-        <p>Send it a note or stop it, without finding its terminal.</p>
-        <div class="running-demo" role="img" aria-label="Animation: three running sessions. web is flagged as stuck. A note is sent and delivered after its step.">
-          <div class="window" aria-hidden="true">
-            <div class="window-bar"><i></i><i></i><i></i><span>Sessions</span></div>
-            <ul class="sessions">
-              <li data-steps="Editing IslandView.swift|Running swift test|Reading IslandModel.swift">
-                <span class="eq"><i></i><i></i><i></i></span>
-                <span class="s-name">side-a</span><span class="s-step">Editing IslandView.swift</span>
-              </li>
-              <li data-steps="Running pytest|Editing routes.py|Running pytest -k retry">
-                <span class="eq"><i></i><i></i><i></i></span>
-                <span class="s-name">api</span><span class="s-step">Running pytest</span>
-              </li>
-              <li class="flagged" data-steps="Running npm run build">
-                <span class="eq"><i></i><i></i><i></i></span>
-                <span class="s-name">web</span><span class="s-step">Running npm run build</span>
-                <span class="s-flag">Stuck on the same step</span>
-                <span class="s-actions"><span class="s-btn" data-press="note">Note…</span><span class="s-btn">Stop</span></span>
-                <span class="s-note">Note queued</span>
-              </li>
-            </ul>
+      <section class="pillar" id="switch" data-demo>
+        <div class="pillar-text">
+          <p class="eyebrow">01</p>
+          <h2>The quota that expires first goes first</h2>
+          <p>Running sessions move at a pause. Nothing restarts.</p>
+          <div class="paper aside" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
+            <div class="hand formula" aria-hidden="true">
+              <span>priority</span><span>=</span>
+              <span class="frac"><span>weekly % left</span><span>hours until it resets</span></span>
+              <span>&times; plan size</span>
+            </div>
+            <p class="hand note" aria-hidden="true"><span class="note-mark">Whatever expires first, goes first.<svg viewBox="0 0 300 10" preserveAspectRatio="none"><path d="M2 6 C 60 2, 120 9, 180 5 S 270 3, 298 6" /></svg></span></p>
+          </div>
+        </div>
+        <div class="pillar-demo">
+          <div class="timeline" role="img" aria-label="Animation: Work's switch can wait, so it happens after its session pauses. Personal is out of room, so it switches at once.">
+            <div class="lane" aria-hidden="true">
+              <p class="lane-label"><b>Work</b> can wait</p>
+              <div class="track">
+                <i class="act a1"></i><i class="act a2"></i><i class="act a3"></i><i class="act a4"></i>
+                <span class="quiet"><span>Pause</span></span>
+                <span class="trade t-late">Switch</span>
+              </div>
+            </div>
+            <div class="lane" aria-hidden="true">
+              <p class="lane-label"><b>Personal</b> out of room</p>
+              <div class="track">
+                <i class="act b1"></i>
+                <span class="trade t-now">Switch now</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="feature-section" id="money" data-demo>
-        <h2>See what your plan is worth</h2>
-        <p>Your tokens, priced at API rates.</p>
-        <div class="mini-card">
-          <div class="worth-bar" role="img" aria-label="Illustration: most of the value is cache reads, then cache writes, then input and output."><i class="seg-read"></i><i class="seg-write"></i><i class="seg-io"></i></div>
-          <p class="legend" aria-hidden="true"><span class="k-read">Cache reads</span><span class="k-write">Cache writes</span><span class="k-io">Input and output</span></p>
+      <section class="pillar" id="island" data-demo>
+        <div class="pillar-text">
+          <p class="eyebrow">02</p>
+          <h2>Answer from anywhere</h2>
+          <p>Requests and finished sessions open at the notch. Answer there, in Sessions, or from a notification.</p>
+        </div>
+        <div class="pillar-demo">
+          <div class="island-demo" role="img" aria-label="Animation: the notch opens: Claude Code wants to run npm test. A shortcut allows it. Then the notch says api is done, and a reply sends the next task.">
+            <div class="mac" aria-hidden="true">
+              <div class="screen">
+                <div class="menubar"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
+                <div class="term">
+                  <div class="term-bar"><i></i><i></i><i></i><span>api — claude</span></div>
+                  <p><b>&gt;</b> fix the retry and run the tests</p>
+                  <p class="term-status"><span class="term-wait">Waiting for permission…</span><span class="term-ran">48 passed</span></p>
+                </div>
+                <div class="island" data-state="idle">
+                  <div class="pane" data-pane="ask">
+                    <p class="i-kicker"><span class="i-dot"></span>Claude Code wants to run</p>
+                    <p class="i-cmd">npm test</p>
+                    <div class="i-actions"><span class="i-btn">Deny</span><span class="i-btn primary" data-press="allow">Allow</span></div>
+                  </div>
+                  <div class="pane" data-pane="allowed">
+                    <p class="i-ok"><span class="i-check"></span>Allowed</p>
+                  </div>
+                  <div class="pane" data-pane="done">
+                    <p class="i-title"><span class="i-check"></span>api is done</p>
+                    <p class="i-msg">All 48 tests pass.</p>
+                    <div class="i-actions"><span class="i-btn">Go</span><span class="i-btn primary" data-press="reply">Reply</span></div>
+                  </div>
+                  <div class="pane" data-pane="reply">
+                    <p class="i-title">Reply to api</p>
+                    <p class="i-field"><span class="typed"></span><span class="caret"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="keys" aria-hidden="true">
+              <span class="key" data-key="ctrl"><small>control</small>⌃</span><span class="key" data-key="opt"><small>option</small>⌥</span><span class="key letter" data-key="letter">Y</span>
+              <span class="keys-label">Allow</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Safe on your Mac</h2>
+      <section class="pillar" id="running" data-demo>
+        <div class="pillar-text">
+          <p class="eyebrow">03</p>
+          <h2>Know your sessions and spend</h2>
+          <p>Catch a stuck session without finding its terminal, and see your tokens priced at API rates.</p>
+        </div>
+        <div class="pillar-demo">
+          <div class="running-demo" role="img" aria-label="Animation: three running sessions. web is flagged as stuck. A note is sent and delivered after its step.">
+            <div class="window" aria-hidden="true">
+              <div class="window-bar"><i></i><i></i><i></i><span>Sessions</span></div>
+              <ul class="sessions">
+                <li data-steps="Editing IslandView.swift|Running swift test|Reading IslandModel.swift">
+                  <span class="eq"><i></i><i></i><i></i></span>
+                  <span class="s-name">side-a</span><span class="s-step">Editing IslandView.swift</span>
+                </li>
+                <li data-steps="Running pytest|Editing routes.py|Running pytest -k retry">
+                  <span class="eq"><i></i><i></i><i></i></span>
+                  <span class="s-name">api</span><span class="s-step">Running pytest</span>
+                </li>
+                <li class="flagged" data-steps="Running npm run build">
+                  <span class="eq"><i></i><i></i><i></i></span>
+                  <span class="s-name">web</span><span class="s-step">Running npm run build</span>
+                  <span class="s-flag">Stuck on the same step</span>
+                  <span class="s-actions"><span class="s-btn" data-press="note">Note…</span><span class="s-btn">Stop</span></span>
+                  <span class="s-note">Note queued</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mini-card">
+            <p class="card-label">Worth at API rates</p>
+            <div class="worth-bar" role="img" aria-label="Illustration: most of the value is cache reads, then cache writes, then input and output."><i class="seg-read"></i><i class="seg-write"></i><i class="seg-io"></i></div>
+            <p class="legend" aria-hidden="true"><span class="k-read">Cache reads</span><span class="k-write">Cache writes</span><span class="k-io">Input and output</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-labelledby="trust-title">
+        <h2 id="trust-title" class="eyebrow">Safe on your Mac</h2>
         <ul class="trust">
           <li>Logins stay in your Keychain. Never copied or uploaded.</li>
           <li>Changes to your files are marked and removable in Settings.</li>
@@ -151,7 +414,9 @@
         <p class="fine"><a href="https://github.com/arnenoori/side-a-source/blob/main/SECURITY.md">Security details</a></p>
       </section>
 
-      <div class="download-area"><a class="download" href="../">Get Side A</a></div>
+      <section class="cta">
+        <a class="download" href="../">Get Side A</a>
+      </section>
     </main>
     <footer><a href="https://arne.ai">Made with love by Arne Noori</a></footer>
   </div>
