@@ -4,23 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.29</title>
-            <pubDate>Tue, 13 Oct 2026 11:03:27 -0700</pubDate>
-            <sparkle:version>37</sparkle:version>
-            <sparkle:shortVersionString>0.5.29</sparkle:shortVersionString>
+            <title>0.5.30</title>
+            <pubDate>Tue, 13 Oct 2026 16:53:18 -0700</pubDate>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>0.5.30</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.29
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.30
 
-- Keep awake while agents work: your Mac stays awake while sessions work and sleeps about 2 minutes after the last one stops.
-- Also with the lid closed: close the lid and agents keep going (on power by default, one-time approval in Login Items).
-- Add account lives in Settings > Accounts; the menu is one row tidier.
+- Usage never reads over 100%: past the limit Claude reports 101%, and Side A now caps it.
+- A limit that has reset shows 0% instead of its old reading.
+- Resets a few seconds out read "in 1m", and the weekly alert skips weeks that already reset.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.29/SideA-0.5.29-macOS-universal.dmg" length="10376695" type="application/octet-stream" sparkle:edSignature="MACV6e/2bUDE1w0jJD+rGJbsFKA3DZze92Ezj+SPB7cqVFSXk/k8Un62gruLSRrxNbLD+K9uUHve7czUKhTYCg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.30/SideA-0.5.30-macOS-universal.dmg" length="10377316" type="application/octet-stream" sparkle:edSignature="9M4Jxiogs3tsvYI6oVDfC/rGO4NBRhCe5zhnvIPmBlA0oJkHA8pp3QNIssmpbKPnQOp/5Pc5Zh/xNXcBk0sAAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: XGzq+fE8nB0zGEnuVGfsF646VQzriG9givY7ZQayRrdcaHjWaAcE9ozDTkxNezWAYXPRDVjrbtZskvXvqoloBA==
-length: 1531
+edSignature: Qv+LLp8mBHPATra9PrPI0H7CkGiArZJVGC0JkTtV08GEjuewdSINAUK9b9xEx1zgX5LQ1HqVcYKrlYNt41iiCw==
+length: 1459
 -->
