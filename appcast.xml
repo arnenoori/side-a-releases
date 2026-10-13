@@ -4,25 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.27</title>
-            <pubDate>Mon, 12 Oct 2026 17:26:14 -0700</pubDate>
-            <sparkle:version>35</sparkle:version>
-            <sparkle:shortVersionString>0.5.27</sparkle:shortVersionString>
+            <title>0.5.28</title>
+            <pubDate>Mon, 12 Oct 2026 18:25:40 -0700</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>0.5.28</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.27
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.28
 
-- Memory per session, counting everything it started, plus the ports it listens on. Stop a server or quit a session from Sessions.
-- Quit Idle frees sessions idle for 30+ minutes in one click.
-- A warning in the menu, and a notification, when sessions fill your Mac's memory.
-- Setup tab: your CLIs, MCP servers, hooks, skills and agents at a glance.
-- Clean Up: archive old conversations (restorable) and remove leftover worktrees.
+- Fixes Autopilot not moving running sessions off a full account whose login needed signing in again.
+- Autopilot's decisions and their reasons are logged to `runtime/autopilot.log`.
+- A notification when a move to an account with room fails.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.27/SideA-0.5.27-macOS-universal.dmg" length="10046363" type="application/octet-stream" sparkle:edSignature="GGtN/YVN5L3MKUPDZZn3dmdfpObon+Caxg3GSQCvHqzji0sRD4PX0XygeaYrLWIQJliJ6wBXByX0HEStfQJ/Cg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.28/SideA-0.5.28-macOS-universal.dmg" length="10090339" type="application/octet-stream" sparkle:edSignature="tY1Gzgn4VUGZGlOPS6NbgHtoyHYqOl/XDn8/PjS/HXMEWgwKDZR/yUCCdvMi3xg3JCvoXRagg134h/Y96AGGBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 4JNc2KSD9ze97h3Lezovwo9IAhhi5X5Nbzz4ZdXRieY2+/v7ScVI9/BooqngzYltPqNiaNg31c0bi9EPmujXAg==
-length: 1645
+edSignature: 8iqKIrHq2MTnVix/a7hczoXZkoUIQl6a3dU5dr4auPeJzMnzmcdr0XaAbrAoe15p1AfiCNEXpCh5OV8Foce7DA==
+length: 1455
 -->
