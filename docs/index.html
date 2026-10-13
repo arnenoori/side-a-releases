@@ -19,7 +19,7 @@
   <link rel="canonical" href="https://getsidea.com/" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>Side A: usage limits and account autopilot for Claude Code and Codex</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota that moves running sessions, timed to keep the prompt cache","Dynamic Island for Claude Code and Codex permission requests, questions, plans and finished sessions","Running sessions with step, flags, notes and stop","Search across every Claude Code and Codex conversation","Token usage by project, day and model, with worth at API prices","5-hour window priming"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota that moves running sessions, timed to keep the prompt cache","Dynamic Island for Claude Code and Codex permission requests, questions, plans and finished sessions","Running sessions with step, flags, notes and stop","Search across every Claude Code and Codex conversation","Token usage by project, day and model, with worth at API prices","5-hour window priming","Keeps the Mac awake while agents work, optionally with the lid closed, and lets it sleep when they finish"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
   <script type="module" crossorigin src="./assets/main-BDOR4kaD.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-DkgMPgRk.css">
 </head>
@@ -272,6 +272,8 @@
                   <div class="f-row"><span class="f-label">Dynamic Island<small>Answer Claude Code and Codex from the notch, and see account changes as they happen.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Dynamic Island"><span></span></button></div>
                 </div>
                 <div class="f-section">
+                  <div class="f-row"><span class="f-label">Keep awake while agents work<small>While a session works, your Mac stays awake. It can sleep about 2 minutes after the last one stops.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Keep awake while agents work"><span></span></button></div>
+                  <div class="f-row"><span class="f-label">Also with the lid closed<small>Close the lid and agents keep running. On power by default. One-time approval in Login Items.</small></span><button type="button" class="switch" role="switch" aria-checked="false" aria-label="Also with the lid closed"><span></span></button></div>
                 </div>
               </div>
             </div>
@@ -530,6 +532,49 @@
           </div>
         </section>
 
+        <section class="pillar" id="overnight" data-demo>
+          <div class="pillar-text">
+            <h2>Run agents overnight</h2>
+            <p>Close the lid and go to bed. Your agents keep working, and your Mac sleeps when they&rsquo;re done.</p>
+          </div>
+          <div class="pillar-demo">
+            <!-- Keep awake (General settings), rebuilt: close the lid and the agents keep going; the Mac sleeps after the last one. Time runs fast; the data is a demo. -->
+            <div class="desk solo ka" data-keep-awake role="group" aria-label="Keep awake, rebuilt in the browser. Close the lid and watch the agents finish. The data is a demo.">
+              <div class="ka-sky" aria-hidden="true"><svg class="ka-moon"><use href="#i-moon" /></svg></div>
+              <div class="ka-stage">
+                <div class="lap" aria-hidden="true">
+                  <div class="lap-lid">
+                    <div class="lap-screen">
+                      <div class="lap-display">
+                        <div class="lap-bar"><i></i><span class="mini-disc"></span></div>
+                        <div class="lap-term"><p><span>&gt;</span> migrate billing to the new API and run every test</p><p class="lap-work">&#10059; Working&hellip;</p><p class="lap-done">&#10003; Done. All three agents finished.</p></div>
+                      </div>
+                    </div>
+                    <div class="lap-back"><span class="lap-logo"></span></div>
+                  </div>
+                  <div class="lap-base"><div class="lap-lip"></div></div>
+                </div>
+                <button type="button" class="push ka-lid" data-ka-lid>Close the lid</button>
+              </div>
+              <div class="ka-cards">
+                <div class="ka-card glass">
+                  <p class="ka-head"><b>Agents</b><span class="sec" data-ka-count>3 working</span></p>
+                  <ul class="ka-list">
+                    <li class="ka-row" data-start=".5" data-rate=".09"><span class="s-lead"><span class="eq"><i></i><i></i><i></i></span><svg class="ok" aria-hidden="true"><use href="#i-check-fill" /></svg></span><span class="ka-main"><span class="ka-top"><span class="ka-title">api</span><span class="ka-sub" data-done="All 212 tests pass">Running the test suite</span></span><span class="mini-bar wide"><i></i></span></span></li>
+                    <li class="ka-row" data-start=".3" data-rate=".065"><span class="s-lead"><span class="eq"><i></i><i></i><i></i></span><svg class="ok" aria-hidden="true"><use href="#i-check-fill" /></svg></span><span class="ka-main"><span class="ka-top"><span class="ka-title">web</span><span class="ka-sub" data-done="Pricing page ready">Building the pricing page</span></span><span class="mini-bar wide"><i></i></span></span></li>
+                    <li class="ka-row" data-start=".12" data-rate=".075"><span class="s-lead"><span class="eq"><i></i><i></i><i></i></span><svg class="ok" aria-hidden="true"><use href="#i-check-fill" /></svg></span><span class="ka-main"><span class="ka-top"><span class="ka-title">docs</span><span class="ka-sub" data-done="Migration guide written">Writing the migration guide</span></span><span class="mini-bar wide"><i></i></span></span></li>
+                  </ul>
+                  <p class="ka-status"><span class="ka-dot"></span><span data-ka-status role="status">Keeping your Mac awake</span><button type="button" class="link-btn" data-ka-again hidden>Run again</button></p>
+                </div>
+                <div class="ka-card glass ka-settings">
+                  <p class="ka-head"><b>General</b></p>
+                  <div class="f-row"><span class="f-label">Keep awake while agents work<small id="ka-awake-note">Sleeps about 2 minutes after the last one stops.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Keep awake while agents work" aria-describedby="ka-awake-note" data-ka-awake><span></span></button></div>
+                  <div class="f-row ka-sub-row"><span class="f-label">Also with the lid closed<small id="ka-lid-note">On power by default. One-time approval in Login Items.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Also with the lid closed" aria-describedby="ka-lid-note" data-ka-closed><span></span></button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="trust-strip" aria-labelledby="trust-title">
           <h2 id="trust-title" class="eyebrow">Safe on your Mac</h2>

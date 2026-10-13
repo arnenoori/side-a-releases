@@ -16,6 +16,7 @@ Quota you don't use before a window resets is gone. With more than one account, 
 - **Across your Macs.** Optional iCloud Drive sync combines usage; logins never sync.
 - **Early windows.** Starts idle 5-hour windows before your usual start, so they reset sooner.
 - **Usage by project.** Tokens per project and per day, from your local transcripts.
+- **Overnight runs.** Keeps your Mac awake while an agent works and lets it sleep about 2 minutes after the last one stops. Optionally with the lid closed, on power by default (one-time approval in Login Items).
 - **Instant on limits.** An optional hook rechecks the moment a rate limit hits, so Autopilot moves right away.
 
 ## How it decides
