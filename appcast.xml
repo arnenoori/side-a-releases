@@ -4,24 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.26</title>
-            <pubDate>Mon, 12 Oct 2026 15:14:46 -0700</pubDate>
-            <sparkle:version>34</sparkle:version>
-            <sparkle:shortVersionString>0.5.26</sparkle:shortVersionString>
+            <title>0.5.27</title>
+            <pubDate>Mon, 12 Oct 2026 17:26:14 -0700</pubDate>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>0.5.27</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.26
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.27
 
-- Answer from Sessions: a waiting conversation shows Allow, Deny and Always, or its question's options or plan's Approve; a finished one has a box for its next task.
-- A Finished section lists sessions waiting for their next task, and the menu shows how many wait for you.
-- Permission notifications have Allow and Deny buttons.
-- Claude's recommended answer is marked and preselected; Send recommended answers takes one click.
+- Memory per session, counting everything it started, plus the ports it listens on. Stop a server or quit a session from Sessions.
+- Quit Idle frees sessions idle for 30+ minutes in one click.
+- A warning in the menu, and a notification, when sessions fill your Mac's memory.
+- Setup tab: your CLIs, MCP servers, hooks, skills and agents at a glance.
+- Clean Up: archive old conversations (restorable) and remove leftover worktrees.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.26/SideA-0.5.26-macOS-universal.dmg" length="9558175" type="application/octet-stream" sparkle:edSignature="+GyGM5H7cRqzvziKZxor+Ukso/FvOQ2rPjhUtlXFYbr9vsuSrKjr5l3cPgZtwh5rydlRLMr2PJ8rncK2q3nSDg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.27/SideA-0.5.27-macOS-universal.dmg" length="10046363" type="application/octet-stream" sparkle:edSignature="GGtN/YVN5L3MKUPDZZn3dmdfpObon+Caxg3GSQCvHqzji0sRD4PX0XygeaYrLWIQJliJ6wBXByX0HEStfQJ/Cg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8ckXIN/BHxw14wnvMiCDLelGD9EGV4AXLQ8G0IyWKotUyqCvzM319rt2wyj3JSkQc5UR6uqyMyVkUPB1I7RSBA==
-length: 1639
+edSignature: 4JNc2KSD9ze97h3Lezovwo9IAhhi5X5Nbzz4ZdXRieY2+/v7ScVI9/BooqngzYltPqNiaNg31c0bi9EPmujXAg==
+length: 1645
 -->
