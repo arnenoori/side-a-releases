@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://us.i.posthog.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <meta name="theme-color" content="#f7f8f7" />
-  <meta name="description" content="How Side A uses the quota that expires first, and answers your sessions from the notch." />
+  <meta name="description" content="Side A spends the Claude Code and Codex quota that expires first, answers your agents from the notch, and keeps your Mac fast." />
   <link rel="canonical" href="https://getsidea.com/how/" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <title>How Side A works</title>
-  <script type="module" crossorigin src="../assets/how-DgLCV4Tn.js"></script>
+  <script type="module" crossorigin src="../assets/how-BfbSiha1.js"></script>
   <link rel="modulepreload" crossorigin href="../assets/analytics-CnTxUk2r.js">
   <link rel="stylesheet" crossorigin href="../assets/analytics-EBHkNbbf.css">
-  <link rel="stylesheet" crossorigin href="../assets/how-DyXV6g5b.css">
+  <link rel="stylesheet" crossorigin href="../assets/how-Cx4QDDg1.css">
 </head>
 <body>
   <div class="page how">
@@ -23,7 +23,7 @@
     <main>
       <section class="hero">
         <h1>Never waste a limit you paid for.</h1>
-        <p class="subline">Side A watches every Claude Code and Codex account and keeps you on the one about to lose the most.</p>
+        <p class="subline">Your Claude Code and Codex sessions run on whichever account&rsquo;s quota expires first, so none of it goes unused.</p>
         <!-- The app, rebuilt in HTML and CSS from the SwiftUI views (MenuPlayer, SettingsView, SessionsView). Every control works; the data is a demo. -->
         <svg class="sprite" aria-hidden="true" focusable="false">
           <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" /><path d="M19.5 4.5v4.6h-4.6" /></symbol>
@@ -42,15 +42,24 @@
           <symbol id="i-check-fill" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" stroke="none" /><path d="M7.6 12.3l3 3 5.8-6.2" stroke="#fff" stroke-width="2.4" /></symbol>
           <symbol id="i-asterisk" viewBox="0 0 24 24"><path d="M12 4v16M5.1 8l13.8 8M18.9 8L5.1 16" /></symbol>
           <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="M3 9h18" /></symbol>
+          <symbol id="i-chevron-up" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" /></symbol>
+          <symbol id="i-reply" viewBox="0 0 24 24"><path d="M10 5.5L3.5 11.5 10 17.5v-3.7c4.6 0 8 1.3 10.5 4.7-.6-5.4-3.7-9.6-10.5-10.2z" fill="currentColor" stroke="none" /></symbol>
+          <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7l-5 5 5 5M15.5 7l5 5-5 5" /></symbol>
+          <symbol id="i-check" viewBox="0 0 24 24"><path d="M5.5 12.5l4.2 4.2 8.8-9.4" /></symbol>
+          <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17" /></symbol>
+          <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" /><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3" /></symbol>
+          <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.2A7.8 7.8 0 0 1 9.8 4.5a7.8 7.8 0 1 0 9.7 9.7z" fill="currentColor" stroke="none" /></symbol>
+          <symbol id="i-archive" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1.2" /><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 13h4" /></symbol>
+          <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0 5.6 5.6l-8.6 8.6a2.1 2.1 0 0 1-3-3l8.6-8.6a4.5 4.5 0 0 1-2.6-2.6z" /><path d="M14.7 6.3a4.5 4.5 0 0 1 5.3-2.9l-2.8 2.8.5 2.1 2.1.5 2.8-2.8a4.5 4.5 0 0 1-2.3 5.9" /></symbol>
         </svg>
 
         <div class="desk" role="group" aria-label="Side A, rebuilt in the browser. Try the menu and the Settings window.">
-          <div class="desk-bar" aria-hidden="true"><span class="desk-apple"></span><span class="desk-menus"><b>Terminal</b><span>Shell</span><span>Edit</span><span>View</span></span><span class="desk-right"><span class="desk-status"><span class="mini-disc"></span></span><span>Mon 3:41 PM</span></span></div>
+          <div class="desk-bar"><span class="desk-apple" aria-hidden="true"></span><span class="desk-menus" aria-hidden="true"><b>Terminal</b><span>Shell</span><span>Edit</span><span>View</span></span><span class="desk-right"><button type="button" class="desk-status" aria-label="Side A" aria-expanded="true" aria-controls="mm"><span class="mini-disc"></span></button><span aria-hidden="true">Mon 3:41 PM</span></span></div>
 
           <!-- Settings window -->
           <div class="mw glass" data-mock="settings" role="region" aria-label="Side A Settings">
             <div class="mw-toolbar">
-              <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="lights"><button type="button" data-light="close" aria-label="Close Settings"></button><button type="button" data-light="minimize" aria-label="Minimize Settings"></button><i aria-hidden="true"></i></span>
               <p class="mw-title" aria-hidden="true">Sessions</p>
               <div class="mw-tabs" role="tablist" aria-label="Settings">
                 <button type="button" role="tab" id="mt-accounts" aria-controls="mp-accounts" aria-selected="false" tabindex="-1" data-tab="accounts"><svg aria-hidden="true"><use href="#i-people" /></svg>Accounts</button>
@@ -232,7 +241,7 @@
           </div>
 
           <!-- Menu bar popover -->
-          <div class="mm glass" data-mock="menu" role="region" aria-label="Side A menu">
+          <div class="mm glass" id="mm" data-mock="menu" role="region" aria-label="Side A menu">
             <div class="mm-head"><p class="mm-title">Side A</p><button type="button" class="mm-icon" data-refresh aria-label="Refresh usage"><svg aria-hidden="true"><use href="#i-refresh" /></svg></button></div>
             <div class="mm-group">
               <p class="mm-provider">Claude</p>
@@ -279,9 +288,9 @@
             <div class="mm-foot">
               <button type="button" class="mm-add" data-open="accounts"><svg aria-hidden="true"><use href="#i-plus" /></svg>Add account</button>
               <span class="spacer"></span>
-              <span class="mm-icon" aria-hidden="true"><svg><use href="#i-disc" /></svg></span>
+              <button type="button" class="mm-icon" data-spin aria-label="Spin the disc"><svg aria-hidden="true"><use href="#i-disc" /></svg></button>
               <button type="button" class="mm-icon" data-open="general" aria-label="Settings"><svg aria-hidden="true"><use href="#i-gear" /></svg></button>
-              <span class="mm-icon" aria-hidden="true"><svg><use href="#i-power" /></svg></span>
+              <button type="button" class="mm-icon" data-quit-app aria-label="Quit Side A"><svg aria-hidden="true"><use href="#i-power" /></svg></button>
             </div>
           </div>
         </div>
@@ -289,9 +298,8 @@
 
       <section class="pillar" id="switch" data-demo>
         <div class="pillar-text">
-          <p class="eyebrow">01</p>
-          <h2>The quota that expires first goes first</h2>
-          <p>Running sessions move at a pause. Nothing restarts.</p>
+          <h2>Spend the quota that expires first</h2>
+          <p>Sessions switch accounts between steps. Nothing restarts.</p>
           <div class="paper aside" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
             <div class="hand formula" aria-hidden="true">
               <span>priority</span><span>=</span>
@@ -324,82 +332,165 @@
 
       <section class="pillar" id="island" data-demo>
         <div class="pillar-text">
-          <p class="eyebrow">02</p>
           <h2>Answer from anywhere</h2>
-          <p>Requests and finished sessions open at the notch. Answer there, in Sessions, or from a notification.</p>
+          <p>Approve a command or give a finished agent its next task from the notch. No hunting for the terminal.</p>
         </div>
         <div class="pillar-demo">
-          <div class="island-demo" role="img" aria-label="Animation: the notch opens: Claude Code wants to run npm test. A shortcut allows it. Then the notch says api is done, and a reply sends the next task.">
-            <div class="mac" aria-hidden="true">
+          <!-- The Dynamic Island, rebuilt from IslandView.swift: the notch grows into the card; the buttons and the ⌃⌥ shortcuts work. -->
+          <div class="island-demo" data-state="rest">
+            <div class="mac">
               <div class="screen">
-                <div class="menubar"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
-                <div class="term">
-                  <div class="term-bar"><i></i><i></i><i></i><span>api — claude</span></div>
-                  <p><b>&gt;</b> fix the retry and run the tests</p>
-                  <p class="term-status"><span class="term-wait">Waiting for permission…</span><span class="term-ran">48 passed</span></p>
+                <div class="menubar" aria-hidden="true"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
+                <div class="term" aria-hidden="true">
+                  <div class="term-bar"><i></i><i></i><i></i><span data-term-title>api — claude</span></div>
+                  <div class="term-lines"></div>
                 </div>
-                <div class="island" data-state="idle">
-                  <div class="pane" data-pane="ask">
-                    <p class="i-kicker"><span class="i-dot"></span>Claude Code wants to run</p>
-                    <p class="i-cmd">npm test</p>
-                    <div class="i-actions"><span class="i-btn">Deny</span><span class="i-btn primary" data-press="allow">Allow</span></div>
-                  </div>
-                  <div class="pane" data-pane="allowed">
-                    <p class="i-ok"><span class="i-check"></span>Allowed</p>
-                  </div>
-                  <div class="pane" data-pane="done">
-                    <p class="i-title"><span class="i-check"></span>api is done</p>
-                    <p class="i-msg">All 48 tests pass.</p>
-                    <div class="i-actions"><span class="i-btn">Go</span><span class="i-btn primary" data-press="reply">Reply</span></div>
-                  </div>
-                  <div class="pane" data-pane="reply">
-                    <p class="i-title">Reply to api</p>
-                    <p class="i-field"><span class="typed"></span><span class="caret"></span></p>
+                <div class="island" role="region" aria-label="Dynamic Island">
+                  <div class="island-body">
+                    <button type="button" class="pane strip" data-pane="compact" aria-label="A request is waiting. Open it.">
+                      <span class="strip-l" data-glyph></span><span class="strip-gap"></span><span class="strip-r"><span class="beacon"></span></span>
+                    </button>
+                    <div class="pane strip" data-pane="ok">
+                      <span class="strip-l" data-glyph></span><span class="strip-gap"></span><span class="strip-r" data-result></span>
+                    </div>
+                    <div class="pane card" data-pane="ask">
+                      <div class="band"><span class="band-l"><span data-glyph></span><span data-agent>Claude Code</span></span><span class="band-gap"></span><span class="band-r"><button type="button" class="i-icon" data-act="collapse" aria-label="Collapse"><svg aria-hidden="true"><use href="#i-chevron-up" /></svg></button></span></div>
+                      <div class="card-body">
+                        <p class="i-context"><span data-title>api</span><span class="dim" data-place>  ·  Personal</span></p>
+                        <p class="i-head">Run a command</p>
+                        <p class="i-cmd"><span class="dim">$ </span><span data-cmd>pytest -k retry</span></p>
+                        <div class="i-buttons"><button type="button" class="i-btn" data-act="deny">Deny</button><button type="button" class="i-btn" data-act="always">Always</button><button type="button" class="i-btn primary" data-act="allow">Allow</button></div>
+                        <div class="i-foot"><button type="button" class="i-quiet" data-act="terminal">Show terminal</button><span class="spacer"></span><span class="i-keys" aria-hidden="true"><span><kbd>⌃⌥Y</kbd>allow</span><span class="opt"><kbd>⌃⌥N</kbd>deny</span></span></div>
+                      </div>
+                    </div>
+                    <div class="pane card event" data-pane="done">
+                      <div class="band"><span class="band-l done-l"><svg aria-hidden="true"><use href="#i-check-fill" /></svg>Done</span><span class="band-gap"></span><span class="band-r"></span></div>
+                      <div class="event-row">
+                        <p class="event-text"><b data-title>docs</b><span data-summary>Added the changelog entry.</span></p>
+                        <button type="button" class="i-icon" data-act="reply" aria-label="Reply"><svg aria-hidden="true"><use href="#i-reply" /></svg></button>
+                        <button type="button" class="i-btn primary pill" data-act="go">Go</button>
+                      </div>
+                    </div>
+                    <div class="pane card" data-pane="reply">
+                      <div class="band"><span class="band-l"><span class="disc"></span>Ready for you</span><span class="band-gap"></span><span class="band-r"><button type="button" class="i-icon" data-act="collapse" aria-label="Collapse"><svg aria-hidden="true"><use href="#i-chevron-up" /></svg></button></span></div>
+                      <form class="i-reply" action="#">
+                        <p class="i-context"><span data-glyph></span><b data-title>docs</b></p>
+                        <div class="i-field-row"><input class="i-field" type="text" autocomplete="off" aria-label="Next task" placeholder="Next task…" /><button type="submit" class="i-btn primary pill">Send</button></div>
+                        <p class="i-hint">Wakes the session with this as its next task.</p>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="keys" aria-hidden="true">
-              <span class="key" data-key="ctrl"><small>control</small>⌃</span><span class="key" data-key="opt"><small>option</small>⌥</span><span class="key letter" data-key="letter">Y</span>
+            <button type="button" class="keys" data-act="key">
+              <span class="key" data-key="ctrl" aria-hidden="true"><small>control</small>⌃</span><span class="key" data-key="opt" aria-hidden="true"><small>option</small>⌥</span><span class="key letter" data-key="letter" aria-hidden="true">Y</span>
               <span class="keys-label">Allow</span>
-            </div>
+            </button>
+            <p class="sr-only" role="status" data-announce></p>
           </div>
         </div>
       </section>
 
-      <section class="pillar" id="running" data-demo>
+      <section class="pillar" id="background" data-demo>
         <div class="pillar-text">
-          <p class="eyebrow">03</p>
-          <h2>Know your sessions and spend</h2>
-          <p>Catch a stuck session without finding its terminal, and see your tokens priced at API rates.</p>
+          <h2>Keep your Mac fast</h2>
+          <p>See the memory and ports each session holds, and quit the idle ones before your Mac starts to swap.</p>
         </div>
         <div class="pillar-demo">
-          <div class="running-demo" role="img" aria-label="Animation: three running sessions. web is flagged as stuck. A note is sent and delivered after its step.">
-            <div class="window" aria-hidden="true">
-              <div class="window-bar"><i></i><i></i><i></i><span>Sessions</span></div>
-              <ul class="sessions">
-                <li data-steps="Editing IslandView.swift|Running swift test|Reading IslandModel.swift">
-                  <span class="eq"><i></i><i></i><i></i></span>
-                  <span class="s-name">side-a</span><span class="s-step">Editing IslandView.swift</span>
-                </li>
-                <li data-steps="Running pytest|Editing routes.py|Running pytest -k retry">
-                  <span class="eq"><i></i><i></i><i></i></span>
-                  <span class="s-name">api</span><span class="s-step">Running pytest</span>
-                </li>
-                <li class="flagged" data-steps="Running npm run build">
-                  <span class="eq"><i></i><i></i><i></i></span>
-                  <span class="s-name">web</span><span class="s-step">Running npm run build</span>
-                  <span class="s-flag">Stuck on the same step</span>
-                  <span class="s-actions"><span class="s-btn" data-press="note">Note…</span><span class="s-btn">Stop</span></span>
-                  <span class="s-note">Note queued</span>
-                </li>
-              </ul>
+          <!-- Sessions (LiveSummary, RunningRow), CleanupView and SetupView, with their demo data. -->
+          <div class="desk solo" data-live-mock role="group" aria-label="Side A's Sessions, Clean Up and Setup, rebuilt in the browser. The buttons work; the data is a demo.">
+            <div class="mw glass">
+              <div class="mw-toolbar">
+                <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+                <p class="mw-title" aria-hidden="true">Sessions</p>
+                <div class="mw-tabs" role="tablist" aria-label="Side A">
+                  <button type="button" role="tab" id="lt-sessions" aria-controls="lp-sessions" aria-selected="true" data-tab="sessions"><svg aria-hidden="true"><use href="#i-bubble" /></svg>Sessions</button>
+                  <button type="button" role="tab" id="lt-cleanup" aria-controls="lp-cleanup" aria-selected="false" tabindex="-1" data-tab="cleanup"><svg aria-hidden="true"><use href="#i-archive" /></svg>Clean Up</button>
+                  <button type="button" role="tab" id="lt-setup" aria-controls="lp-setup" aria-selected="false" tabindex="-1" data-tab="setup"><svg aria-hidden="true"><use href="#i-wrench" /></svg>Setup</button>
+                </div>
+              </div>
+
+              <div class="mw-pane lv" role="tabpanel" id="lp-sessions" aria-labelledby="lt-sessions">
+                <p class="tight" data-tight><svg aria-hidden="true"><use href="#i-chip" /></svg><span data-tight-text>Sessions hold 14 GB · memory is tight</span></p>
+                <div class="lv-tiles">
+                  <p><b data-n="sessions">5</b><small>Sessions</small></p>
+                  <p><b data-n="working">3</b><small>Working</small></p>
+                  <p><b data-n="memory">13.8 GB</b><small>Memory</small></p>
+                </div>
+                <div class="stale" data-stale><svg aria-hidden="true"><use href="#i-moon" /></svg><span data-stale-text>2 idle 30+ min · 7.1 GB</span><span class="spacer"></span><button type="button" class="push small" data-quit-idle>Quit Idle</button></div>
+                <ul class="lv-list">
+                  <li class="lv-row" data-name="web" data-mb="3277" data-procs="8" data-busy>
+                    <span class="s-lead"><span class="eq"><i></i><i></i><i></i></span></span>
+                    <span class="lv-main"><span class="lv-top"><span class="lv-title">web</span><button type="button" class="chip port" data-port="3000" data-cmd="node" data-mb="410">:3000</button><span class="chip mem"></span><span class="lv-procs"></span></span><span class="lv-sub">Running npm run dev</span></span>
+                  </li>
+                  <li class="lv-row" data-name="api" data-mb="2458" data-procs="5" data-busy>
+                    <span class="s-lead"><span class="eq"><i></i><i></i><i></i></span></span>
+                    <span class="lv-main"><span class="lv-top"><span class="lv-title">api</span><button type="button" class="chip port" data-port="8000" data-cmd="uvicorn" data-mb="220">:8000</button><span class="chip mem"></span><span class="lv-procs"></span></span><span class="lv-sub">Running pytest -k retry</span></span>
+                  </li>
+                  <li class="lv-row" data-name="side-a" data-mb="1126" data-procs="3" data-busy>
+                    <span class="s-lead"><span class="eq"><i></i><i></i><i></i></span></span>
+                    <span class="lv-main"><span class="lv-top"><span class="lv-title">side-a</span><span class="chip mem"></span><span class="lv-procs"></span></span><span class="lv-sub">Editing IslandView.swift</span></span>
+                  </li>
+                  <li class="lv-row" data-name="docs" data-mb="4198" data-procs="6" data-idle>
+                    <span class="s-lead"><span class="idle-dot"></span></span>
+                    <span class="lv-main"><span class="lv-top"><span class="lv-title">docs</span><span class="chip mem"></span><span class="lv-procs"></span></span><span class="lv-sub">Idle 2 hours ago</span></span>
+                    <button type="button" class="push small" data-quit aria-label="Quit docs">Quit</button>
+                  </li>
+                  <li class="lv-row" data-name="spike" data-mb="3072" data-procs="4" data-idle>
+                    <span class="s-lead"><span class="idle-dot"></span></span>
+                    <span class="lv-main"><span class="lv-top"><span class="lv-title">spike</span><button type="button" class="chip port" data-port="5173" data-cmd="vite" data-mb="180">:5173</button><span class="chip mem"></span><span class="lv-procs"></span></span><span class="lv-sub">Idle 45 minutes ago</span></span>
+                    <button type="button" class="push small" data-quit aria-label="Quit spike">Quit</button>
+                  </li>
+                </ul>
+                <p class="lv-note" role="status"><span data-note></span><button type="button" class="link-btn" data-undo hidden>Undo</button></p>
+              </div>
+
+              <div class="mw-pane form" role="tabpanel" id="lp-cleanup" aria-labelledby="lt-cleanup" tabindex="0" hidden>
+                <p class="f-head">Conversations on disk</p>
+                <div class="f-section">
+                  <div class="f-row"><span class="sec" data-disk>2.8 GB · Claude 2.3 GB · Codex 530 MB</span></div>
+                  <div class="f-row proj"><span>demo-app</span><span class="mini-bar wide" data-p="100"><i></i></span><span class="num sec">1.2 GB</span></div>
+                  <div class="f-row proj"><span>demo-site</span><span class="mini-bar wide" data-p="53"><i></i></span><span class="num sec">640 MB</span></div>
+                  <div class="f-row proj"><span>demo-cli</span><span class="mini-bar wide" data-p="39"><i></i></span><span class="num sec">470 MB</span></div>
+                  <div class="f-row"><span class="f-label"><span data-old>318 conversations, 1.05 GB</span><small data-old-note>Untouched for 90 days. Pinned and running ones stay.</small></span><button type="button" class="push" data-archive>Archive</button></div>
+                </div>
+                <p class="f-head">Git worktrees</p>
+                <p class="f-sub">Merged or untouched for a week</p>
+                <div class="f-section">
+                  <div class="f-row wt"><span class="f-label">search<small>~/Code/demo-app/.claude/worktrees/search</small></span><span class="wt-meta">merged · 12 days ago</span><button type="button" class="push" data-remove aria-label="Remove worktree search">Remove</button></div>
+                  <div class="f-row wt"><span class="f-label">island<small>~/Code/demo-app/.claude/worktrees/island</small></span><span class="wt-meta">has changes · 9 days ago</span><button type="button" class="push" disabled title="Has changes">Remove</button></div>
+                </div>
+                <p class="f-sub">Active</p>
+                <div class="f-section">
+                  <div class="f-row wt"><span class="f-label">pricing<small>~/Code/demo-site-pricing</small></span><span class="wt-meta">1 hour ago</span><button type="button" class="push" data-remove aria-label="Remove worktree pricing">Remove</button></div>
+                </div>
+              </div>
+
+              <div class="mw-pane form" role="tabpanel" id="lp-setup" aria-labelledby="lt-setup" tabindex="0" hidden>
+                <p class="f-head">Tools</p>
+                <div class="f-section">
+                  <div class="f-row"><span>Claude Code</span><span class="sec trunc">2.1.296 at ~/.local/bin/claude</span></div>
+                  <div class="f-row"><span>Codex CLI</span><span class="sec trunc">0.162.1 at /opt/homebrew/bin/codex</span></div>
+                </div>
+                <div class="f-head split"><span>MCP servers</span><button type="button" class="push small" data-check>Check connections</button></div>
+                <div class="f-section">
+                  <div class="f-row srv" data-srv="connected"><span class="dot" role="img" aria-label="Not checked"></span><span class="f-label"><span>docs <span class="sec">user</span></span><small>HTTP  https://mcp.example.com/mcp</small><small class="ter">header Authorization</small></span></div>
+                  <div class="f-row srv" data-srv="failed"><span class="dot" role="img" aria-label="Not checked"></span><span class="f-label"><span>simulator <span class="sec">project app</span></span><small>STDIO  npx</small><small class="ter">env SIM_TOKEN</small></span></div>
+                  <div class="f-row srv"><span class="dot" role="img" aria-label="Not checked"></span><span class="f-label"><span>tracker <span class="sec">Codex, off</span></span><small>HTTP  https://tracker.example.com/mcp</small></span></div>
+                </div>
+                <p class="f-head">Hooks</p>
+                <div class="f-section">
+                  <div class="f-row hook"><span class="f-label"><span>PermissionRequest <span class="sec">*</span></span><small>/bin/sh island-hook.sh claude</small><small class="ter">~/.claude/settings.json</small></span><span class="chip tinted">Side A: Dynamic Island</span></div>
+                  <div class="f-row hook"><span class="f-label"><span>PostToolUse <span class="sec">Edit|Write</span></span><small>npx prettier --write</small><small class="ter">~/.claude/settings.json</small></span></div>
+                </div>
+                <p class="f-head">Skills and agents</p>
+                <div class="f-section">
+                  <details class="f-row disc-row"><summary><span>Skills</span><span class="sec">3</span></summary><p>code-review · release-notes · simplify</p></details>
+                  <details class="f-row disc-row"><summary><span>Agents</span><span class="sec">2</span></summary><p>explorer · reviewer</p></details>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="mini-card">
-            <p class="card-label">Worth at API rates</p>
-            <div class="worth-bar" role="img" aria-label="Illustration: most of the value is cache reads, then cache writes, then input and output."><i class="seg-read"></i><i class="seg-write"></i><i class="seg-io"></i></div>
-            <p class="legend" aria-hidden="true"><span class="k-read">Cache reads</span><span class="k-write">Cache writes</span><span class="k-io">Input and output</span></p>
           </div>
         </div>
       </section>
@@ -415,10 +506,10 @@
       </section>
 
       <section class="cta">
-        <a class="download" href="../">Get Side A</a>
+        <a class="download" href="../" data-linger="balloons">Get Side A</a>
       </section>
     </main>
-    <footer><a href="https://arne.ai">Made with love by Arne Noori</a></footer>
+    <footer><a href="https://arne.ai" data-linger="heart">Made with love by Arne Noori</a></footer>
   </div>
 </body>
 </html>
