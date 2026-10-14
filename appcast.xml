@@ -4,23 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.31</title>
-            <pubDate>Wed, 14 Oct 2026 09:02:22 -0700</pubDate>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>0.5.31</sparkle:shortVersionString>
+            <title>0.5.32</title>
+            <pubDate>Wed, 14 Oct 2026 09:28:39 -0700</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>0.5.32</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.31
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.32
 
-- Fewer surprise sign-ins: if a session overwrites a login right after Autopilot moves it, Side A puts it back.
-- When an account's login was replaced, the menu says by whose, and autopilot.log records why.
-- Usage bars read 5h, Fable, week; a used-up week shows alone.
+- Sign in again works when an account's slot holds a stray copy of another account's login.
+- A notification names the account to sign in again when its login was replaced.
+- Live limits are no longer credited to the wrong account after a move.
+
+Thanks to brandeddaniel for the fixes.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.31/SideA-0.5.31-macOS-universal.dmg" length="10393457" type="application/octet-stream" sparkle:edSignature="llhmC6yh/q03kiq0+rt3W42W44v5Dgwy2mmJDezaMGIHJURFUoZxa3/1gSG635/IIH+D64LET6PP1grQ7XQgCA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.32/SideA-0.5.32-macOS-universal.dmg" length="10394341" type="application/octet-stream" sparkle:edSignature="RcgEsSP7/R23ZbVYIlPRvnlB0NMw9fN0o+164VSy5gBqpbb8CRFzRGp0AAeZypQsQnMMD8bKKf8O9G7I6SnRDA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 577ZQ56DLov1WIUoDi+0uroHg0J0DPzZyTnqo9gN1qxJPf3r8UTbnp/QdBiRHRyECtuZpceqkfMa+jYTNR2CAg==
-length: 1482
+edSignature: zzND3qRAHYoD87JdLH2FTAvqn2QfTM216ZmOVfpPx5uCojyr89Pb+FSKL2FsJyJkYE81UFhqlo7Y4jkXjJ+yDg==
+length: 1497
 -->
