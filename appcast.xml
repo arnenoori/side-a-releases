@@ -4,23 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.34</title>
-            <pubDate>Wed, 14 Oct 2026 16:53:27 -0700</pubDate>
-            <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>0.5.34</sparkle:shortVersionString>
+            <title>0.5.35</title>
+            <pubDate>Thu, 15 Oct 2026 15:47:54 -0700</pubDate>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>0.5.35</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.34
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.35
 
-- Claude's multi-question forms fit in the island: questions show one at a time under tabs, with Back, Next and Send answers always on screen.
-- Picking an answer moves to the next question, ⌃⌥1–4 picks on whichever question is showing, and Send recommended accepts all of Claude's recommendations at once.
-- Long questions and options scroll instead of running off the bottom, and answers in progress survive folding the island into the notch.
+- The Running list holds still: sessions keep a fixed order, and nothing moves between sections while the pointer is over the list.
+- Running sessions sit under their project, idle ones fold into one row, and working sessions always show the step they're on.
+- Hovering a row no longer reflows it, memory shows only from 1 GB, and ↑ and ↓ work from the list itself.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.34/SideA-0.5.34-macOS-universal.dmg" length="10490423" type="application/octet-stream" sparkle:edSignature="+yi0RMATUcUlo27LdB8aQkNsdzRKmtmpHzdXdOJy26D5pjmNddU7hvhahMXGEkbHDKMBf/SFItIBD/UVkVkNCA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.35/SideA-0.5.35-macOS-universal.dmg" length="10605635" type="application/octet-stream" sparkle:edSignature="bp5iuKocO+XQj1QKFqZipYy3AIgwzVVdLyKZckwJ/UeeCHchxKJlOR7jBlxklhjFtVSQ+WD8frfSmBm5VerBAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: gZLqHOno0lwLvVokiQD0aeDjAHCUX+bR8Kdqp8nDKOc0AX+QU14MXGk7TFIcp+NM8ofHzfDNZbZ1oQES/H1ZDw==
-length: 1663
+edSignature: WQzPVDOcWiSUc/albLFDfiK+bPrkrKmSZQCDX626unurZOYLHkb6QgxuhEw3Uwlwt9gJ6/2AL+2OPP2H9Al9CA==
+length: 1582
 -->
