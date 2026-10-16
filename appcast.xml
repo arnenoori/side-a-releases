@@ -4,23 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.35</title>
-            <pubDate>Thu, 15 Oct 2026 15:47:54 -0700</pubDate>
-            <sparkle:version>43</sparkle:version>
-            <sparkle:shortVersionString>0.5.35</sparkle:shortVersionString>
+            <title>0.5.36</title>
+            <pubDate>Thu, 15 Oct 2026 19:44:43 -0700</pubDate>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>0.5.36</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.35
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.36
 
-- The Running list holds still: sessions keep a fixed order, and nothing moves between sections while the pointer is over the list.
-- Running sessions sit under their project, idle ones fold into one row, and working sessions always show the step they're on.
-- Hovering a row no longer reflows it, memory shows only from 1 GB, and ↑ and ↓ work from the list itself.
+- Show terminal, Answer in terminal and Go open the session's own Warp tab instead of only bringing Warp forward.
+- Warp is reached through the link it gives each session, so it no longer needs Accessibility permission.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.35/SideA-0.5.35-macOS-universal.dmg" length="10605635" type="application/octet-stream" sparkle:edSignature="bp5iuKocO+XQj1QKFqZipYy3AIgwzVVdLyKZckwJ/UeeCHchxKJlOR7jBlxklhjFtVSQ+WD8frfSmBm5VerBAw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.36/SideA-0.5.36-macOS-universal.dmg" length="10603605" type="application/octet-stream" sparkle:edSignature="3YdkMBMIubJci9pOlXbOLyeVVaA6QJp4JdSWosT10xD+k0lzc+zGrOrgtPj7gGUNJC2tmXx3qwMA9gDJrk26CQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: WQzPVDOcWiSUc/albLFDfiK+bPrkrKmSZQCDX626unurZOYLHkb6QgxuhEw3Uwlwt9gJ6/2AL+2OPP2H9Al9CA==
-length: 1582
+edSignature: /H53ZiSq/QjuLV+NPuvKDRL7qQUC2bZUQIY1Y5buZJznVjUlHkhTEiflOfgJdnlNNYAzfiAtyhVw2fRwJPyoCA==
+length: 1432
 -->
