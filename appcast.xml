@@ -4,26 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.37</title>
-            <pubDate>Sun, 25 Oct 2026 11:14:25 -0700</pubDate>
-            <sparkle:version>45</sparkle:version>
-            <sparkle:shortVersionString>0.5.37</sparkle:shortVersionString>
+            <title>0.5.38</title>
+            <pubDate>Sun, 25 Oct 2026 12:57:19 -0700</pubDate>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>0.5.38</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.37
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.38
 
-- With Codex's Approve for me on, the island no longer asks about commands Codex's own reviewer approves. Sessions started with `--yolo`, turns under strict auto-review, apps set to auto-review and administrator requirements are left to Codex too.
-- Codex edits get a This session button: later edits to the same files are allowed without asking again.
-- Claude requests that an SDK host or a background subagent settles first leave the island once the call is done.
-- Side A Remote (beta): pair the iPhone app to see and answer sessions, reply, switch accounts and run hosted sessions from your phone, on your network or through the relay.
-- The conversation viewer shows prompts typed while Claude was working, and opens conversations again with macOS's own Python.
-- Requests whose paths lead somewhere sensitive through a link, credential searches and more deletes need a click.
+- Finished sessions can clear themselves from the notch: Settings > General > Dynamic Island > Clear finished sessions removes them 30 seconds, a minute or five minutes after they finish. Never, the default, keeps them as before.
+- Side A prefers Python 3.11 or later when one is installed, so the island can read Codex's `config.toml` and an administrator's requirements.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.37/SideA-0.5.37-macOS-universal.dmg" length="18634494" type="application/octet-stream" sparkle:edSignature="70GCChTsTvnHgwjvdRuUdXER47Ug+zSVoqjmfs96NRcshs01yvfYFhgD+V60ssA41SLkdmcJ8cpWR9ZuzFU4AA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.38/SideA-0.5.38-macOS-universal.dmg" length="18636389" type="application/octet-stream" sparkle:edSignature="ryZWcwLOLodd9haOLBIL64eiY+XLhQVmb5YbNoDBpykgmHuDwWP7bqTiRq9SF8lJyWlZvLj6C/RhsL+s/SR5Aw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: kjgeoaI1q9W8V75LYCLVH93Kxo0gOzCj0EAZjPbgIKjcxi8iCuj04K4h7SzgIZDV136rmkwDrOEu4fvZlratCw==
-length: 2095
+edSignature: VEwAz7FUp8UPMONLHPAtF8dq1R96NzjuRszUgFwOM9Qpd538hXGTrEdp32xj9nd1IU1LJwGutttzzHQJ/sHDAQ==
+length: 1585
 -->
