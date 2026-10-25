@@ -22,14 +22,15 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>Side A: usage limits and account autopilot for Claude Code and Codex</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota that moves running sessions, timed to keep the prompt cache","Dynamic Island for Claude Code and Codex permission requests, questions, plans and finished sessions","Running sessions with step, flags, notes and stop","Search across every Claude Code and Codex conversation","Token usage by project, day and model, with worth at API prices","5-hour window priming","Keeps the Mac awake while agents work, optionally with the lid closed, and lets it sleep when they finish"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
-  <script type="module" crossorigin src="./assets/main-BDOR4kaD.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-DkgMPgRk.css">
+  <script type="module" crossorigin src="./assets/main-BFslVByN.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-foANFZsY.css">
+  <link rel="stylesheet" crossorigin href="./assets/style-CK1wNR4b.css">
 </head>
 <body>
   <div class="page">
     <header>
       <a class="wordmark" href="./" aria-label="Side A home"><span class="disc-mark" aria-hidden="true"></span>Side A</a>
-      <nav><a class="icon-link" href="https://github.com/arnenoori/side-a-source" aria-label="Side A on GitHub" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></nav>
+      <nav><a class="quiet-button" href="#remote">iPhone</a><a class="icon-link" href="https://github.com/arnenoori/side-a-source" aria-label="Side A on GitHub" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></nav>
     </header>
     <main>
       <div class="intro">
@@ -578,6 +579,55 @@
           </div>
         </section>
 
+        <section class="remote" id="remote" aria-labelledby="remote-title">
+          <div class="remote-head">
+            <picture><source type="image/avif" srcset="./remote/icon.avif" /><img class="remote-icon" src="./remote/icon.webp" width="64" height="64" alt="" /></picture>
+            <p class="eyebrow">Side A Remote</p>
+            <h2 id="remote-title">Every session, on your iPhone</h2>
+            <p class="subline">See and answer every Claude Code and Codex session from your phone, whichever account it&rsquo;s on.</p>
+            <a class="remote-beta" href="https://testflight.apple.com/join/FJEsBYZg" data-remote-beta><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" /><path d="M10.5 5.2h3" /></svg>Join the beta on TestFlight</a>
+          </div>
+          <!-- The Mac runs the session in tmux; the phone shows real Side A Remote screens from the simulator. -->
+          <div class="remote-demo" data-remote>
+            <div class="mac remote-mac" aria-hidden="true">
+              <div class="screen">
+                <div class="menubar"><span class="menubar-left"><i></i><i></i><i></i></span><span class="menubar-right"><span class="mini-disc"></span>9:41</span></div>
+                <div class="remote-term">
+                  <div class="term-bar"><i></i><i></i><i></i><span>api — sidea attach sa-api-3f2a</span></div>
+                  <p class="dim">$ sidea attach sa-api-3f2a</p>
+                  <p><span class="dim">&gt;</span> fix the retry and run the tests</p>
+                  <p><span class="dot">&#9210;</span> Read(routes.py)</p>
+                  <p><span class="dot">&#9210;</span> Update(routes.py)</p>
+                  <p class="dim">&nbsp; &#9151; Added 12 lines, removed 3 lines</p>
+                  <p><span class="dot">&#9210;</span> The retry now backs off and stops after three tries.</p>
+                  <p><span class="dot">&#9210;</span> Bash(pytest -k retry)</p>
+                  <p class="wait">&nbsp; Waiting for permission&hellip;</p>
+                </div>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="phone-screen" id="remote-screen" role="tabpanel" aria-labelledby="rt-sessions">
+                <picture data-screen="sessions"><source type="image/avif" srcset="./remote/sessions.avif" /><img src="./remote/sessions.webp" width="600" height="1305" alt="Side A Remote's Sessions: two need you, three are working, across Personal, Work and Studio." loading="lazy" decoding="async" /></picture>
+                <picture data-screen="approve" hidden><source type="image/avif" srcset="./remote/approve.avif" /><img src="./remote/approve.webp" width="600" height="1305" alt="A session asking to read a file and run npm test, each with Deny and Allow, and a plan to review." loading="lazy" decoding="async" /></picture>
+                <picture data-screen="answer" hidden><source type="image/avif" srcset="./remote/answer.avif" /><img src="./remote/answer.webp" width="600" height="1305" alt="A question from the agent, which database the export should use, with Postgres recommended." loading="lazy" decoding="async" /></picture>
+              </div>
+            </div>
+          </div>
+          <div class="remote-tabs" role="tablist" aria-label="Side A Remote">
+            <button type="button" role="tab" id="rt-sessions" aria-controls="remote-screen" aria-selected="true" data-screen="sessions">Sessions</button>
+            <button type="button" role="tab" id="rt-approve" aria-controls="remote-screen" aria-selected="false" tabindex="-1" data-screen="approve">Approve</button>
+            <button type="button" role="tab" id="rt-answer" aria-controls="remote-screen" aria-selected="false" tabindex="-1" data-screen="answer">Answer</button>
+          </div>
+          <ul class="remote-points">
+            <li><b>Every account</b>Sessions stay on your phone when Autopilot moves them. Other remotes see one account.</li>
+            <li><b>From the Lock Screen</b>Allow, deny, answer a question or approve a plan. Anything risky asks for Face ID.</li>
+            <li><b>What the agent sees</b>The screenshots and images it looked at, right in the transcript.</li>
+            <li><b>Start from your phone</b>New sessions run in tmux, so you can pick them up on the Mac.</li>
+            <li><b>Side A&rsquo;s tools</b>History, Restart Fresh, health, ports and previews, Autopilot.</li>
+            <li><b>Private</b>Straight to your Mac over Wi-Fi or Tailscale. No account. What passes through our relay is encrypted end to end.</li>
+          </ul>
+        </section>
+
         <section class="trust-strip" aria-labelledby="trust-title">
           <h2 id="trust-title" class="eyebrow">Safe on your Mac</h2>
           <ul class="trust">
@@ -595,6 +645,6 @@
     </main>
     <footer><a href="https://arne.ai" data-love-egg>Made with love by Arne Noori</a><p class="fine"><a href="https://github.com/arnenoori/side-a-source/blob/main/SECURITY.md">Security details</a> · <button class="text-button" data-dialog="privacy">Privacy</button></p></footer>
   </div>
-  <dialog id="privacy" aria-labelledby="privacy-title"><button class="close" data-close aria-label="Close privacy">×</button><h2 id="privacy-title">Privacy</h2><p>Your accounts and usage stay on your Mac. Claude and Codex handle sign-in and requests under their own policies.</p><p>Anonymous page, download-click, and demo statistics via PostHog. No cookies or recordings. Your browser’s privacy signals are respected. This page checks GitHub for downloads.</p><label><input type="checkbox" id="analytics-enabled" /> Share anonymous website statistics</label></dialog>
+  <dialog id="privacy" aria-labelledby="privacy-title"><button class="close" data-close aria-label="Close privacy">×</button><h2 id="privacy-title">Privacy</h2><p>Your accounts and usage stay on your Mac. Claude and Codex handle sign-in and requests under their own policies.</p><p>Anonymous page, download-click, and demo statistics via PostHog. No cookies or recordings. Your browser’s privacy signals are respected. This page checks GitHub for downloads.</p><label><input type="checkbox" id="analytics-enabled" /> Share anonymous website statistics</label><p class="dialog-link"><a href="./privacy/">Full privacy policy</a></p></dialog>
 </body>
 </html>

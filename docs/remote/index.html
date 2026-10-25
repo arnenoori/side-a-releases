@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta name="theme-color" content="#f7f8f7" />
+  <meta name="description" content="Pair Side A Remote with Side A on your Mac, and what to do when your iPhone can't reach it." />
+  <link rel="canonical" href="https://getsidea.com/remote/" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <title>Set up Side A Remote</title>
+  <script type="module" crossorigin src="../assets/doc-DCMgMWmP.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/doc-B81mPQ0Q.css">
+  <link rel="stylesheet" crossorigin href="../assets/style-CK1wNR4b.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="wordmark" href="../" aria-label="Side A home"><span class="disc-mark" aria-hidden="true"></span>Side A</a>
+    </header>
+    <main class="doc">
+      <h1>Set up Side A Remote</h1>
+      <p class="lead">See and answer your Mac’s Claude Code and Codex sessions from your iPhone.</p>
+      <p class="requirements">Side A on macOS 14 or later. Side A Remote on iOS 26 or later.</p>
+      <div class="actions"><a class="remote-beta" href="https://testflight.apple.com/join/FJEsBYZg" data-remote-beta><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" /><path d="M10.5 5.2h3" /></svg>Join the beta on TestFlight</a><a class="download" href="../">Get Side A for Mac</a></div>
+
+      <h2>Pair your iPhone</h2>
+      <ol class="steps">
+        <li>In Side A on your Mac, open Settings › Remote. It checks your Mac and shows what’s left.</li>
+        <li>Turn on Side A Remote, then click Pair iPhone… to show a pairing code. If macOS asks whether Side A may accept incoming connections, click Allow. That’s your iPhone connecting.</li>
+        <li>On your iPhone, open Side A Remote, tap Pair with Your Mac and scan the code. Scanning it with the Camera works too.</li>
+        <li>Check that both devices show the same 6-digit code, then click Pair on your Mac.</li>
+        <li>Optional: run /hooks once in Codex, and keep your Mac awake while agents work. Both are in Settings › Remote.</li>
+      </ol>
+
+      <h2>Where it connects</h2>
+      <p>Choose in Settings › Remote › Connection on your Mac:</p>
+      <ul>
+        <li><b>Tailscale.</b> Install Tailscale on your Mac and your iPhone and sign in to the same account on both. Works wherever both are online.</li>
+        <li><b>Also on this Wi-Fi.</b> Connects directly when your iPhone is on the same Wi-Fi as your Mac.</li>
+        <li><b>Reach this Mac from anywhere.</b> Connects through our relay, end to end encrypted, when your iPhone can’t reach your Mac directly.</li>
+      </ul>
+
+      <h2>If it doesn’t connect</h2>
+      <p>The app says what’s wrong in one line. Here’s what each one means.</p>
+      <dl>
+        <dt>Can’t reach your Mac. It may be asleep or Side A is closed.</dt>
+        <dd>Wake the Mac and open Side A. Away from your Wi-Fi, check that both devices have Tailscale turned on, or turn on Reach this Mac from anywhere.</dd>
+        <dt>Tailscale is off on this iPhone</dt>
+        <dd>Open Tailscale on your iPhone and turn it on.</dd>
+        <dt>This iPhone was removed from your Mac</dt>
+        <dd>Click Pair iPhone… in Settings › Remote on your Mac and scan the new code.</dd>
+        <dt>Your Mac has a new security key, so this iPhone has to pair again.</dt>
+        <dd>Tap Pair Again and scan the new code on your Mac.</dd>
+        <dt>Update Side A on your Mac</dt>
+        <dd>Choose Check for Updates… in Side A’s menu.</dd>
+        <dt>Update Side A Remote to use it with your Mac</dt>
+        <dd>Update the app from TestFlight or the App Store.</dd>
+      </dl>
+      <p>Still stuck? In the app, Settings › Test Connection stops at the first step that fails and says what to fix.</p>
+
+      <h2>Privacy</h2>
+      <p>Your sessions go between your iPhone and your Mac, encrypted with a key from pairing. Notifications are encrypted on your Mac and pass through our relay unreadable. No account, no analytics. <a href="../privacy/">Privacy policy</a></p>
+
+      <h2>Help</h2>
+      <p>Write to <a href="mailto:support@getsidea.com">support@getsidea.com</a> or <a href="https://github.com/arnenoori/side-a-source/issues">open an issue on GitHub</a>.</p>
+    </main>
+    <footer><a href="https://arne.ai">Made with love by Arne Noori</a><p class="fine"><a href="https://github.com/arnenoori/side-a-source/blob/main/SECURITY.md">Security details</a> · <a href="../privacy/">Privacy</a></p></footer>
+  </div>
+</body>
+</html>
