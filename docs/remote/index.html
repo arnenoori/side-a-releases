@@ -20,47 +20,49 @@
     </header>
     <main class="doc">
       <h1>Set up Side A Remote</h1>
-      <p class="lead">See and answer your Mac’s Claude Code and Codex sessions from your iPhone.</p>
+      <p class="lead">Answer your Mac’s Claude Code and Codex sessions from your iPhone.</p>
       <p class="requirements">Side A on macOS 14 or later. Side A Remote on iOS 26 or later.</p>
       <div class="actions"><a class="remote-beta" href="https://testflight.apple.com/join/FJEsBYZg" data-remote-beta><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" /><path d="M10.5 5.2h3" /></svg>Join the beta on TestFlight</a><a class="download" href="../">Get Side A for Mac</a></div>
 
       <h2>Pair your iPhone</h2>
       <ol class="steps">
-        <li>In Side A on your Mac, open Settings › Remote. It checks your Mac and shows what’s left.</li>
-        <li>Turn on Side A Remote, then click Pair iPhone… to show a pairing code. If macOS asks whether Side A may accept incoming connections, click Allow. That’s your iPhone connecting.</li>
-        <li>On your iPhone, open Side A Remote, tap Pair with Your Mac and scan the code. Scanning it with the Camera works too.</li>
-        <li>Check that both devices show the same 6-digit code, then click Pair on your Mac.</li>
-        <li>Optional: run /hooks once in Codex, and keep your Mac awake while agents work. Both are in Settings › Remote.</li>
+        <li>In Side A on your Mac, open Settings › Remote.</li>
+        <li>Turn on Side A Remote and click Pair iPhone… If macOS asks about incoming connections, click Allow.</li>
+        <li>On your iPhone, open Side A Remote, tap Pair with Your Mac and scan the code.</li>
+        <li>Check both show the same 6-digit code, then click Pair on your Mac.</li>
+        <li>Optional: run /hooks once in Codex, and turn on Keep this Mac awake in Settings › Remote.</li>
       </ol>
 
       <h2>Where it connects</h2>
-      <p>Choose in Settings › Remote › Connection on your Mac:</p>
-      <ul>
-        <li><b>Tailscale.</b> Install Tailscale on your Mac and your iPhone and sign in to the same account on both. Works wherever both are online.</li>
-        <li><b>Also on this Wi-Fi.</b> Connects directly when your iPhone is on the same Wi-Fi as your Mac.</li>
-        <li><b>Reach this Mac from anywhere.</b> Connects through our relay, end to end encrypted, when your iPhone can’t reach your Mac directly.</li>
-      </ul>
+      <p>Choose in Settings › Remote › Connection on your Mac.</p>
+      <dl>
+        <dt>Tailscale</dt>
+        <dd>Sign in to the same Tailscale account on both.</dd>
+        <dt>Also on this Wi-Fi</dt>
+        <dd>When both are on the same Wi-Fi.</dd>
+        <dt>Reach this Mac from anywhere</dt>
+        <dd>Through our relay, encrypted end to end.</dd>
+      </dl>
 
       <h2>If it doesn’t connect</h2>
-      <p>The app says what’s wrong in one line. Here’s what each one means.</p>
       <dl>
-        <dt>Can’t reach your Mac. It may be asleep or Side A is closed.</dt>
-        <dd>Wake the Mac and open Side A. Away from your Wi-Fi, check that both devices have Tailscale turned on, or turn on Reach this Mac from anywhere.</dd>
+        <dt>Can’t reach your Mac. It may be asleep or Side A is closed</dt>
+        <dd>Wake the Mac and open Side A. Away from your Wi-Fi, turn on Tailscale on both, or Reach this Mac from anywhere.</dd>
         <dt>Tailscale is off on this iPhone</dt>
         <dd>Open Tailscale on your iPhone and turn it on.</dd>
         <dt>This iPhone was removed from your Mac</dt>
-        <dd>Click Pair iPhone… in Settings › Remote on your Mac and scan the new code.</dd>
-        <dt>Your Mac has a new security key, so this iPhone has to pair again.</dt>
+        <dd>Pair again from Settings › Remote on your Mac.</dd>
+        <dt>Your Mac has a new security key, so this iPhone has to pair again</dt>
         <dd>Tap Pair Again and scan the new code on your Mac.</dd>
         <dt>Update Side A on your Mac</dt>
         <dd>Choose Check for Updates… in Side A’s menu.</dd>
         <dt>Update Side A Remote to use it with your Mac</dt>
         <dd>Update the app from TestFlight or the App Store.</dd>
       </dl>
-      <p>Still stuck? In the app, Settings › Test Connection stops at the first step that fails and says what to fix.</p>
+      <p>Still stuck? Run Settings › Test Connection in the app.</p>
 
       <h2>Privacy</h2>
-      <p>Your sessions go between your iPhone and your Mac, encrypted with a key from pairing. Notifications are encrypted on your Mac and pass through our relay unreadable. No account, no analytics. <a href="../privacy/">Privacy policy</a></p>
+      <p>Encrypted end to end. No account, no analytics. <a href="../privacy/">Privacy policy</a></p>
 
       <h2>Help</h2>
       <p>Write to <a href="mailto:support@getsidea.com">support@getsidea.com</a> or <a href="https://github.com/arnenoori/side-a-source/issues">open an issue on GitHub</a>.</p>

@@ -35,8 +35,7 @@
     <main>
       <div class="intro">
       <div class="title">
-        <h1>All your Claude Code and Codex limits, in the menu bar.</h1>
-        <p>Side A uses the quota that expires first, so none goes to waste.</p>
+        <h1>All your Claude Code and Codex limits, in the menu bar</h1>
       </div>
       <div class="stage" id="stage" role="group" aria-label="Interactive Side A player preview">
         <picture>
@@ -59,8 +58,7 @@
       </div>
       <div class="how" id="how">
         <section class="hero">
-          <h2 class="lead">Never waste a limit you paid for.</h2>
-          <p class="subline">Your Claude Code and Codex sessions run on whichever account&rsquo;s quota expires first, so none of it goes unused.</p>
+          <h2 class="lead">Never waste a limit you paid for</h2>
           <!-- The app, rebuilt in HTML and CSS from the SwiftUI views (MenuPlayer, SettingsView, SessionsView). Every control works; the data is a demo. -->
           <svg class="sprite" aria-hidden="true" focusable="false">
             <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" /><path d="M19.5 4.5v4.6h-4.6" /></symbol>
@@ -339,7 +337,6 @@
         <section class="pillar" id="switch" data-demo>
           <div class="pillar-text">
             <h2>Spend the quota that expires first</h2>
-            <p>Sessions switch accounts between steps. Nothing restarts.</p>
             <div class="paper aside" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
               <div class="hand formula" aria-hidden="true">
                 <span>priority</span><span>=</span>
@@ -373,7 +370,6 @@
         <section class="pillar" id="island" data-demo>
           <div class="pillar-text">
             <h2>Answer from anywhere</h2>
-            <p>Approve a command or give a finished agent its next task from the notch. No hunting for the terminal.</p>
           </div>
           <div class="pillar-demo">
             <!-- The Dynamic Island, rebuilt from IslandView.swift: the notch grows into the card; the buttons and the ⌃⌥ shortcuts work. -->
@@ -435,7 +431,6 @@
         <section class="pillar" id="background" data-demo>
           <div class="pillar-text">
             <h2>Keep your Mac fast</h2>
-            <p>See the memory and ports each session holds, and quit the idle ones before your Mac starts to swap.</p>
           </div>
           <div class="pillar-demo">
             <!-- Sessions (LiveSummary, RunningRow), CleanupView and SetupView, with their demo data. -->
@@ -538,7 +533,6 @@
         <section class="pillar" id="overnight" data-demo>
           <div class="pillar-text">
             <h2>Run agents overnight</h2>
-            <p>Close the lid and go to bed. Your agents keep working, and your Mac sleeps when they&rsquo;re done.</p>
           </div>
           <div class="pillar-demo">
             <!-- Keep awake (General settings), rebuilt: close the lid and the agents keep going; the Mac sleeps after the last one. Time runs fast; the data is a demo. -->
@@ -584,7 +578,6 @@
             <picture><source type="image/avif" srcset="./remote/icon.avif" /><img class="remote-icon" src="./remote/icon.webp" width="64" height="64" alt="" /></picture>
             <p class="eyebrow">Side A Remote</p>
             <h2 id="remote-title">Every session, on your iPhone</h2>
-            <p class="subline">See and answer every Claude Code and Codex session from your phone, whichever account it&rsquo;s on.</p>
             <a class="remote-beta" href="https://testflight.apple.com/join/FJEsBYZg" data-remote-beta><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" /><path d="M10.5 5.2h3" /></svg>Join the beta on TestFlight</a>
           </div>
           <!-- The Mac runs the session in tmux; the phone shows real Side A Remote screens from the simulator. -->
@@ -619,19 +612,19 @@
             <button type="button" role="tab" id="rt-answer" aria-controls="remote-screen" aria-selected="false" tabindex="-1" data-screen="answer">Answer</button>
           </div>
           <ul class="remote-points">
-            <li><b>Every account</b>Sessions stay on your phone when Autopilot moves them. Other remotes see one account.</li>
-            <li><b>From the Lock Screen</b>Allow, deny, answer a question or approve a plan. Anything risky asks for Face ID.</li>
-            <li><b>What the agent sees</b>The screenshots and images it looked at, right in the transcript.</li>
-            <li><b>Start from your phone</b>New sessions run in tmux, so you can pick them up on the Mac.</li>
-            <li><b>Side A&rsquo;s tools</b>History, Restart Fresh, health, ports and previews, Autopilot.</li>
-            <li><b>Private</b>Straight to your Mac over Wi-Fi or Tailscale. No account. What passes through our relay is encrypted end to end.</li>
+            <li><b>Every account</b>Whichever account it’s on</li>
+            <li><b>From the Lock Screen</b>Allow, deny, answer</li>
+            <li><b>What the agent sees</b>Images in the transcript</li>
+            <li><b>Start from your phone</b>Pick up in tmux on the Mac</li>
+            <li><b>Side A&rsquo;s tools</b>History, ports, Autopilot</li>
+            <li><b>Private</b>No account, encrypted end to end</li>
           </ul>
         </section>
 
         <section class="trust-strip" aria-labelledby="trust-title">
           <h2 id="trust-title" class="eyebrow">Safe on your Mac</h2>
           <ul class="trust">
-            <li>Logins stay in your Keychain. Never copied or uploaded.</li>
+            <li>Logins stay in your Keychain, never uploaded.</li>
             <li>Changes to your files are marked and removable in Settings.</li>
             <li><span><a href="https://github.com/arnenoori/side-a-source">Open source</a>. Not affiliated with Anthropic or OpenAI.</span></li>
           </ul>
