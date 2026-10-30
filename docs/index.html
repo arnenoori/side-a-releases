@@ -22,7 +22,7 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>Side A: usage limits and account autopilot for Claude Code and Codex</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","@id":"https://getsidea.com/#app","name":"Side A","url":"https://getsidea.com/","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 14 or later","description":"A Mac menu bar app that shows the 5-hour and weekly usage limits of all your Claude Code and Codex accounts and switches the Mac-wide login to the account whose quota is most at risk of going unused. Signed and Apple-notarized public preview.","image":"https://getsidea.com/social.jpg","softwareRequirements":"Python 3.9 or later; Claude Code or Codex CLI.","author":{"@type":"Person","name":"Arne Noori","url":"https://arne.ai"},"featureList":["5-hour and weekly limits for every account","Mac-wide account switching","Autopilot based on expiring quota that moves running sessions, timed to keep the prompt cache","Dynamic Island for Claude Code and Codex permission requests, questions, plans and finished sessions","Running sessions with step, flags, notes and stop","Search across every Claude Code and Codex conversation","Token usage by project, day and model, with worth at API prices","5-hour window priming","Keeps the Mac awake while agents work, optionally with the lid closed, and lets it sleep when they finish"]},{"@type":"WebSite","@id":"https://getsidea.com/#website","name":"Side A","url":"https://getsidea.com/","inLanguage":"en"}]}</script>
-  <script type="module" crossorigin src="./assets/main-BTIOEBTP.js"></script>
+  <script type="module" crossorigin src="./assets/main-D3HHyyKG.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-foANFZsY.css">
   <link rel="stylesheet" crossorigin href="./assets/style-CK1wNR4b.css">
 </head>
@@ -92,15 +92,14 @@
             <div class="desk-bar"><span class="desk-apple" aria-hidden="true"></span><span class="desk-menus" aria-hidden="true"><b>Terminal</b><span>Shell</span><span>Edit</span><span>View</span></span><span class="desk-right"><button type="button" class="desk-status" aria-label="Side A" aria-expanded="true" aria-controls="mm"><span class="mini-disc"></span></button><span aria-hidden="true">Mon 3:41 PM</span></span></div>
 
             <!-- Settings window -->
-            <div class="mw glass" data-mock="settings" role="region" aria-label="Side A Settings">
+            <div class="mw glass" data-mock="settings" data-mode="sessions" role="region" aria-label="Side A Sessions and Settings">
               <div class="mw-toolbar">
                 <span class="lights"><button type="button" data-light="close" aria-label="Close Settings"></button><button type="button" data-light="minimize" aria-label="Minimize Settings"></button><i aria-hidden="true"></i></span>
                 <p class="mw-title" aria-hidden="true">Sessions</p>
                 <div class="mw-tabs" role="tablist" aria-label="Settings">
                   <button type="button" role="tab" id="mt-accounts" aria-controls="mp-accounts" aria-selected="false" tabindex="-1" data-tab="accounts"><svg aria-hidden="true"><use href="#i-people" /></svg>Accounts</button>
-                  <button type="button" role="tab" id="mt-usage" aria-controls="mp-usage" aria-selected="false" tabindex="-1" data-tab="usage"><svg aria-hidden="true"><use href="#i-chart" /></svg>Usage</button>
-                  <button type="button" role="tab" id="mt-sessions" aria-controls="mp-sessions" aria-selected="true" data-tab="sessions"><svg aria-hidden="true"><use href="#i-bubble" /></svg>Sessions</button>
                   <button type="button" role="tab" id="mt-autopilot" aria-controls="mp-autopilot" aria-selected="false" tabindex="-1" data-tab="autopilot"><svg aria-hidden="true"><use href="#i-cycle" /></svg>Autopilot</button>
+                  <button type="button" role="tab" id="mt-usage" aria-controls="mp-usage" aria-selected="false" tabindex="-1" data-tab="usage"><svg aria-hidden="true"><use href="#i-chart" /></svg>Usage</button>
                   <button type="button" role="tab" id="mt-general" aria-controls="mp-general" aria-selected="false" tabindex="-1" data-tab="general"><svg aria-hidden="true"><use href="#i-gear" /></svg>General</button>
                 </div>
               </div>
@@ -184,7 +183,7 @@
               </div>
 
               <!-- Sessions -->
-              <div class="mw-pane s-pane" role="tabpanel" id="mp-sessions" aria-labelledby="mt-sessions">
+              <div class="mw-pane s-pane" role="region" id="mp-sessions" aria-label="Sessions">
                 <div class="s-side">
                   <label class="s-search"><svg aria-hidden="true"><use href="#i-search" /></svg><input type="search" placeholder="Search 1,284 conversations" aria-label="Search conversations" autocomplete="off" /><svg aria-hidden="true" class="s-filter"><use href="#i-filter" /></svg></label>
                   <div class="s-list">
@@ -327,6 +326,7 @@
                 <span id="mm-auto-label">Autopilot</span><button type="button" class="switch" role="switch" aria-checked="true" aria-labelledby="mm-auto-label" data-autopilot><span></span></button>
                 <span class="spacer"></span>
                 <button type="button" class="mm-icon" data-spin aria-label="Spin the disc"><svg aria-hidden="true"><use href="#i-disc" /></svg></button>
+                <button type="button" class="mm-icon" data-open="sessions" aria-label="Sessions"><svg aria-hidden="true"><use href="#i-bubble" /></svg></button>
                 <button type="button" class="mm-icon" data-open="general" aria-label="Settings"><svg aria-hidden="true"><use href="#i-gear" /></svg></button>
                 <button type="button" class="mm-icon" data-quit-app aria-label="Quit Side A"><svg aria-hidden="true"><use href="#i-power" /></svg></button>
               </div>
