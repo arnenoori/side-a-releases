@@ -4,23 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.40</title>
-            <pubDate>Fri, 30 Oct 2026 09:43:00 -0700</pubDate>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>0.5.40</sparkle:shortVersionString>
+            <title>0.5.41</title>
+            <pubDate>Fri, 30 Oct 2026 12:53:46 -0700</pubDate>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>0.5.41</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.40
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.41
 
-- Accounts no longer get stuck after a `/login` in a session: Side A points each account at the login it really holds, lets every account sign in again, and puts back a login that was written over.
-- Pool mode (Autopilot, off by default): Claude Code in Terminal goes through Side A, which keeps each conversation on one account and moves it the moment that account is full, with no wait for sessions to pause.
-- Search in Settings: press ⌘F and type to find any setting.
+- Pool mode keeps prompt caches for an hour, as Claude Code does with your own login, so pauses no longer cost you limits.
+- Pool mode is safer: only `claude` gets its key, your own API settings are left alone, and it only ever talks to Anthropic's API.
+- Signing out of an account keeps it signed out.
+- Automated runs (`claude -p`, scripts) finish quietly in the Done list instead of popping up in the notch.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.40/SideA-0.5.40-macOS-universal.dmg" length="19007855" type="application/octet-stream" sparkle:edSignature="I6GHVZHZcwvok53W3jYwIQsSFCHm5PH7LkOqV4Nzqu/xgw2CxQP0Hl0I1P8VaO5llJ8VKCZ0aqahxEuEPaT/Bg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.41/SideA-0.5.41-macOS-universal.dmg" length="19038144" type="application/octet-stream" sparkle:edSignature="TQ4CsASEbVq7xZhjUwY4Lp2zI1ZDhoqWNRp36/sNWB13B/GdKo8OoLNu1ve+ba+orYFzvpQJVeb0Ne2JFRI6Bg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: sEJV5OZZhglR618k1QWUkXNxyjH3HVa/0K4/6Rt2wJtrLK14oWcVMw83sdGa9TfIjIidcXhO5P42BVm0lorHDg==
-length: 1686
+edSignature: SUg1l47mxnQAE47OVkK1RPo7pehTT5b3wAWl5+/6mD2/RsNyyAlMb2os1JM/z0p5+MMuSUeHTSV34eeMNRY4Aw==
+length: 1623
 -->
