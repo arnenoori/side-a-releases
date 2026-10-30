@@ -251,6 +251,10 @@
                   <div class="f-row"><span class="f-label"><b class="big">Autopilot</b><small data-autopilot-status>On. Using Personal. Warms up idle windows from 8:30.</small></span><button type="button" class="switch" role="switch" aria-checked="true" aria-label="Autopilot" data-autopilot><span></span></button></div>
                   <div class="f-row"><span class="f-label">Move at<small>When an account reaches this much of its 5-hour or weekly limit, Autopilot moves your sessions to another.</small></span><span class="popup">95%</span></div>
                 </div>
+                <p class="f-head">Left across your accounts</p>
+                <div class="f-section">
+                  <div class="f-row"><span class="f-label">All accounts<small>Weekend is back Wed 5 PM</small></span><span>5-hour 75% left · week 47% left</span></div>
+                </div>
                 <p class="f-head">Up next</p>
                 <div class="f-section">
                   <div class="f-row rank" data-rank="personal" data-pct="100"><b>Personal</b><span class="mini-bar wide"><i></i></span><span class="hand">1.4/h</span><span class="rank-tag"></span></div>
@@ -337,17 +341,18 @@
         <section class="pillar" id="switch" data-demo>
           <div class="pillar-text">
             <h2>Spend the quota that expires first</h2>
-            <div class="paper aside" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first.">
+            <div class="paper aside" role="img" aria-label="Priority equals weekly percent left divided by hours until it resets, times plan size. Whatever expires first goes first, or choose which account goes first and which goes last.">
               <div class="hand formula" aria-hidden="true">
                 <span>priority</span><span>=</span>
                 <span class="frac"><span>weekly % left</span><span>hours until it resets</span></span>
                 <span>&times; plan size</span>
               </div>
               <p class="hand note" aria-hidden="true"><span class="note-mark">Whatever expires first, goes first.<svg viewBox="0 0 300 10" preserveAspectRatio="none"><path d="M2 6 C 60 2, 120 9, 180 5 S 270 3, 298 6" /></svg></span></p>
+              <p class="hand note" aria-hidden="true">Or pick who goes first, and who goes last.</p>
             </div>
           </div>
           <div class="pillar-demo">
-            <div class="timeline" role="img" aria-label="Animation: Work's switch can wait, so it happens after its session pauses. Personal is out of room, so it switches at once.">
+            <div class="timeline" role="img" aria-label="Animation: Work's switch can wait, so it happens after its session pauses. Personal is out of room, so it switches at once. Studio is full with no account free, so Side A says when it's back and what would free it.">
               <div class="lane" aria-hidden="true">
                 <p class="lane-label"><b>Work</b> can wait</p>
                 <div class="track">
@@ -361,6 +366,13 @@
                 <div class="track">
                   <i class="act b1"></i>
                   <span class="trade t-now">Switch now</span>
+                </div>
+              </div>
+              <div class="lane" aria-hidden="true">
+                <p class="lane-label"><b>Studio</b> no account free</p>
+                <div class="track">
+                  <i class="act b1"></i>
+                  <span class="trade t-now">Back 4:10 · or sign in to Home</span>
                 </div>
               </div>
             </div>
