@@ -4,22 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.42</title>
-            <pubDate>Fri, 30 Oct 2026 13:11:32 -0700</pubDate>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.5.42</sparkle:shortVersionString>
+            <title>0.5.43</title>
+            <pubDate>Fri, 30 Oct 2026 15:03:18 -0700</pubDate>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>0.5.43</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.42
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.43
 
-- Share pool mode with your other Macs over Tailscale: sign in to your accounts on one Mac, and run one command on the others.
-- Only devices signed in to Tailscale as you can use it, behind a key you can replace.
+- Pool mode carries Codex accounts too.
+- See what is left across your accounts, and test every login without spending quota.
+- Set an account to be used first or last.
+- A notification when sessions are full with no account free, saying what would free them.
+- Ready for the Ultra plan, including no 5-hour limit.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.42/SideA-0.5.42-macOS-universal.dmg" length="19092445" type="application/octet-stream" sparkle:edSignature="QQEQbEKX05jJu9+TmdGdSLZag+wPSiRsAA8A34hv++8fJdJ1QBsWcs0XITUqkua/NOlEGuzhS1/FuhEZa4kHCQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.43/SideA-0.5.43-macOS-universal.dmg" length="19245380" type="application/octet-stream" sparkle:edSignature="Jxs132J/M+VuHkqMGL0nmC88gvmdGcWse2JqjJF6kCT+68ktIWEPccPKLuLQ57DJuRYsEpx9y17PCjghxpUxAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: bbBx/WfbqnIm1xvgr2gLweoFTtIqAzcCoRzNriSAWITYzAgVl2LQ4g/AjgvKLg8D1rcDyJ2gWJ9ApfqBk2dhBw==
-length: 1426
+edSignature: eOPZsuAEUq45Tihnm/iC2DVRK9Bot/pd+eGVDcehBK2uxuOmPPFFUXeQG1bBe+2EOolaAOl6V3uJiibNANglBg==
+length: 1527
 -->
