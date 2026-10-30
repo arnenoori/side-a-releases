@@ -4,24 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.41</title>
-            <pubDate>Fri, 30 Oct 2026 12:53:46 -0700</pubDate>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.5.41</sparkle:shortVersionString>
+            <title>0.5.42</title>
+            <pubDate>Fri, 30 Oct 2026 13:11:32 -0700</pubDate>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>0.5.42</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.41
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.42
 
-- Pool mode keeps prompt caches for an hour, as Claude Code does with your own login, so pauses no longer cost you limits.
-- Pool mode is safer: only `claude` gets its key, your own API settings are left alone, and it only ever talks to Anthropic's API.
-- Signing out of an account keeps it signed out.
-- Automated runs (`claude -p`, scripts) finish quietly in the Done list instead of popping up in the notch.
+- Share pool mode with your other Macs over Tailscale: sign in to your accounts on one Mac, and run one command on the others.
+- Only devices signed in to Tailscale as you can use it, behind a key you can replace.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.41/SideA-0.5.41-macOS-universal.dmg" length="19038144" type="application/octet-stream" sparkle:edSignature="TQ4CsASEbVq7xZhjUwY4Lp2zI1ZDhoqWNRp36/sNWB13B/GdKo8OoLNu1ve+ba+orYFzvpQJVeb0Ne2JFRI6Bg=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.42/SideA-0.5.42-macOS-universal.dmg" length="19092445" type="application/octet-stream" sparkle:edSignature="QQEQbEKX05jJu9+TmdGdSLZag+wPSiRsAA8A34hv++8fJdJ1QBsWcs0XITUqkua/NOlEGuzhS1/FuhEZa4kHCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: SUg1l47mxnQAE47OVkK1RPo7pehTT5b3wAWl5+/6mD2/RsNyyAlMb2os1JM/z0p5+MMuSUeHTSV34eeMNRY4Aw==
-length: 1623
+edSignature: bbBx/WfbqnIm1xvgr2gLweoFTtIqAzcCoRzNriSAWITYzAgVl2LQ4g/AjgvKLg8D1rcDyJ2gWJ9ApfqBk2dhBw==
+length: 1426
 -->
