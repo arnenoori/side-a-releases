@@ -4,25 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.43</title>
-            <pubDate>Fri, 30 Oct 2026 15:03:18 -0700</pubDate>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>0.5.43</sparkle:shortVersionString>
+            <title>0.5.44</title>
+            <pubDate>Sun, 01 Nov 2026 17:55:43 -0800</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.5.44</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.43
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.44
 
-- Pool mode carries Codex accounts too.
-- See what is left across your accounts, and test every login without spending quota.
-- Set an account to be used first or last.
-- A notification when sessions are full with no account free, saying what would free them.
-- Ready for the Ultra plan, including no 5-hour limit.
+- A stolen phone token can no longer run anything or get past Face ID.
+- Your phone explains and steers rotation: who's next, why a session moved, what's left.
+- Remote recovers by itself from dropped connections and sleep, and offers Pair Again when it can't.
+- Settings follow you across copies of Side A and your other Macs.
+- Update Side A Remote to build 12 to use it with this version.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.43/SideA-0.5.43-macOS-universal.dmg" length="19245380" type="application/octet-stream" sparkle:edSignature="Jxs132J/M+VuHkqMGL0nmC88gvmdGcWse2JqjJF6kCT+68ktIWEPccPKLuLQ57DJuRYsEpx9y17PCjghxpUxAQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.44/SideA-0.5.44-macOS-universal.dmg" length="19864241" type="application/octet-stream" sparkle:edSignature="1ep6blC9VA9jBsVydQgULJ2BS1DCokwovD1YlT9hZpUTELfMAA1n1iKm4FKRDuOYezSKf/vhWgxiiahmWcX5CQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: eOPZsuAEUq45Tihnm/iC2DVRK9Bot/pd+eGVDcehBK2uxuOmPPFFUXeQG1bBe+2EOolaAOl6V3uJiibNANglBg==
-length: 1527
+edSignature: AhfcdD+dJPYZ7BBund+2UTrGYIQrulGezNytddldwqnhsb0cZjevZUo+DPed3loeoxh2WThfKmpa35BAfPFmBw==
+length: 1604
 -->
