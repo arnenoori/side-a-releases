@@ -4,25 +4,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.47</title>
-            <pubDate>Mon, 02 Nov 2026 21:13:59 -0800</pubDate>
-            <sparkle:version>55</sparkle:version>
-            <sparkle:shortVersionString>0.5.47</sparkle:shortVersionString>
+            <title>0.5.48</title>
+            <pubDate>Sun, 08 Nov 2026 15:15:36 -0800</pubDate>
+            <sparkle:version>56</sparkle:version>
+            <sparkle:shortVersionString>0.5.48</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.47
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.48
 
-- Update to always installs the newest Side A, not an older download.
-- Pairing an iPhone is calmer, and Pair iPhone always says what it's waiting for.
-- Scan the pairing code with the iPhone Camera, not only inside Side A Remote.
-- Hosted sessions keep updating after a helper hiccup.
-- Open Terminal keeps its account for names with letters like ß.
+- Updates install by themselves while you're away from the Mac. Settings has one switch for it.
+- Your iPhone buzzes less: nothing while you're at the Mac, a short wait before requests, and one grouped Ready notification.
+- Pool mode keeps working when Side A is closed.
+- A calmer Mac app: less text, the same names as on iPhone, an island that opens only when you mean it.
+- Side A Remote: no banners while the app is open, and replies you already dealt with stay dealt with.
+- Fixes for accounts whose names contain words like "idle" or "429".
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.47/SideA-0.5.47-macOS-universal.dmg" length="20026080" type="application/octet-stream" sparkle:edSignature="5ICSQg8xGl3wpWsEO+nu4lEKjnKDseCxSyzhrPlD9sVsKsxJuMp8+C6hpg0ht8TmrvRB0M0Bn5IT6JcyoPeVAQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.48/SideA-0.5.48-macOS-universal.dmg" length="23740468" type="application/octet-stream" sparkle:edSignature="nS+pOQzNLklaLi/DuAzHrz60N76uXXXPmgrAuVHyzyNBmbn3vLjWCFwmhFJGodL2+Kvi2INgJLtnqG7lFwAnCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8gpru5+A9gQ+0aQE3Ic09rHaCu/8UgZ07aFBUseqJANCuNlWYNTnd81aCbjAWbbewyrXelZKWH7CUn3x/biBAg==
-length: 1564
+edSignature: QcwvIgF9IqlBRnrzfrPIG+6JimQtLrhPDwUrQ6NFsKFNFXURfmtGSwKMiKxTDiM1e8j510tbJut5zgJygOchBw==
+length: 1759
 -->
