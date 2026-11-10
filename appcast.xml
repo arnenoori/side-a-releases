@@ -4,24 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.49</title>
-            <pubDate>Mon, 09 Nov 2026 21:17:38 -0800</pubDate>
-            <sparkle:version>57</sparkle:version>
-            <sparkle:shortVersionString>0.5.49</sparkle:shortVersionString>
+            <title>0.5.50</title>
+            <pubDate>Tue, 10 Nov 2026 09:54:33 -0800</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>0.5.50</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.49
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.50
 
-- Much less CPU when many sessions run at once.
-- New lines in your conversations show up sooner in the Sessions window and on your iPhone.
-- Codex conversations that viewed a since-deleted image open on your iPhone again.
-- Fixes for requests whose Face ID requirement changes, account trades, and the session reader.
+- Less work while sessions are streaming, and much faster checks with Codex sessions open.
+- Quit and Quit Idle no longer end a session that just got work from your iPhone.
+- Large photos from your iPhone over a slow connection are no longer cut off.
+- The Sessions window and the island answer questions the same way; ⌃⌥N on a plan opens "What should change?".
+- Fixes for Codex usage under added accounts, Claude settings with non-English text, and indexing.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.49/SideA-0.5.49-macOS-universal.dmg" length="23734797" type="application/octet-stream" sparkle:edSignature="4TTiwj8WfiV/Nu1WRWjTZLdGYGH3VL4pz5HifH0eND13NovIuQoG3bjDHrL3yLQb9dE3Ii1h5AJj2OEaJsN1CA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.50/SideA-0.5.50-macOS-universal.dmg" length="23773877" type="application/octet-stream" sparkle:edSignature="yBs6rN2jctwrzV3Am+/ih7N00lnbGfZZJOKzmpTAt7gmHd7ANJCC96dMAeYqQMNoYl0TqJ7vKR7eau3NM3bqBw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: o5UMRDzdo1pKlIbdEr2RpBkMMyBR+N89xa0x9zo18PJX6iLipcsdQrU1N/ngQ3Z++azpcUcqFz2n7AtC7hKQCw==
-length: 1531
+edSignature: FY6CfSnSMU9tnku63GhqzyLzQekXwxslqobH4/MaD79Y98J6kPSw5ZOtcTMSENiYrkyGglhn9x9dvjsAZ+9nDw==
+length: 1677
 -->
