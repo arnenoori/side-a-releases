@@ -4,23 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.51</title>
-            <pubDate>Tue, 10 Nov 2026 17:49:21 -0800</pubDate>
-            <sparkle:version>59</sparkle:version>
-            <sparkle:shortVersionString>0.5.51</sparkle:shortVersionString>
+            <title>0.5.52</title>
+            <pubDate>Tue, 10 Nov 2026 19:30:24 -0800</pubDate>
+            <sparkle:version>60</sparkle:version>
+            <sparkle:shortVersionString>0.5.52</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.51
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.52
 
-- Messages from your iPhone reach a Claude session that is waiting on background agents within about a second.
-- A subagent no longer takes a message meant for the main session.
-- Side A Remote keeps listening on Tailscale when Tailscale wasn't up yet at launch.
+- Message a Codex session in a Side A terminal while it works: ↩ steers the turn, ⌥↩ sends after it.
+- From your iPhone, Send steers the turn, and a long press on Send offers to send after the turn or interrupt first.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.51/SideA-0.5.51-macOS-universal.dmg" length="23781269" type="application/octet-stream" sparkle:edSignature="c7yVnbvDgTPqkhUuV5U7UkOLp34vNFfz6sUUcm7eUbkrlnef8YH22QqtLz2PLZxd3nxmoKNzF5/iHk+C05arAQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.52/SideA-0.5.52-macOS-universal.dmg" length="23782390" type="application/octet-stream" sparkle:edSignature="CJ2WpZU4PnX4bvkrV3ek2fexI2Pb1yeroWakoNAR1oFmqiJl0R3qzN2rCYoz7Hizkm6SLqSGNcr8Sc+Qr0FsCw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: lh6/Nmrcp61XB4+dWSGTPupJGUGEMotcvW8WotHJv+PVD8W/AbYUKgUYrnV3WQmtYh9DDf2zaAhExTmi8ZrHCQ==
-length: 1475
+edSignature: 29+ePSvbSiC2y2vgkAvJpzUm1pqE9rEU1VEkO07CckFYWzRNr8QJUwRmdceLF0kEF8rzNHMuhf66xArPPIPTCA==
+length: 1436
 -->
