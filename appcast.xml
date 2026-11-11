@@ -4,25 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.50</title>
-            <pubDate>Tue, 10 Nov 2026 09:54:33 -0800</pubDate>
-            <sparkle:version>58</sparkle:version>
-            <sparkle:shortVersionString>0.5.50</sparkle:shortVersionString>
+            <title>0.5.51</title>
+            <pubDate>Tue, 10 Nov 2026 17:49:21 -0800</pubDate>
+            <sparkle:version>59</sparkle:version>
+            <sparkle:shortVersionString>0.5.51</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.50
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.51
 
-- Less work while sessions are streaming, and much faster checks with Codex sessions open.
-- Quit and Quit Idle no longer end a session that just got work from your iPhone.
-- Large photos from your iPhone over a slow connection are no longer cut off.
-- The Sessions window and the island answer questions the same way; ⌃⌥N on a plan opens "What should change?".
-- Fixes for Codex usage under added accounts, Claude settings with non-English text, and indexing.
+- Messages from your iPhone reach a Claude session that is waiting on background agents within about a second.
+- A subagent no longer takes a message meant for the main session.
+- Side A Remote keeps listening on Tailscale when Tailscale wasn't up yet at launch.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.50/SideA-0.5.50-macOS-universal.dmg" length="23773877" type="application/octet-stream" sparkle:edSignature="yBs6rN2jctwrzV3Am+/ih7N00lnbGfZZJOKzmpTAt7gmHd7ANJCC96dMAeYqQMNoYl0TqJ7vKR7eau3NM3bqBw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.51/SideA-0.5.51-macOS-universal.dmg" length="23781269" type="application/octet-stream" sparkle:edSignature="c7yVnbvDgTPqkhUuV5U7UkOLp34vNFfz6sUUcm7eUbkrlnef8YH22QqtLz2PLZxd3nxmoKNzF5/iHk+C05arAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: FY6CfSnSMU9tnku63GhqzyLzQekXwxslqobH4/MaD79Y98J6kPSw5ZOtcTMSENiYrkyGglhn9x9dvjsAZ+9nDw==
-length: 1677
+edSignature: lh6/Nmrcp61XB4+dWSGTPupJGUGEMotcvW8WotHJv+PVD8W/AbYUKgUYrnV3WQmtYh9DDf2zaAhExTmi8ZrHCQ==
+length: 1475
 -->
