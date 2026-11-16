@@ -4,23 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.53</title>
-            <pubDate>Wed, 11 Nov 2026 13:06:36 -0800</pubDate>
-            <sparkle:version>61</sparkle:version>
-            <sparkle:shortVersionString>0.5.53</sparkle:shortVersionString>
+            <title>0.5.54</title>
+            <pubDate>Mon, 16 Nov 2026 08:50:57 -0800</pubDate>
+            <sparkle:version>62</sparkle:version>
+            <sparkle:shortVersionString>0.5.54</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.53
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.54
 
-- Side A looks for updates every hour and on wake, instead of once a day.
-- A background check that never finishes no longer leaves accounts, limits and usage stale.
-- Side A Remote reconnects to the relay on the first try after a dropped connection.
+- A session you start from your iPhone also opens a terminal tab on your Mac, and any session Side A runs has Show on Mac.
+- Replies from your iPhone reach idle and ended sessions: an idle one moves into Side A, an ended one resumes.
+- Subagents get their own cards in the iPhone transcript, and Side A Remote asks for Face ID once every five minutes.
+
+The iPhone changes need Side A Remote 1.0.3.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.53/SideA-0.5.53-macOS-universal.dmg" length="23796015" type="application/octet-stream" sparkle:edSignature="C2u+TRLK+impYzgTAJWk1JNxiFLv8NtS6RwdtR/jK2mwPP0uIVzatcQYtvHZ7g53Y+rwHMOQ5Qsg+sQGmEY2Dw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.54/SideA-0.5.54-macOS-universal.dmg" length="23821252" type="application/octet-stream" sparkle:edSignature="wX4OJZKt4t/L5UA0F5F7hLJRBvEqKWCLV3IbX9Mj8PuIEvkYppZSq89cBxuAvAaW4e/3LzC/dQGtExeia6D7AA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: JyHovpMrk4zF5RRqmgay3RUOt34vXBWqdiktmmZBAzG9fu6DLk96XCLdKKMegra5q8TmLL6p45WJqCE971R9Aw==
-length: 1463
+edSignature: 0XgmVP+uG+pWNLX1CcVitOBd0pB+64aZ1CFvxmpgExW+h5/7LIZyXiPTmWWrrroUjMUqSuR3xHTzZbGGp1peBA==
+length: 1610
 -->
