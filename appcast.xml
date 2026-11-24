@@ -4,32 +4,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.58</title>
-            <pubDate>Mon, 23 Nov 2026 22:50:11 -0800</pubDate>
-            <sparkle:version>66</sparkle:version>
-            <sparkle:shortVersionString>0.5.58</sparkle:shortVersionString>
+            <title>0.5.59</title>
+            <pubDate>Tue, 24 Nov 2026 15:03:30 -0800</pubDate>
+            <sparkle:version>67</sparkle:version>
+            <sparkle:shortVersionString>0.5.59</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.58
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.59
 
-- Side A no longer quits by itself about a day after launch on a Mac where Tailscale is installed but not running. If it ever ends without being quit, its helper reopens it within a second.
-- A pool session no longer stops with "API Error: 502" when the network drops for a moment. Side A waits up to 90 seconds for the network, and pool sessions cut off mid-response are asked to continue.
-- With "Keep awake while agents work" on, the Mac also stays awake while Side A Remote is connected and for 30 minutes after.
-- New: see and work your Mac's screen from Side A Remote. It is off until you turn it on in Settings › iPhone › Screen.
-- New: dictation in Side A Remote, transcribed by your Mac with an OpenAI key you enter in Settings › iPhone › Dictation. The key stays on the Mac.
-- New: hand a session from Claude to Codex, or back, from the phone.
-- New: pick the app's icon in Settings › General › App Icon: Midnight, Cobalt, Gold, Glass, Chrome or CRT Pixel. It changes the Dock icon while Side A runs.
-- A Claude Code session's todo list shows as a plan card in the Sessions window, whether it keeps it with TodoWrite or the newer task tools.
-- Your phone is told when your Mac goes quiet: one notification after ten minutes without a word from a Mac that didn't quit or sleep on purpose, and another when it is back.
-- Side A's log no longer reports hours-long stalls after the Mac wakes from sleep.
+- "Quiet while I'm watching" in Side A Remote now does what it says: a notification is held only while your phone is in front with that session open, and a request still waiting is sent once you look away.
+- A notification that fails to go is tried again, up to three times. Taking a notification away can no longer arrive before the notification itself.
+- A request nobody answered no longer turns into "Answered" on your phone. The notification says what happened, such as "Handed back to the terminal".
+- The limit notification says the percentage, such as "Work is at 92%".
+- A "Didn't send" notice is no longer silent.
+- Mac's Screen: a phone that is refused now gets the reason (Screen is off, or Screen Recording isn't allowed) where it used to retry forever.
+- `remote.log` says why a notification did or didn't go.
 
-With Side A Remote 1.2, every message says where it is (sent, held behind a step, read), Stop only stops, and queued messages can be changed or sent sooner. Messages typed while the Mac is out of reach go once it is back. The app opens the files a session writes, shows a session's pull request, and adds Snooze and Undo to the sessions list. A handoff carries the message's photos. Face ID is asked once per use, not per message.
+Side A Remote is redesigned in its next build: two tabs and a compose button, approvals on the row and above the message field, and one Face ID while you use it, not one per message.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.58/SideA-0.5.58-macOS-universal.dmg" length="28101096" type="application/octet-stream" sparkle:edSignature="L1hSh/WXM+wzIvlX5rarTk7kyxKZL5zP4LX313lNN/XcOVsLKSKa7EHHllaIg0BR7ZDCWTc5D+UcEaEHLVe/CQ=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.59/SideA-0.5.59-macOS-universal.dmg" length="28296429" type="application/octet-stream" sparkle:edSignature="c/aAr8dn93ZZcyJZj2DnEmiw9BQQ/vgMR8G7ckUz99SWl6yrjBlx2wDVHlxpuCKKxAKBVfuS9cq0zoVraCGlBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: iceuOrOGIsmT6UsSlD7JLchRxINJ/qUjG0fZ6aZOVbIVBnJI3UVYdV/PlWfjb7opFweSQ3s5dbrpyDiVYc85Dg==
-length: 3066
+edSignature: GZpi56Ubj96jLOFiVbhH0xTb7op1zgU7oVIcauLn+eSyCZgOS58LP2ZqrSAsotzA0/YIiLpf3Q1+r8kH1ya8Dw==
+length: 2220
 -->
