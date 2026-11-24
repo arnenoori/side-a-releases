@@ -4,24 +4,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.57</title>
-            <pubDate>Wed, 18 Nov 2026 21:10:18 -0800</pubDate>
-            <sparkle:version>65</sparkle:version>
-            <sparkle:shortVersionString>0.5.57</sparkle:shortVersionString>
+            <title>0.5.58</title>
+            <pubDate>Mon, 23 Nov 2026 22:50:11 -0800</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>0.5.58</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.57
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.58
 
-- Side A now sends "Please continue" to a session that stopped on something it can get past, once it can: after Autopilot moves its login, after its limit resets, after the pool had every account out and one has room again, and a minute after a response was cut off by sleep or a dropped connection. Only idle sessions are asked, at most three times, and each ask is written to autopilot.log. "Continue sessions once a limit lifts" in Autopilot's settings turns it off.
-- New and experimental: Side A can type into a session's own terminal tab when there is no other way to reach it, in Ghostty 1.4 or later and in panes of your own tmux. Continuing a stopped session uses it, and so do replies from the Sessions window. What is typed arrives as your own message. macOS asks once whether Side A may control Ghostty. In Ghostty a draft already in the message field can't be seen, so it would be sent along. Terminal, iTerm, Warp, kitty and WezTerm tabs are not typed into.
-- Tokens per day in Usage fits any number of models: it draws the five most used and folds the rest into Other, each with its own color, and the legend wraps instead of running past its card. Its bars now sit on their own day in time zones west of Greenwich.
-- Claude Code's newer wording for a spent 5-hour window is recognized, so a session stopped on it marks its account as full at once.
+- Side A no longer quits by itself about a day after launch on a Mac where Tailscale is installed but not running. If it ever ends without being quit, its helper reopens it within a second.
+- A pool session no longer stops with "API Error: 502" when the network drops for a moment. Side A waits up to 90 seconds for the network, and pool sessions cut off mid-response are asked to continue.
+- With "Keep awake while agents work" on, the Mac also stays awake while Side A Remote is connected and for 30 minutes after.
+- New: see and work your Mac's screen from Side A Remote. It is off until you turn it on in Settings › iPhone › Screen.
+- New: dictation in Side A Remote, transcribed by your Mac with an OpenAI key you enter in Settings › iPhone › Dictation. The key stays on the Mac.
+- New: hand a session from Claude to Codex, or back, from the phone.
+- New: pick the app's icon in Settings › General › App Icon: Midnight, Cobalt, Gold, Glass, Chrome or CRT Pixel. It changes the Dock icon while Side A runs.
+- A Claude Code session's todo list shows as a plan card in the Sessions window, whether it keeps it with TodoWrite or the newer task tools.
+- Your phone is told when your Mac goes quiet: one notification after ten minutes without a word from a Mac that didn't quit or sleep on purpose, and another when it is back.
+- Side A's log no longer reports hours-long stalls after the Mac wakes from sleep.
+
+With Side A Remote 1.2, every message says where it is (sent, held behind a step, read), Stop only stops, and queued messages can be changed or sent sooner. Messages typed while the Mac is out of reach go once it is back. The app opens the files a session writes, shows a session's pull request, and adds Snooze and Undo to the sessions list. A handoff carries the message's photos. Face ID is asked once per use, not per message.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.57/SideA-0.5.57-macOS-universal.dmg" length="24210358" type="application/octet-stream" sparkle:edSignature="vSMaI/mY8tzG0jlrcNXV6TDRH3KpnupT1R0ldzfrJK5xjAaBgzfRQETlNIU8WSljrBtnWRYx40MHZkwxB3LLAw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.58/SideA-0.5.58-macOS-universal.dmg" length="28101096" type="application/octet-stream" sparkle:edSignature="L1hSh/WXM+wzIvlX5rarTk7kyxKZL5zP4LX313lNN/XcOVsLKSKa7EHHllaIg0BR7ZDCWTc5D+UcEaEHLVe/CQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: JSnv8pxG9cnhT7VYspH7xK4PBQADqyKamESNRcC4AZLLQhrx79JxsQWLdc+IXEjcLi1OPFgjrxfOCFsk3+82Bg==
-length: 2576
+edSignature: iceuOrOGIsmT6UsSlD7JLchRxINJ/qUjG0fZ6aZOVbIVBnJI3UVYdV/PlWfjb7opFweSQ3s5dbrpyDiVYc85Dg==
+length: 3066
 -->
