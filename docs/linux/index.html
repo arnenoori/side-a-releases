@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <meta name="theme-color" content="#f7f8f7" />
-  <meta name="description" content="Install the Side A daemon on Linux, or on Windows through WSL 2, and answer Claude Code and Codex sessions from your iPhone." />
+  <meta name="description" content="Install the Side A daemon on Linux and answer Claude Code and Codex sessions from your iPhone." />
   <link rel="canonical" href="https://getsidea.com/linux/" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <title>Side A for Linux</title>
+  <script type="module" crossorigin src="../assets/release-B8xN-1T0.js"></script>
   <script type="module" crossorigin src="../assets/linux-B8G7Tu8_.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/release-B8xN-1T0.js">
   <link rel="stylesheet" crossorigin href="../assets/linux-DRAb5i9B.css">
   <link rel="stylesheet" crossorigin href="../assets/style-CK1wNR4b.css">
   <link rel="stylesheet" crossorigin href="../assets/doc-B81mPQ0Q.css">
@@ -61,14 +61,7 @@
         <li>A tray icon or settings window. The iPhone is the only interface.</li>
       </ul>
 
-      <h2>Windows <span class="tag">Preview</span></h2>
-      <p>Runs inside WSL 2, and only sees Claude Code and Codex installed there. Not yet tried on a Windows PC.</p>
-      <ol class="steps">
-        <li>In PowerShell, run <code>wsl --install -d Ubuntu-24.04</code> and restart.</li>
-        <li>In Ubuntu, turn on systemd once with <code>printf '[boot]\nsystemd=true\n' | sudo tee /etc/wsl.conf</code>, then run <code>wsl --shutdown</code> in PowerShell and open Ubuntu again.</li>
-        <li>In Ubuntu, run the install command above, then <code>sidead pair</code>.</li>
-      </ol>
-      <p><a href="https://github.com/arnenoori/side-a-source/blob/main/docs/ports/windows.md">Windows details</a> · <a href="https://github.com/arnenoori/side-a-source/blob/main/docs/ports/linux.md">Linux details</a></p>
+      <p><a href="../windows/">Side A for Windows</a> · <a href="https://github.com/arnenoori/side-a-source/blob/main/docs/ports/linux.md">Linux details</a></p>
 
       <h2>Remove</h2>
       <p>Run <code>~/.local/share/side-a/uninstall.sh</code>, or <code>sudo apt remove side-a-daemon</code> for the .deb. <code>sidead</code> adds nothing to your shell, <code>~/.claude</code> or <code>~/.codex</code>.</p>
