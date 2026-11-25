@@ -4,29 +4,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.59</title>
-            <pubDate>Tue, 24 Nov 2026 15:03:30 -0800</pubDate>
-            <sparkle:version>67</sparkle:version>
-            <sparkle:shortVersionString>0.5.59</sparkle:shortVersionString>
+            <title>0.5.60</title>
+            <pubDate>Tue, 24 Nov 2026 18:20:50 -0800</pubDate>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>0.5.60</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.59
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.60
 
-- "Quiet while I'm watching" in Side A Remote now does what it says: a notification is held only while your phone is in front with that session open, and a request still waiting is sent once you look away.
-- A notification that fails to go is tried again, up to three times. Taking a notification away can no longer arrive before the notification itself.
-- A request nobody answered no longer turns into "Answered" on your phone. The notification says what happened, such as "Handed back to the terminal".
-- The limit notification says the percentage, such as "Work is at 92%".
-- A "Didn't send" notice is no longer silent.
-- Mac's Screen: a phone that is refused now gets the reason (Screen is off, or Screen Recording isn't allowed) where it used to retry forever.
-- `remote.log` says why a notification did or didn't go.
+- Messages queued from Side A Remote are no longer stuck. A session that ended its turn while background tasks were still running never released what you queued, and "send now" did nothing. Queued messages now go a few seconds after the turn pauses, or come back to the phone as "Didn't send" with their text.
+- Side A Remote uses far less data. A long session opens in tens of kilobytes where it took hundreds, reopening or reconnecting fetches only what is new, and responses are compressed.
+- A message you send from the phone shows once in the transcript.
+- Scrolling a long session on the phone no longer goes blank for a screen when it refreshes.
+- Pool mode uploads far less: the conversation Claude Code resends on every turn is compressed on its way to Anthropic, to about two fifths of its size.
+- The phone moves onto a direct connection to the Mac more readily, and reconnects over the relay a second faster when no direct address answers.
+- `remote.log` says what happened to each message from the phone and how much data each connection moved.
 
-Side A Remote is redesigned in its next build: two tabs and a compose button, approvals on the row and above the message field, and one Face ID while you use it, not one per message.
+Side A Remote's next build asks for Face ID when it opens, not after you send, no longer crashes when you swipe Quit, and keeps a session you start as one row in Working.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.59/SideA-0.5.59-macOS-universal.dmg" length="28296429" type="application/octet-stream" sparkle:edSignature="c/aAr8dn93ZZcyJZj2DnEmiw9BQQ/vgMR8G7ckUz99SWl6yrjBlx2wDVHlxpuCKKxAKBVfuS9cq0zoVraCGlBA=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.60/SideA-0.5.60-macOS-universal.dmg" length="28392032" type="application/octet-stream" sparkle:edSignature="DopLvst/W0inq2qfc32tIEPpfng28jOtwPcvieSgCE8Yxn6L4cjJripN4hvbbEjCYn/D7E1Egk90Tsvy6hNCBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: GZpi56Ubj96jLOFiVbhH0xTb7op1zgU7oVIcauLn+eSyCZgOS58LP2ZqrSAsotzA0/YIiLpf3Q1+r8kH1ya8Dw==
-length: 2220
+edSignature: 7YvuH0bo3Yo8aUGAaib7wcNglVHmUye2t4yTZsC0N2XRn4E/8A9CfKewtmySkW+yg0uf4FHvcUW1/bhLceY7Dw==
+length: 2442
 -->
