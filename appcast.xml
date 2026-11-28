@@ -4,31 +4,31 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Side A</title>
         <item>
-            <title>0.5.61</title>
-            <pubDate>Wed, 25 Nov 2026 13:49:48 -0800</pubDate>
-            <sparkle:version>69</sparkle:version>
-            <sparkle:shortVersionString>0.5.61</sparkle:shortVersionString>
+            <title>0.5.62</title>
+            <pubDate>Fri, 27 Nov 2026 18:27:17 -0800</pubDate>
+            <sparkle:version>70</sparkle:version>
+            <sparkle:shortVersionString>0.5.62</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.61
+            <description sparkle:format="markdown"><![CDATA[# Side A 0.5.62
 
-- The menu no longer says "Update didn't install" under "Updated to" when the Mac is already on the new version.
-- Pool mode notices a limit that reset early, such as a weekly reset you redeemed: the account takes requests again as soon as a reading shows the limit emptied, and when every account is resting the pool tries one again every so often.
-- An error about an account or pool mode goes away once that account signs in, renews or switches, or pool mode starts. An account you signed in to again no longer keeps its "Sign in again" label beside a working Use button.
-- A Claude Code installed with npm (in `~/.npm-global/bin`) is found when you sign in to an account.
-- The Sessions window says "Can't Open This Conversation" only for the conversation that failed to load, not for other errors.
-- The red error under Remote settings goes away once the thing that failed works again.
-- The Mac no longer says "Reconnecting…" about a phone whose connection dot is still green.
-- The folder that holds the pool's key is closed to other accounts on the Mac.
-- Side A for Linux is out, with Windows through WSL 2 as a preview: `curl -fsSL https://getsidea.com/install.sh | sh`. See getsidea.com/linux and getsidea.com/windows.
-
-With Side A Remote 1.3: the terminal says why it closed instead of "Process Exited", a request you answered no longer flips back to "Needs you", and a session's memory reads the same on the phone as on the Mac.
+- The Sessions window shows what the agent did, step by step, the way Side A Remote does: what each step was, whether it worked, how long it took, and what it printed. Edits show the lines taken out and put in, and a finished turn folds behind "Worked for 4m".
+- Starting a session is instant: New Session closes when you press Start and the session is in the list while it boots. New Session leads with the prompt, starts in any folder, can cut a worktree from a branch, and can start Claude and Codex together on one prompt.
+- Everything in the Sessions window works from the keyboard: ⌘K goes to any session or acts on the open one, ⌘1 to ⌘9 open the top sessions, and the new Session menu lists the rest.
+- Changes shows uncommitted work, the whole branch, or each commit. Click a line to comment on it, and Add to Message sends your comments to the agent.
+- A hosted session can move to another of your computers and keep running there, with its work and its login. Link computers in Settings > Remote > Computers, then use Move to on the Mac or the iPhone. Standby keeps checkpoints on a linked computer in case this Mac disappears.
+- Sessions can be snoozed, archived and quit with Undo, and several rows can be selected at once.
+- ⌘S stashes what you have typed in a message field; Edit from Here branches a Claude conversation from any message you sent.
+- A session stopped by a usage limit says when it continues, and Codex sessions are now sent on when their account has room again.
+- A project can list its commands in `side-a.json`; they appear under Run beside a conversation.
+- A reply from your iPhone to a Claude session in your own tmux no longer stops at a draft in its prompt, and a reply left typed but unsent goes in when you retry it.
+- On Linux, `sidead` takes sessions moved from a Mac, sends them back, keeps standby checkpoints, and sends Claude Code's permission requests to your iPhone after `sidead hooks on`.
 
 macOS 14 or later. Apple Silicon and Intel. Free.
 ]]></description>
-            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.61/SideA-0.5.61-macOS-universal.dmg" length="28504157" type="application/octet-stream" sparkle:edSignature="20q6HD2fFAXTUZuApTlf2bEJHAEaEroqnKrEVuKeQfhcH7oxye+L8e9y0lwhV0NyNWYJ/QMDCVvLp4q3y2QrCw=="></enclosure>
+            <enclosure url="https://github.com/arnenoori/side-a-releases/releases/download/v0.5.62/SideA-0.5.62-macOS-universal.dmg" length="34448030" type="application/octet-stream" sparkle:edSignature="UW9D6kKxQ71x8PiZG1SqSLViqMd9M4ZVUOzHDGjC86ct3OpBVjdrRT3dLDSdnywYvBsjAaHflGHBunKw73iYDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: tjC5LzJWguIa5rm5PXoiLUl8z6YeByBUwwXlLDJGFhhYwiLUeTnroK804FKersE//wMjmbyG6RPAzC3aPAJTAw==
-length: 2656
+edSignature: Smb6jgLayJ6CfakUEXkQbZFS5GpOyo930HLZfR2reMna5G0gvxLXqWPJjCdRoTfitEEKsYCdBlhB3dDFRTaCCQ==
+length: 3160
 -->
